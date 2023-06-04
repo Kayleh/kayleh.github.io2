@@ -1,0 +1,1 @@
+[![auto deploy](https://github.com/Kayleh/kayleh.github.io2/actions/workflows/auto-deploy.yml/badge.svg)](https://github.com/Kayleh/kayleh.github.io2/actions/workflows/auto-deploy.yml)
