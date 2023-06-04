@@ -47,15 +47,15 @@ jobs:
         commit_message: ${{ github.event.head_commit.message }}
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
-    # 5. 部署到服务器（可选）
-    - name: Deploy to Server
-      uses: easingthemes/ssh-deploy@v3
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-        ARGS: "-rltgoDzvO --delete"
-        EXCLUDE: ".well-known, .user.ini"
-        SOURCE: public/
-        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-        REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-        REMOTE_USER: ${{ secrets.REMOTE_USER }}
-        TARGET: ${{ secrets.TARGET }}
+#    # 5. 部署到服务器（可选）
+#    - name: Deploy to Server
+#      uses: easingthemes/ssh-deploy@v3
+#      env:
+#        SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+#        ARGS: "-rltgoDzvO --delete"
+#        EXCLUDE: ".well-known, .user.ini"
+#        SOURCE: public/
+#        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+#        REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+#        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+#        TARGET: ${{ secrets.TARGET }}
