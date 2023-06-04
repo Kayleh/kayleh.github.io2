@@ -114,7 +114,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: stellar
+theme: hexo-theme-stellar
 # hexo-theme-next
 # hexo-theme-anatolo
 # volantis1
@@ -143,9 +143,7 @@ deploy:
   #   branch: master
   - type: git
     repo:
-      # github: git@github.com:Kayleh/blog.git
       github: git@github.com:Kayleh/Kayleh.github.io.git
-      # coding: git@e.coding.net:kayleh/Kayleh.git
       # coding: git@e.coding.net:kayleh/Kayleh.git,master
       # gitee: git@gitee.com:kayleh/kayleh.git
     branch: master
@@ -179,10 +177,10 @@ Plugins:
 #   field: post
 
 #站点地图，seo搜索引擎需要
-sitemap:
-  path: sitemap.xml
-baidusitemap:
-  path: baidusitemap.xml
+#sitemap:
+#  path: sitemap.xml
+#baidusitemap:
+#  path: baidusitemap.xml
 
 # # 是否开启字数统计
 # #不需要使用，直接设置值为false，或注释掉
@@ -244,11 +242,6 @@ live2d:
 #   total_symbols: true #是否统计总字数
 #   total_time: true #是否统计总阅读时长
 
-# hexo-generator-searchdb
-search:
-  path: search.xml
-  field: post
-  format: html
 
 # hexo-neat
 # 开关
@@ -274,157 +267,145 @@ neat_js:
     - '**/jquery.fancybox.pack.js'
     - '**/index.js'
 
-# # 翻译
-# # # 修改原链接格式：permalink: :year/:month/:day/:title/
-# # permalink: :year:month:day/:translate_title.html
-translate_title:
-  translate_way: google  # google,youdao,baidu_with_appid,baidu_no_appid
-  is_need_proxy: false     # true | false
-  # proxy_url: http://localhost:50018 # Your proxy_url
-  # youdao_api_key: '' # Your youdao_api_key
-  # youdao_keyfrom: xxxx-blog # Your youdao_keyfrom
-  # baidu_appid: '' # Your baidu_appid
-  # baidu_appkey: '' # Your baidu_appkey
-
-# # PWA
-# # offline config passed to sw-precache.
-# offline:
-#   maximumFileSizeToCacheInBytes: 10485760 # 缓存的最大文件大小，以字节为单位
-#   staticFileGlobs:
-#     - public/**/*.{js,html,css,png,jpg,gif,svg,webp,eot,ttf,woff,woff2}
-#   # 静态文件合集，如果你的站点使用了例如webp格式的文件，请将文件类型添加进去。
-#   stripPrefix: public
-#   verbose: true
-#   runtimeCaching:
-#     # CDNs - should be cacheFirst, since they should be used specific versions so should not change
-#     - urlPattern: /* # 如果你需要加载CDN资源，请配置该选项，如果没有，可以不配置。
-#       handler: cacheFirst
-#       options:
-#         origin: https://kayleh.top # 可替换成你的 url
-
-# # 数学公式
-kramed:
-  gfm: true
-  pedantic: false
-  sanitize: false
-  tables: true
-  breaks: true
-  smartLists: true
-  smartypants: true
-# 数学公式
-# markdown_it_plus:
-#   plugins:
-#     - plugin:
-#       name: '@neilsustc/markdown-it-katex'
-#       enable: true
-#       options:
-#         strict: false
-
-import:
-  meta:
-    - <meta name="msapplication-TileColor" content="#ffffff">
-    - <meta name="msapplication-config" content="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/browserconfig.xml">
-    - <meta name="theme-color" content="#ffffff">
-    - <meta name="google-site-verification" content="LQn0xwjfEU_V6CXCA0qAdwM4qRXtblIbfy5KuzEKaRg" />
-
-  link:
-    - <link rel="apple-touch-icon" sizes="180x180" href="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.png">
-    - <link rel="icon" type="image/png" sizes="32x32" href="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon-32x32.png">
-    - <link rel="icon" type="image/png" sizes="16x16" href="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon-16x16.png">
-    - <link rel="manifest" href="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/site.webmanifest">
-    - <link rel="mask-icon" href="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    - <link rel="shortcut icon" href="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon.ico">
-  script:
-    # - <script async="" src="https://widget.daovoice.io/widget/38b1c911.js" charset="utf-8"></script>
-    - <script data-ad-client="ca-pub-7457165067653912" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    - <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- 打赏之后横向 --><ins class="adsbygoogle"style="display:inline-block;width:728px;height:90px"data-ad-client="ca-pub-7457165067653912"data-ad-slot="9837525717"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-    # - <script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?24f5d46da7ff42ae73ccea4ea7114e1b";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script>
-    - <script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?2cd1dc193190f18fed292accb735c684";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script>
-
-
-#hexo-theme-typography
-# Generate archive page
-archive_generator:
-  per_page: 0
-
-# Generate categories index page and each category page
-# category_generator:
-#   per_page: 10
-#   enable_index_page: true
-
-# Generate tags index page and each tag page
-tag_generator:
-  per_page: 10
-  enable_index_page: false
-
-# Generator atom feed for you website
-feed:
-  type: atom
-  path: atom.xml
-  limit: 20
-  hub:
-  content:
-  content_limit: 140
-  content_limit_delim: ' '
-
-# For syntax highlighting
-# prism_plugin:
-#   mode: 'preprocess'
-#   theme: 'default'
-#   line_number: true
-
-# offline config passed to sw-precache.
+##---------------------------------------------------------------------------------------------------隐藏
+## # 翻译
+## # # 修改原链接格式：permalink: :year/:month/:day/:title/
+## # permalink: :year:month:day/:translate_title.html
+#translate_title:
+#  translate_way: google  # google,youdao,baidu_with_appid,baidu_no_appid
+#  is_need_proxy: false     # true | false
+#  # proxy_url: http://localhost:50018 # Your proxy_url
+#  # youdao_api_key: '' # Your youdao_api_key
+#  # youdao_keyfrom: xxxx-blog # Your youdao_keyfrom
+#  # baidu_appid: '' # Your baidu_appid
+#  # baidu_appkey: '' # Your baidu_appkey
+#
+## # PWA
+## # offline config passed to sw-precache.
+## offline:
+##   maximumFileSizeToCacheInBytes: 10485760 # 缓存的最大文件大小，以字节为单位
+##   staticFileGlobs:
+##     - public/**/*.{js,html,css,png,jpg,gif,svg,webp,eot,ttf,woff,woff2}
+##   # 静态文件合集，如果你的站点使用了例如webp格式的文件，请将文件类型添加进去。
+##   stripPrefix: public
+##   verbose: true
+##   runtimeCaching:
+##     # CDNs - should be cacheFirst, since they should be used specific versions so should not change
+##     - urlPattern: /* # 如果你需要加载CDN资源，请配置该选项，如果没有，可以不配置。
+##       handler: cacheFirst
+##       options:
+##         origin: https://kayleh.top # 可替换成你的 url
+#
+## # 数学公式
+#kramed:
+#  gfm: true
+#  pedantic: false
+#  sanitize: false
+#  tables: true
+#  breaks: true
+#  smartLists: true
+#  smartypants: true
+#
+#import:
+#  meta:
+#    - <meta name="msapplication-TileColor" content="#ffffff">
+#    - <meta name="msapplication-config" content="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/browserconfig.xml">
+#    - <meta name="theme-color" content="#ffffff">
+#    - <meta name="google-site-verification" content="LQn0xwjfEU_V6CXCA0qAdwM4qRXtblIbfy5KuzEKaRg" />
+#
+#  link:
+#    - <link rel="apple-touch-icon" sizes="180x180" href="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.png">
+#    - <link rel="icon" type="image/png" sizes="32x32" href="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon-32x32.png">
+#    - <link rel="icon" type="image/png" sizes="16x16" href="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon-16x16.png">
+#    - <link rel="manifest" href="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/site.webmanifest">
+#    - <link rel="mask-icon" href="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/safari-pinned-tab.svg" color="#5bbad5">
+#    - <link rel="shortcut icon" href="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon.ico">
+#  script:
+#    # - <script async="" src="https://widget.daovoice.io/widget/38b1c911.js" charset="utf-8"></script>
+#    - <script data-ad-client="ca-pub-7457165067653912" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+#    - <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- 打赏之后横向 --><ins class="adsbygoogle"style="display:inline-block;width:728px;height:90px"data-ad-client="ca-pub-7457165067653912"data-ad-slot="9837525717"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+#    # - <script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?24f5d46da7ff42ae73ccea4ea7114e1b";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script>
+#    - <script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?2cd1dc193190f18fed292accb735c684";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script>
+#
+#
+##hexo-theme-typography
+## Generate archive page
+#archive_generator:
+#  per_page: 0
+#
+## Generate categories index page and each category page
+## category_generator:
+##   per_page: 10
+##   enable_index_page: true
+#
+## Generate tags index page and each tag page
+#tag_generator:
+#  per_page: 10
+#  enable_index_page: false
+#
+## Generator atom feed for you website
+#feed:
+#  type: atom
+#  path: atom.xml
+#  limit: 20
+#  hub:
+#  content:
+#  content_limit: 140
+#  content_limit_delim: ' '
+#
+## For syntax highlighting
+## prism_plugin:
+##   mode: 'preprocess'
+##   theme: 'default'
+##   line_number: true
+#
+## offline config passed to sw-precache.
+##service_worker:
+##  maximumFileSizeToCacheInBytes: 5242880
+##  staticFileGlobs:
+##    - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+##  stripPrefix: public
+##  verbose: true
 #service_worker:
 #  maximumFileSizeToCacheInBytes: 5242880
 #  staticFileGlobs:
-#    - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+#    - public/js/*
 #  stripPrefix: public
-#  verbose: true
-service_worker:
-  maximumFileSizeToCacheInBytes: 5242880
-  staticFileGlobs:
-    - public/js/*
-  stripPrefix: public
-  verbose: false
-  runtimeCaching:
-    - urlPattern: /**/*
-      handler: cacheFirst
-      options:
-        origin: blog.kayleh.top
-
-filter_optimize:
-  enable: true
-  # remove static resource query string
-  #   - like `?v=1.0.0`
-  remove_query_string: true
-  # remove the surrounding comments in each of the bundled files
-  remove_comments: true
-  css:
-    enable: true
-    # bundle loaded css file into the one
-    bundle: true
-    # use a script block to load css elements dynamically
-    delivery: true
-    # make specific css content inline into the html page
-    #   - only support the full path
-    #   - default is ['css/main.css']
-    inlines:
-    excludes:
-  js:
-    # bundle loaded js file into the one
-    bundle: true
-    excludes:
-  # set the priority of this plugin,
-  # lower means it will be executed first, default is 10
-  priority: 12
-
-
-# 自动摘要
-#npm install hexo-excerpt --save
-excerpt:
-  depth: 5
-  excerpt_excludes: []
-  more_excludes: []
-  hideWholePostExcerpts: true
-
-cache: true
+#  verbose: false
+#  runtimeCaching:
+#    - urlPattern: /**/*
+#      handler: cacheFirst
+#      options:
+#        origin: blog.kayleh.top
+#
+#filter_optimize:
+#  enable: true
+#  # remove static resource query string
+#  #   - like `?v=1.0.0`
+#  remove_query_string: true
+#  # remove the surrounding comments in each of the bundled files
+#  remove_comments: true
+#  css:
+#    enable: true
+#    # bundle loaded css file into the one
+#    bundle: true
+#    # use a script block to load css elements dynamically
+#    delivery: true
+#    # make specific css content inline into the html page
+#    #   - only support the full path
+#    #   - default is ['css/main.css']
+#    inlines:
+#    excludes:
+#  js:
+#    # bundle loaded js file into the one
+#    bundle: true
+#    excludes:
+#  # set the priority of this plugin,
+#  # lower means it will be executed first, default is 10
+#  priority: 12
+#
+#
+#
+#cache: true
+#
+##---------------------------------------------------------------------------------------------------

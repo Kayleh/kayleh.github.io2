@@ -46,6 +46,7 @@
     "hexo-neat": "^1.0.9",
     "hexo-offline": "^2.0.0",
     "hexo-offline-popup": "^1.0.3",
+    "hexo-related-popular-posts": "^5.0.1",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-jade": "^0.5.0",
     "hexo-renderer-kramed": "^0.1.4",
