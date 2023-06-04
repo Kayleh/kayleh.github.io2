@@ -36,6 +36,11 @@ jobs:
         npm i
         npm install hexo-cli -g
         hexo clean && hexo generate
+        # 配置 SSH
+        mkdir -p ~/.ssh && echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa  && ssh-keyscan github.com >> ~/.ssh/known_hosts
+        # 配置 Git
+        git config --global user.name 'kayleh'
+        git config --global user.email 'yaojinqing@kayleh.top'
     # 4. 部署到 GitHub 仓库（可选）
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
