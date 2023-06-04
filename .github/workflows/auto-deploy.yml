@@ -19,6 +19,17 @@ jobs:
       uses: actions/setup-node@master
       with:
         node-version: "16.15.0"
+    - name: '缓存依赖环境'
+      uses: actions/cache@v3
+      id: cache
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    - name: '安装依赖环境'
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: npm ci
     # 3. 生成静态文件
     - name: Generate Public Files
       run: |
