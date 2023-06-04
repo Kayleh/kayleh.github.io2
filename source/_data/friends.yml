@@ -1,0 +1,61 @@
+- group: # 分组标题
+  description:  # 分组描述
+  items:
+    # - title: # 名称
+    #   avatar: # 头像
+    #   url: # 链接
+    #   screenshot: # 截图
+    #   keywords: # 关键词
+    #   description: # 描述
+    - title: Mi Manchi
+      avatar: https://cdn.jsdelivr.net/gh/A-ANing/manifest_s@master/myblog/images/head/20200607155524_4ZRYW.jpeg
+      url: http://xudaxianer.cn
+      screenshot: https://cdn.jsdelivr.net/gh/kayleh/cdn2/website/1.png
+      keywords: # 关键词
+      description: 我曾踏足山巅 也曾进入低谷 二者都让我受益良多
+    - title: Aurora
+      avatar: https://cdn.jsdelivr.net/gh/52assert/CDN/img/20200711202438.jpg
+      url: https://blog.this52.cn/
+      screenshot: # 截图
+      keywords: # 关键词
+      description: 偷偷厉害 万物尽可期待！
+    - title: 孑然一身
+      avatar: https://s1.ax1x.com/2020/08/17/dmSykV.jpg
+      url: https://zik05.cn/
+      screenshot: # 截图
+      keywords: # 关键词
+      description: 只想这一切自在且不荒唐的度过。
+    - title: 小枫叶
+      avatar: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg
+      url: https://www.starlovei.com
+      screenshot: # 截图
+      keywords: # 关键词
+      description: 欢迎来到小世界
+    - title: 白夜
+      avatar: https://whitenight999.top/img/head.jpg
+      url: https://whitenight999.top/
+      screenshot: # 截图
+      keywords: # 关键词
+      description: 似此星辰非昨夜，为谁风露立中宵？
+    - title: 蝉时雨
+      avatar: https://cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/avatar.jpg
+      url: https://chanshiyu.com
+      screenshot: 
+      keywords: # 关键词
+      description: 蝉鸣如雨，花宵道中
+    - title: 会打篮球的程序猿
+      avatar: https://www.lzhpo.com/img/tx.jpg
+      url: https://www.lzhpo.com/
+      screenshot: 
+      keywords: 
+      description: 主要分享微服务、系统架构、大数据、前端等相关的知识研究和学习资料。
+    - title: 千羽的编程时光
+      avatar: https://mateshao.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA.jpg
+      url: http://www.nateshao.cn/
+      screenshot: 
+      keywords: 
+      description: 云破星出之夜，我对星低喃：吞噬我。
+    
+
+
+     

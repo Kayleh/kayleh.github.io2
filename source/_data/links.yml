@@ -1,0 +1,60 @@
+- class_name: 友情链接
+  # class_desc: 那些人，那些事
+  link_list:
+    - name: Aurora
+      link: https://blog.this52.cn/
+      avatar: https://cdn.jsdelivr.net/gh/52assert/CDN/img/20200711202438.jpg
+      descr: 偷偷厉害 万物尽可期待！
+
+    - name: 孑然一身
+      link: https://zik05.cn/
+      avatar: https://s1.ax1x.com/2020/08/17/dmSykV.jpg
+      descr: 只想这一切自在且不荒唐的度过。
+
+    - name: 小枫叶
+      link: https://www.starlovei.com
+      avatar: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg
+      descr: 欢迎来到小世界
+
+    - name: 白夜
+      link: https://whitenight999.top/
+      avatar: https://whitenight999.top/img/head.jpg
+      descr: 似此星辰非昨夜，为谁风露立中宵？
+      
+    - name: 蝉时雨
+      link: https://chanshiyu.com
+      avatar: https://cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/avatar.jpg
+      descr: 蝉鸣如雨，花宵道中
+    # - name: JerryC
+    #   link: https://jerryc.me/
+    #   avatar: https://jerryc.me/image/avatar.png
+    #   descr: 今日事,今日毕
+    - name: 会打篮球的程序猿
+      link: https://www.lzhpo.com/
+      avatar: https://www.lzhpo.com/img/tx.jpg
+      descr: 主要分享微服务、系统架构、大数据、前端等相关的知识研究和学习资料。
+
+    - name: 千羽的编程时光
+      link: http://www.nateshao.cn/
+      avatar: https://mateshao.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA.jpg
+      descr: 云破星出之夜，我对星低喃：吞噬我。
+
+
+
+
+
+# - class_name: 网站
+#   class_desc: 值得推荐的网站
+#   link_list:
+#     - name: Youtube
+#       link: https://www.youtube.com/
+#       avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
+#       descr: 视频网站
+#     - name: Weibo
+#       link: https://www.weibo.com/
+#       avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
+#       descr: 中国最大社交分享平台
+#     - name: Twitter
+#       link: https://twitter.com/
+#       avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
+#       descr: 社交分享平台

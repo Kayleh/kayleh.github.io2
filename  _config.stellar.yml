@@ -1,0 +1,133 @@
+#https://xaoxuu.com/wiki/stellar
+
+#默认生成 Open Graph 标签，如果您不希望生成它，可以在主题配置文件中关闭：
+open_graph:
+  enable: true
+  twitter_id: # for open_graph meta
+
+#根据 tags 作为关键词为每一篇文章在线搜索封面：
+article:
+  auto_cover: true
+
+#---
+ ## 本地图片路径为 blog/source/assets/xaoxuu/blog/2020-0927a@1x.svg
+ ## 也可以直接引用图片直链 https://xxx.jpg
+ #cover: /assets/xaoxuu/blog/2020-0927a@1x.svg
+ #---
+
+ #---
+   #cover: /assets/xaoxuu/blog/2020-0927a@1x.svg # 必选
+   #poster: # 海报（可选，全图封面卡片）
+   #  topic: 标题上方的小字 # 可选
+   #  headline: 大标题 # 必选
+   #  caption: 标题下方的小字 # 可选
+   #  color: 标题颜色 # 可选，默认为跟随主题的动态颜色 # white,red...
+   #---
+
+#自动从文章内容截取一定字数的文字作为摘要，可以这样设置：
+article:
+   auto_excerpt: 50
+
+#相关文章推荐
+article:
+  # npm i hexo-related-popular-posts
+  related_posts:
+    enable: true
+    title: 您可能感兴趣的文章
+
+#引用
+#---
+ #references:
+ #  - title: '心跳之旅—💗—iOS用手机摄像头检测心率(PPG)'
+ #    url: https://punmy.cn/2016/07/28/15231176397746.html
+ #  - title: 'PPG光电容积脉搏波描记法技术概况'
+ #    url: https://www.jianshu.com/p/695c131abfa5
+ #  ...
+ #---
+
+#导航栏
+sidebar:
+  menu:
+    post: '[btn.blog](/)'
+    wiki: '[btn.wiki](/wiki/)'
+    notes: '[笔记](/notes/)'
+    more: '[更多](/more/)'
+  logo:
+    title: '[<img no-lazy height="32px" src="https://cdn.jsdelivr.net/gh/kayleh/logo/logo.png"/>](/)'
+
+# 文章搜索
+search:
+  service: local_search # local_search, todo...
+  local_search: # 在 front-matter 中设置 indexing:false 来避免被搜索索引
+    field: all # post, page, all
+    path: /search.json # 搜索文件存放位置
+    content: true # 是否搜索内容
+    codeblock: true # 是否搜索代码块（需要content: true)
+
+#footer
+footer:
+  social:
+#    github:
+#      icon: '<img src="/assets/placeholder/social/08a41b181ce68.svg"/>'
+#      url: https://
+#    music:
+#      icon: '<img src="/assets/placeholder/social/3845874.svg"/>'
+#      url: https://
+#    unsplash:
+#      icon: '<img src="/assets/placeholder/social/3616429.svg"/>'
+#      url: https://
+#    comments:
+#      icon: '<img src="/assets/placeholder/social/942ebbf1a4b91.svg"/>'
+#      url: https://
+
+comments:
+  service: giscus
+  # giscus
+  # https://giscus.app/zh-CN
+  giscus:
+    data-repo: Kayleh/kayleh.top.giscus # [在此输入仓库]
+    data-repo-id: R_kgDOJrPWjA # [在此输入仓库 ID]
+    data-category: announcements # [在此输入分类名]
+    data-category-id: DIC_kwDOJrPWjM4CW9R6
+    data-mapping: pathname
+    data-strict: 0
+    data-reactions-enabled: 1
+    data-emit-metadata: 0
+    data-input-position: top # top, bottom
+    data-theme: preferred_color_scheme
+    data-lang: zh-CN
+    data-loading: lazy
+    crossorigin: anonymous
+
+#font:
+style:
+  font-size:
+    root: 16px
+    body: .9375rem # 15px
+    code: 85% # 14px
+    codeblock: 0.8125rem # 13px
+  font-family:
+    logo: 'system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    body: 'system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
+    codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
+
+#站点地图
+sitemap:
+  '博客':
+    - '[标签](/tags/)'
+    - '[归档](/archives/)'
+  '更多':
+     - '[关于本站](/)'
+#    - '[GitHub](/)'
+content: | # 支持 Markdown 格式
+  本站由 [@kayleh](/) 创建。
+  本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
+# 主题用户越多，开发者维护和更新的积极性就越高，如果您喜欢本主题，请在适当的位置显示主题信息和仓库链接以表支持。
+
+#懒加载
+# 默认打开
+lazyload:
+  enable: true # [hexo clean && hexo s] is required after changing this value.
+  js: https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js
+  transition: blur # blur, fade
