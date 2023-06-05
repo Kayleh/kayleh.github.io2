@@ -3,8 +3,8 @@
 ######## Stellar info ########
 stellar:
   version: '1.19.0'
-  homepage: 'https://xaoxuu.com/wiki/stellar/'
-  repo: 'https://github.com/xaoxuu/hexo-theme-stellar'
+  homepage: 'https://kaleh.top'
+  repo: 'https://github.com/kayleh'
   cdn_css: # Use cdn links instead of /css/main.css
   cdn_js: # Use cdn links instead of /js/main.js
 
@@ -12,7 +12,7 @@ stellar:
 ######## head tags ########
 open_graph:
   enable: true
-  twitter_id: # for open_graph meta
+  twitter_id: kayleh # for open_graph meta
 
 
 ######## Sidebar ########
@@ -22,9 +22,9 @@ sidebar:
     #title: '[<img no-lazy height="32px" src="https://cdn.jsdelivr.net/gh/kayleh/logo/logo.svg"/>](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
     title: '[config.title](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
   menu:
-    home: '[主页](/)'
+    home: '[主页](https://kayleh.top)'
     #about: '[关于](/about/)'
-    notes: '[笔记](/notes/)'
+    notes: '[随记](/notes/)'
     # post: '[btn.blog](/)'
     # wiki: '[btn.wiki](/wiki/)'
     # friends: '[友链](/friends/)'
@@ -64,7 +64,7 @@ article:
   # 如果没有指定横幅，是否根据 tags 作为关键词搜索横幅图片？
   auto_banner: true # search from https://source.unsplash.com/
   # 如果没有指定 excerpt 和 description，将自动取多长的内容作为文章摘要？
-  auto_excerpt: 5
+  auto_excerpt: '200' # 0 or false to disable
   # 分类颜色
   category_color:
     '探索号': '#f44336'
@@ -187,8 +187,11 @@ comments:
 ######## Footer ########
 footer:
   social:
+    # github:
+    #   icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/social/08a41b181ce68.svg"/>'
+    #   url: https://github.com/kayleh
     github:
-      icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/social/08a41b181ce68.svg"/>'
+      icon: '<img src="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/ablobcatrainbow.png"/>'
       url: https://github.com/kayleh
     # music:
     #   icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/social/3845874.svg"/>'
@@ -202,8 +205,8 @@ footer:
   sitemap:
     '博客':
       - '[近期](/)'
-      - '[标签](/)'
-      - '[归档](/)'
+      - '[标签](/tags)'
+      - '[归档](/archives)'
     '社交':
       - '[友链](/friends)'
     '更多':
@@ -378,8 +381,8 @@ style:
     code: 85% # 14px
     codeblock: 0.8125rem # 13px
   font-family:
-    logo: '"Segoe UI", system-ui, "Microsoft Yahei", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
-    body: '"Segoe UI",system-ui, "Microsoft Yahei",  -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    logo: '"LXGW WenKai Screen","Segoe UI", system-ui, "Microsoft Yahei", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    body: '"LXGW WenKai Screen","Segoe UI",system-ui, "Microsoft Yahei",  -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
     code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
     codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
   text-align: left

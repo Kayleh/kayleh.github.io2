@@ -10,7 +10,8 @@
     "c": "hexo clean",
     "s": "hexo clean && hexo server",
     "g": "hexo clean && hexo generate",
-    "d": "hexo deploy"
+    "d": "hexo deploy",
+    "ss":"/home/kayleh/Project/kayleh.github.io2/node_modules/hexo/bin/hexo server"
   },
   "hexo": {
     "version": "5.4.2"
