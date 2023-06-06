@@ -400,6 +400,8 @@ cache: true
 inject:
   head:
     - <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    # @font-face {
+    - <link rel="preconnect" href="https://s1.hdslb.com/" /> - <link rel="stylesheet" href="//s1.hdslb.com/bfs/static/jinkela/long/font/regular.css" media="all" onload="this.media='all'" /> - <link rel="stylesheet" href="//s1.hdslb.com/bfs/static/jinkela/long/font/medium.css" media="all" onload="this.media='all'" />
   script:
     - <script src="//code.tidio.co/dq5klo9ydptaxokj83vcwnusf63dogzr.js" async></script>
     - <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7457165067653912"
