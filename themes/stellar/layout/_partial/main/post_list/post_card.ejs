@@ -50,21 +50,21 @@ function div_default() {
   el += '</h2>';
 
   // 摘要
-  el += '<div class="excerpt';
-  if (theme.plugins.heti && theme.plugins.heti.enable) {
-    el += ' heti';
-  }
-  el += '">';
-  el += '<p>';
-  if (post.excerpt) {
-    el += strip_html(post.excerpt);
-  } else if (post.description) {
-    el += post.description;
-  } else if (post.content && theme.article.auto_excerpt > 0) {
-    // el += truncate(strip_html(post.content), {length: 2});
-  }
-  el += '</p>';
-  el += '</div>';
+  //   el += '<div class="excerpt';
+  //   if (theme.plugins.heti && theme.plugins.heti.enable) {
+    //     el += ' heti';
+    //   }
+    //   el += '">';
+    //   el += '<p>';
+      //   if (post.excerpt) {
+        //     el += strip_html(post.excerpt);
+        //   } else if (post.description) {
+          //    el += post.description;
+          //  } else if (post.content && theme.article.auto_excerpt > 0) {
+            //    // el += truncate(strip_html(post.content), {length: 2});
+            //  }
+            // el += '</p>';
+            //  el += '</div>';
 
   // meta
   el += '<div class="meta cap">';
