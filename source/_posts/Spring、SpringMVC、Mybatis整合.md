@@ -23,11 +23,11 @@ SSM整合
 ### 准备
 
 #### 创建Maven工程
-![](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Spring、SpringMVC、Mybatis整合/start.png)
+![](https://cdn.kayleh.top/gh/kayleh/cdn/img/Spring、SpringMVC、Mybatis整合/start.png)
 
 ##### 选择webapp
-![](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Spring、SpringMVC、Mybatis整合/new.png)
-![](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Spring、SpringMVC、Mybatis整合/3.png)
+![](https://cdn.kayleh.top/gh/kayleh/cdn/img/Spring、SpringMVC、Mybatis整合/new.png)
+![](https://cdn.kayleh.top/gh/kayleh/cdn/img/Spring、SpringMVC、Mybatis整合/3.png)
 
 ##### 数据库准备
 ``` sql
@@ -39,11 +39,11 @@ name varchar(20),
 money double
 );
 ```
-![](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Spring、SpringMVC、Mybatis整合/data.png)
+![](https://cdn.kayleh.top/gh/kayleh/cdn/img/Spring、SpringMVC、Mybatis整合/data.png)
 ####创建目录
-![](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Spring、SpringMVC、Mybatis整合/root.png)
+![](https://cdn.kayleh.top/gh/kayleh/cdn/img/Spring、SpringMVC、Mybatis整合/root.png)
 ####导入依赖
-![](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Spring、SpringMVC、Mybatis整合/deloy.png)
+![](https://cdn.kayleh.top/gh/kayleh/cdn/img/Spring、SpringMVC、Mybatis整合/deloy.png)
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -297,7 +297,7 @@ public class AccountServiceImpl implements AccountService {
 ```
 ## Spring整合
 在resource下创建Spring配置文件
-![](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Spring、SpringMVC、Mybatis整合/1.png)
+![](https://cdn.kayleh.top/gh/kayleh/cdn/img/Spring、SpringMVC、Mybatis整合/1.png)
 ####命名空间
 ```xml
        xmlns="http://www.springframework.org/schema/beans"

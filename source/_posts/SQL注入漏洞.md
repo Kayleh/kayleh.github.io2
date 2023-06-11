@@ -157,7 +157,7 @@ http://localhost/sqls/index.php?id=2  union select null,null,null limit 1,1
 
   第二个：哪个列中的数据是在页面中显示出来的，有一些列中的数据只是用于后台程序处理，并不会在前台显示，所以我们需要判断哪个字段我们可以看到。所以，我们要通过数字代替NULL进行查询，来确定哪些字段会在页面中显示。这也就是为什么我们不一开始就用数字而用null，因为union select 不仅要求列的数量相同 同时数据类型也要相似。 
 
- ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/SQL注入漏洞/584a947239ae725aab3ee529f701eb7d.jpg) 
+ ![img](https://cdn.kayleh.top/gh/kayleh/cdn4/SQL注入漏洞/584a947239ae725aab3ee529f701eb7d.jpg) 
 
 - 查询库名
 
@@ -200,7 +200,7 @@ http://localhost/sqls/index.php?id=2 union select null,schema_name,null from inf
 http://localhost/sqls/index.php?id=2 union select null,schema_name,null from information_schema.schemata limit 0,1
 ```
 
- ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/SQL注入漏洞/86d1024ab776770ef0a2f6e559ec83df.jpg) 
+ ![img](https://cdn.kayleh.top/gh/kayleh/cdn4/SQL注入漏洞/86d1024ab776770ef0a2f6e559ec83df.jpg) 
 
 并没有显示数据库名而显示的是第一条语句查询出来的结果。在union前面加上and 1=2，就能显示出来了。
 
@@ -246,7 +246,7 @@ http://localhost/sqls/index.php?id=2 union select null,table_name,null from info
 http://localhost/sqls/index.php?id=2 and 1=2 union select 1,group_concat(column_name),3 from information_schema.columns where table_schema='test' and table_name='sqltest'
 ```
 
-  ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/SQL注入漏洞/055b34fa808266a8e9af8b9cea0865db.jpg) 
+  ![img](https://cdn.kayleh.top/gh/kayleh/cdn4/SQL注入漏洞/055b34fa808266a8e9af8b9cea0865db.jpg) 
 
 也可以查看admin表中的字段。 
 
@@ -306,7 +306,7 @@ http://localhost/sqls/index.php?id=2  union select null,column_name,null from in
 >
 > 靶场：https://rimovni.exeye.run/hugkudure/well
 >
-> <img src="https://cdn.jsdelivr.net/gh/kayleh/cdn4/SQL注入漏洞/1617673856077.png" alt="1617673856077" style="zoom:50%;" />
+> <img src="https://cdn.kayleh.top/gh/kayleh/cdn4/SQL注入漏洞/1617673856077.png" alt="1617673856077" style="zoom:50%;" />
 
 sqlmap注入常见用法：
 
@@ -332,4 +332,4 @@ python sqlmap.py -u "https://rimovni.exeye.run/hugkudure/well" --form --batch -D
 
 开始注入，获得数据库
 
-![1617674097343](https://cdn.jsdelivr.net/gh/kayleh/cdn4/SQL注入漏洞/1617674097343.png)
+![1617674097343](https://cdn.kayleh.top/gh/kayleh/cdn4/SQL注入漏洞/1617674097343.png)

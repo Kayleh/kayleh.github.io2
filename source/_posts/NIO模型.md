@@ -15,46 +15,46 @@ translate_title: NIO-blocking-model
 NIO：我认为翻译成`Non-Blocking`，更加的通俗直白，相比于BIO，也有一个对比，叫他非阻塞IO最好不过了
 
 - 它和BIO有以下的区别
-  ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200721215841190.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200721215841190.png)
 - Channel是`双向`的，即可以读又可以写，相比于Stream，它并不区分出输入流和输出流，而且Channel可以完成非阻塞的读写，也可以完成阻塞的读写
 
 ### 1.2 Buffer简介
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200721220142379.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200721220142379.png)
 
 - Channel的读写是离不开Buffer的，Buffer实际上内存上一块用来读写的区域。
 
 #### 1.2.1 写模式
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200721220305715.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200721220305715.png)
 
 - 其中三个指针我们要了解一下，`position`为当前指针位置，`limit`用于读模式，用它来标记可读的最大范围，`capacity`是最大的可写范围阈值
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200721220837981.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200721220837981.png)
 
 当我们写数据写了四个格子时，我们执行`flip()`方法，即可转变为`读模式`，limit指针就直接变到了我们刚刚写数据的极限位置，position指针回到初始位置，这样我们就可以将数据读出来了
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200721220618271.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200721220618271.png)
 
 #### 1.2.2 读模式到写模式的两种切换
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200721221126713.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200721221126713.png)
 
 1. 当我们将数据全部读完时，切换到写模式
    调用`clear()`方法，它会使position指针回到初始位置，limit回到最远端，这样就可以重新开始数据了，虽然clear意为清除，但是其实它只是将指针的位置移动了，并没有将数据清除，而是会覆盖原来的位置
-   ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200721221133628.png)
+   ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200721221133628.png)
 2. 只读了部分数据，我想将未读的部分保留，而现在我又要开始先进行写模式的操作了，这样可以执行`compact()`方法
    这个方法会`将没有读到的数据保存到初始位置`，而`position指针的位置将会移动到这些数据的后面位置`，从未读的数据后开始进行写数据
-   ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200721221448757.png)
+   ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200721221448757.png)
    之后再读数据的时候，我们就能将上次没有读到的数据读出来了
 
 ### 1.3 Channel简介
 
 Channel间的数据交换，都需要依赖Buffer
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200721221615368.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200721221615368.png)
 
 #### 1.3.1 几个重要的Channel
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200721221704507.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200721221704507.png)
 
 - FileChannel：用于文件传输
 - ServerSocketChannel和SocketChannel：用于网络编程的传输
@@ -212,32 +212,32 @@ public class FileCopyDemo {
 ## 3. Selector概述
 
 - Channel需要在Selector上注册
-  ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200722145734223.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200722145734223.png)
 - 注册的同时，要告诉Selector监听的状态
-  ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200722145833687.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200722145833687.png)
 - Channel对应的状态有：`CONNECT`：socketChannel已经与服务器建立连接的状态；`ACCEPT`：serverSocketChannel已经与客户端建立连接的状态；`READ`：可读状态；`WRITE`：可写状态
-  ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200722150046897.png)
-- Channel在Selector上注册完成后，会返回一个SelectKey对象，其中有几个重要的方法：`interestOps`：查看注册的Channel绑定的状态；`readyOps`：查看哪些是可操作的状态；`channel`：返回channel对象；`selector`：返回selector对象；`attachment`：附加其他对象![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200722150611349.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200722150046897.png)
+- Channel在Selector上注册完成后，会返回一个SelectKey对象，其中有几个重要的方法：`interestOps`：查看注册的Channel绑定的状态；`readyOps`：查看哪些是可操作的状态；`channel`：返回channel对象；`selector`：返回selector对象；`attachment`：附加其他对象![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200722150611349.png)
 - 调用Selector的select方法，返回它监听的事件的数量，可同时响应多个事件。不过它是阻塞式的调用，当监听的事件中没有可以用来响应请求的，则会被阻塞，直到有可用的channel能够响应该请求，才会返回
-  ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200722150651862.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200722150651862.png)
 
 # 实战
 
 ## 1. NIO模型分析
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/202007222229375.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/202007222229375.png)
 
 - 在服务器端创建一个`Selector`，将`ServerSocketChannel注册到Selector上`，被Selector监听的事件为`Accept`
 
 ------
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200722222907340.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200722222907340.png)
 
 - Client1请求与服务器建立连接，Selector接收到Accept事件，服务器端对其进行处理（handles），服务器与客户端连接成功
 
 ------
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200722223243146.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200722223243146.png)
 
 - 建立连接过程中，服务器通道（ServerSocketChannel）调用`accept方法`，获取到与客户端进行连接的通道（`SocketChannel`），也将其`注册到Selector`上，`监听READ事件`，这样，客户端向服务器发送消息，就能触发该READ事件进行响应，读取该消息。
 
@@ -245,7 +245,7 @@ public class FileCopyDemo {
 
 ------
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200722223923471.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200722223923471.png)
 
 - 同样，两个客户连接过来也是一个线程在起作用，将客户端2的SocketChannel注册到服务器的Selector，并监听READ事件，随时响应随时处理。即一个客户端有一个SocketChannel，两个客户端就有两个SocketChannel，这个就是我们使用nio编程模型来用一个selector对象在一个线程里边监听以及处理多个通道的io的操作
 
@@ -259,52 +259,52 @@ public class FileCopyDemo {
 
 #### 2.1.1 字段
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/2020072222584984.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/2020072222584984.png)
 
 #### 2.1.2 主方法
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200722230412178.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200722230412178.png)
 
 #### 2.1.3 处理方法
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200722230845441.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200722230845441.png)
 
 #### 2.1.4 转发消息方法
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200722233104941.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200722233104941.png)
 
 #### 2.1.5 接收消息方法
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200722231319234.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200722231319234.png)
 
 ### 2.2 客户端
 
 #### 2.2.1 字段
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200722231507769.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200722231507769.png)
 
 #### 2.2.2 主方法
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200722231820775.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200722231820775.png)
 
 #### 2.2.3 处理方法
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/202007222330187.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/202007222330187.png)
 
 #### 2.2.4 接收方法
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200722233204365.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200722233204365.png)
 
 #### 2.2.5 发送方法
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200722233310845.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200722233310845.png)
 
 ------
 
 ## 3. 测试结果
 
 - 服务器端显示信息正确
-  ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/NIO模型/20200722233342438.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/NIO模型/20200722233342438.png)
 
 ## 4. 完整代码
 

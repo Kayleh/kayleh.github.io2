@@ -54,7 +54,7 @@ System.out.println("过期时间: "+decodedJWT.getExpiresAt());
 - TokenExpiredException: 令牌过期异常
 - AlgorithmMismatchException: 算法不匹配异常
 - InvalidClaimException: 失效的payload异常
-  ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn4/spring-and-jwt/20210426122252495.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn4/spring-and-jwt/20210426122252495.png)
 
 # 封装工具类
 
@@ -249,19 +249,19 @@ public class UserController {
 }
 ```
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn4/spring-and-jwt/20210426122931619.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn4/spring-and-jwt/20210426122931619.png)
 
 ## 6.数据库添加测试数据启动项目
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn4/spring-and-jwt/20210426122959260.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn4/spring-and-jwt/20210426122959260.png)
 
 ## 7.通过postman模拟登录失败
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn4/spring-and-jwt/20210426123015114.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn4/spring-and-jwt/20210426123015114.png)
 
 ## 8.通过postman模拟登录成功
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn4/spring-and-jwt/20210426123031980.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn4/spring-and-jwt/20210426123031980.png)
 
 ## 9.编写测试接口
 
@@ -291,11 +291,11 @@ public Map<String, Object> test(String token) {
 }
 ```
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn4/spring-and-jwt/20210426123106916.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn4/spring-and-jwt/20210426123106916.png)
 
 ## 10.通过postman请求接口
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn4/spring-and-jwt/20210426123124603.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn4/spring-and-jwt/20210426123124603.png)
 
 ## 11.问题?
 
@@ -374,7 +374,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
 1. 返回的token写入localStorage
    localStorage.setItem(‘authorization’,res.data.token);
-   ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn4/spring-and-jwt/20210426123635828.png)
+   ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn4/spring-and-jwt/20210426123635828.png)
 
 2. 配置全局axios访问携带token
 

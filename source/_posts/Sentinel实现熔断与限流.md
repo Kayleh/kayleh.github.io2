@@ -4,7 +4,7 @@ tags: [DistributedMicroservices]
 categories: [分布式]
 translate_title: sentinel-realizes-fusing-and-current-limiting
 date: 2020-08-24T21:18:27+08:00
-cover: https://cdn.jsdelivr.net/gh/kayleh/cdn/img/index4.jpg
+cover: https://cdn.kayleh.top/gh/kayleh/cdn/img/index4.jpg
 ---
 
 Sentinel
@@ -19,7 +19,7 @@ Hystrix
 
 https://github.com/alibaba/Sentinel/releases
 
-![1598275246796](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/1.png)
+![1598275246796](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/1.png)
 
 ### 怎么使用？
 
@@ -39,7 +39,7 @@ https://spring-cloud-alibaba-group.github.io/github-pages/greenwich/spring-cloud
 
 ### sentinel组件由2部分组成
 
-![1598275337431](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/2.png)
+![1598275337431](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/2.png)
 
 > 后台
 >
@@ -238,7 +238,7 @@ http://localhost:8401/testB
 
 ##### 效果
 
-![1598275789442](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/3.png)
+![1598275789442](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/3.png)
 
 ##### 结论
 
@@ -248,13 +248,13 @@ sentinel8080正在监控微服务8401
 
 ### 基本介绍
 
-![1598275892803](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/4.png)
+![1598275892803](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/4.png)
 
 进一步解释说明
 
-![1598275917235](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/5.png)
+![1598275917235](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/5.png)
 
-![1598275930554](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/6.png)
+![1598275930554](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/6.png)
 
 ### 流控模式
 
@@ -266,7 +266,7 @@ sentinel8080正在监控微服务8401
 
 ##### 配置及说明
 
-##### ![1598276075851](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/7.png)测试
+##### ![1598276075851](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/7.png)测试
 
 ```
 快速点击访问http://localhost:8401/testA
@@ -294,25 +294,25 @@ B惹事，A挂了
 
 ##### 配置A
 
-![1598276511243](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/8.png)
+![1598276511243](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/8.png)
 
 ##### postman模拟并发密集访问testB
 
 先把请求save as，保存到Collections
 
-![1598276562818](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/9.png)
+![1598276562818](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/9.png)
 
 访问testB成功
 
-- ![1598276623255](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/10.png)
+- ![1598276623255](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/10.png)
 
 postman里新建多线程集合组
 
-- ![1598276640905](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/11.png)
+- ![1598276640905](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/11.png)
 
 将访问地址添加进新线程组
 
-- ![1598276659894](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/12.png)
+- ![1598276659894](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/12.png)
 
 Run
 
@@ -362,11 +362,11 @@ Run
 
 com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpController
 
-![1598276768339](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/14.png)
+![1598276768339](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/14.png)
 
 ##### Warmup配置
 
-![1598277103340](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/15.png)
+![1598277103340](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/15.png)
 
 ##### 多次点击http://localhost:8401/testB
 
@@ -374,11 +374,11 @@ com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpController
 
 ##### 应用场景
 
-![1598277148535](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/16.png)
+![1598277148535](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/16.png)
 
 #### 排队等待
 
-![1598276768339](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/13.png)
+![1598276768339](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/13.png)
 
 ##### 匀速排队，阈值必须设置为QPS
 
@@ -396,15 +396,15 @@ testB在控制台输出日志sl4j
 log.info(thread.currentThread.getName()+"\t"+"...testB")
 ```
 
-![1598277222170](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/17.png)
+![1598277222170](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/17.png)
 
 ### 降级规则
 
 #### 基本介绍
 
-![1598277395163](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/18.png)
+![1598277395163](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/18.png)
 
-![1598277412123](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/19.png)
+![1598277412123](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/19.png)
 
 进一步说明
 
@@ -414,9 +414,9 @@ log.info(thread.currentThread.getName()+"\t"+"...testB")
 
 复习Hystrix
 
-![1598277556742](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/20.png)
+![1598277556742](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/20.png)
 
-![1598277592247](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/21.png)
+![1598277592247](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/21.png)
 
 ### 降级策略实战
 
@@ -424,9 +424,9 @@ log.info(thread.currentThread.getName()+"\t"+"...testB")
 
 ##### 是什么?
 
-![1598277795422](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/22.png)
+![1598277795422](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/22.png)
 
-![1598277815933](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/23.png)
+![1598277815933](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/23.png)
 
 ##### 测试
 
@@ -446,23 +446,23 @@ log.info(thread.currentThread.getName()+"\t"+"...testB")
 
 配置
 
-![1598277885759](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/24.png)
+![1598277885759](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/24.png)
 
 jmeter压测
 
 结论
 
-![1598277904111](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/25.png)
+![1598277904111](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/25.png)
 
-![1598277918812](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/26.png)
+![1598277918812](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/26.png)
 
 #### 异常比例
 
 是什么
 
-![1598277953235](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/27.png)
+![1598277953235](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/27.png)
 
-![1598277965489](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/28.png)
+![1598277965489](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/28.png)
 
 测试
 
@@ -481,23 +481,23 @@ jmeter压测
 
 - 配置
 
-  ![1598278071559](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/29.png)
+  ![1598278071559](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/29.png)
 
 - jmeter
 
-  ![1598278103683](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/30.png)
+  ![1598278103683](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/30.png)
 
 - 结论
 
-  ![1598278121021](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/1598278121021.png)
+  ![1598278121021](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/1598278121021.png)
 
 #### 异常数
 
 是什么
 
-![1598278157875](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/31.png)
+![1598278157875](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/31.png)
 
-![1598278172535](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/32.png)
+![1598278172535](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/32.png)
 
 异常数是按照分钟统计的
 
@@ -519,7 +519,7 @@ public String testE()
 
 http://localhost:8401/testE
 
-![1598278242551](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/33.png)
+![1598278242551](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/33.png)
 
 - jmeter
 
@@ -529,13 +529,13 @@ http://localhost:8401/testE
 
 是什么
 
-![1598281015660](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/34.png)
+![1598281015660](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/34.png)
 
 https://github.com/alibaba/Sentinel/wiki/热点参数限流
 
 #### 承上启下复习start
 
-![1598281047415](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/35.png)
+![1598281047415](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/35.png)
 
 @SentinelResource
 
@@ -562,7 +562,7 @@ com.alibaba.csp.sentinel.slots.block.BlockException
 
 配置
 
-![1598281119051](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/36.png)
+![1598281119051](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/36.png)
 
 1
 
@@ -616,9 +616,9 @@ http://localhost:8401/testHotKey?p2=abc
 
 配置
 
-![1598281694486](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/37.png)
+![1598281694486](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/37.png)
 
-![1598281694486](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/38.png)
+![1598281694486](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/38.png)
 
 - 添加按钮不能忘
 
@@ -640,7 +640,7 @@ http://localhost:8401/testHotKey?p2=abc
 
 添加异常看看....
 
-![1598281913264](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/39.png)
+![1598281913264](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/39.png)
 
 ## 系统规则
 
@@ -650,7 +650,7 @@ http://localhost:8401/testHotKey?p2=abc
 
 各项配置参数说明
 
-![1598337022929](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/40.png)
+![1598337022929](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/40.png)
 
 配置全局QPS
 
@@ -754,7 +754,7 @@ Module
 
 - 配置步骤
 
-![1598337203454](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/41.png)
+![1598337203454](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/41.png)
 
 - 图形配置和代码关系
 - 表示1秒钟内查询次数大于1，就跑到我们自定义的处流，限流
@@ -765,7 +765,7 @@ Module
 
 - 超过上述问题，疯狂点击，返回了自己定义的限流处理信息，限流发送
 
-  ![1598337235793](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/42.png)
+  ![1598337235793](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/42.png)
 
 额外问题
 
@@ -794,17 +794,17 @@ public CommonResult byUrl()
 
 Sentinel控制台配置
 
-![1598337354555](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/43.png)
+![1598337354555](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/43.png)
 
 测试
 
 - 疯狂点击http://localhost:8401/rateLimit/byUrl
 
-- ![1598337380401](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/44.png)
+- ![1598337380401](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/44.png)
 
 ### 上面兜底方法面临的问题
 
-![1598337405346](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/45.png)
+![1598337405346](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/45.png)
 
 ### 客户自定义限流处理逻辑
 
@@ -814,7 +814,7 @@ Sentinel控制台配置
 
 - CustomerBlockHandler
 
-  ![1598337444808](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/46.png)
+  ![1598337444808](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/46.png)
 
 ```java
 package com.atguigu.springcloud.alibaba.myhandler;
@@ -854,17 +854,17 @@ Sentinel控制台配置
 
 进一步说明:
 
-![1598337533657](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/47.png)
+![1598337533657](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/47.png)
 
 ### 更多注解属性说明
 
-![1598337561019](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/48.png)
+![1598337561019](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/48.png)
 
-![1598337573475](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/49.png)
+![1598337573475](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/49.png)
 
 多说一句
 
-![1598337587461](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/50.png)
+![1598337587461](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/50.png)
 
 Sentinel主要有三个核心API
 
@@ -1227,13 +1227,13 @@ Sentinel主要有三个核心API
 > >
 > > - 结果
 > >
-> >   ![1598338239282](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/51.png)
+> >   ![1598338239282](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/51.png)
 > >
 > > 忽略属性...
 > >
 > > - 编码（那个业务类下面的CircleBreakerController的全部源码）
 > >
-> >   ![1598338281914](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/52.png)
+> >   ![1598338281914](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/52.png)
 
 ### Feign系列
 
@@ -1365,9 +1365,9 @@ http://lcoalhost:84/consumer/paymentSQL/1
 
 #### 熔断框架比较
 
-![1598339929387](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/53.png)
+![1598339929387](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/53.png)
 
-![1598339942749](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/54.png)
+![1598339942749](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/54.png)
 
 ### 规则持久化
 
@@ -1447,9 +1447,9 @@ spring:
 
 添加Nacos业务规则配置
 
-![1598340101146](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/55.png)
+![1598340101146](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/55.png)
 
-![1598340112967](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/56.png)
+![1598340112967](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/56.png)
 
 内容解析
 
@@ -1467,11 +1467,11 @@ spring:
 ]
 ```
 
-![1598340151536](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/57.png)
+![1598340151536](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/57.png)
 
 启动8401后刷新sentinel发现业务规则有了
 
-![1598340340265](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/58.png)
+![1598340340265](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/58.png)
 
 快速访问测试接口
 
@@ -1479,11 +1479,11 @@ spring:
 
 - 默认
 
-  ![图像](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/59.png)
+  ![图像](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/59.png)
 
 停止8401再看sentinel
 
-![1598340454693](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Sentinel实现熔断与限流/60.png)
+![1598340454693](https://cdn.kayleh.top/gh/kayleh/cdn/img/Sentinel实现熔断与限流/60.png)
 
 重新启动8401再看sentinel:
 

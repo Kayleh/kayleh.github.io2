@@ -40,7 +40,7 @@ explain select * from user where sex = 0;
 
 先看InnoDB的存储结构：
 
-![image-20210929132428902](https://cdn.jsdelivr.net/gh/kayleh/cdn4/MYSQL-%E7%B4%A2%E5%BC%95%E9%80%89%E6%8B%A9%E6%80%A7%E5%A4%AA%E5%B7%AE%E5%AF%BC%E8%87%B4%E5%85%A8%E8%A1%A8%E6%89%AB%E6%8F%8F/image-20210929132428902-16328930759731.png)
+![image-20210929132428902](https://cdn.kayleh.top/gh/kayleh/cdn4/MYSQL-%E7%B4%A2%E5%BC%95%E9%80%89%E6%8B%A9%E6%80%A7%E5%A4%AA%E5%B7%AE%E5%AF%BC%E8%87%B4%E5%85%A8%E8%A1%A8%E6%89%AB%E6%8F%8F/image-20210929132428902-16328930759731.png)
 
 以主键为索引时，速度很快，主键为聚集索引，因为每一条数据对应的主键都是有序的。
 

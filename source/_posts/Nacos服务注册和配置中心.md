@@ -31,7 +31,7 @@ Nacos就是注册中心+配置中心的组合等价于 Nacos = Eureka+Config+Bus
 
 各种注册中心比较
 
-![1597916860197](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/1.png)
+![1597916860197](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/1.png)
 
 ### 安装并运行Nacos
 
@@ -51,7 +51,7 @@ Nacos就是注册中心+配置中心的组合等价于 Nacos = Eureka+Config+Bus
 
 结果页面
 
-![1597916943447](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/58.png)
+![1597916943447](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/58.png)
 
 ## Nacos作为服务注册中心演示
 
@@ -184,7 +184,7 @@ http://localhost:9001/payment/nacos/1
 
 nacos控制台
 
-![1597917114444](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/3.png)
+![1597917114444](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/3.png)
 
 nacos服务注册中心+服务提供者9001都ok了
 
@@ -198,7 +198,7 @@ nacos服务注册中心+服务提供者9001都ok了
 
 或者取巧不想新建重复体力劳动，直接拷贝虚拟端口映射
 
-![1597917265960](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/4.png)
+![1597917265960](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/4.png)
 
 <img src="5.png" alt="1597917272302" style="zoom: 80%;" />
 
@@ -251,7 +251,7 @@ POM
 
 为什么nacos支持负载均衡
 
-![1597917355359](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/6.png)
+![1597917355359](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/6.png)
 
 yaml
 
@@ -354,7 +354,7 @@ public class OrderNacosController
 
 nacos控制台
 
-![1597917596670](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/7.png)
+![1597917596670](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/7.png)
 
 访问
 
@@ -368,17 +368,17 @@ nacos控制台
 
 Nacos全景图所示
 
-![1597917654952](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/8.png)
+![1597917654952](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/8.png)
 
 Nacos和CAP
 
-![1597917671204](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/9.png)
+![1597917671204](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/9.png)
 
-![1597917730065](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/10.png)
+![1597917730065](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/10.png)
 
 ##### Nacos支持AP和CP模式的切换
 
-![1597917749721](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/11.png)
+![1597917749721](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/11.png)
 
 ```
 curl -X PUT '$NACOS_SERVER:8848/nacos/v1/ns/operator/switches?entry=serverMode&value=CP'
@@ -439,7 +439,7 @@ YML
 
 为什么配置两个
 
-![1597999398581](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/12.png)
+![1597999398581](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/12.png)
 
 > bootstrap
 >
@@ -516,7 +516,7 @@ public class ConfigClientController
 
 @RefreshScope
 
-![1597999398581](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/13.png)
+![1597999398581](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/13.png)
 
 #### 在Nacos中添加配置信息
 
@@ -528,15 +528,15 @@ Nacos中的dataid的组成格式与SpringBoot配置文件中的匹配规则
 
 https://nacos.io/zh-cn/docs/quick-start-spring-cloud.html
 
-![1597999707395](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/14.png)
+![1597999707395](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/14.png)
 
-![1597999752185](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/15.png)
+![1597999752185](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/15.png)
 
 **实操**
 
 1.配置新增
 
-> ![1597999802135](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/16.png)
+> ![1597999802135](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/16.png)
 >
 > nacos-config-client-dev
 
@@ -547,7 +547,7 @@ https://nacos.io/zh-cn/docs/quick-start-spring-cloud.html
 >     info: nacos config center,version = 1,from nacos config center, nacos-config-client-dev.yaml, version=1
 > ```
 >
-> ![1598006810118](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/17.png)
+> ![1598006810118](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/17.png)
 >
 > 设置DataId
 >
@@ -563,7 +563,7 @@ https://nacos.io/zh-cn/docs/quick-start-spring-cloud.html
 >
 > 总结:
 >
-> ![1598006888126](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/18.png)
+> ![1598006888126](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/18.png)
 
 3.历史配置
 
@@ -587,13 +587,13 @@ https://nacos.io/zh-cn/docs/quick-start-spring-cloud.html
 
 > 多环境多项目管理
 >
-> ![1598007094349](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/19.png)
+> ![1598007094349](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/19.png)
 
 Nacos的图形化管理界面
 
 > 配置管理
 >
-> ![1598007142269](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/20.png)
+> ![1598007142269](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/20.png)
 >
 > 命名空间
 >
@@ -601,9 +601,9 @@ Nacos的图形化管理界面
 
 ##### Namespace+Group+Data ID三者关系？为什么这么设计？
 
-![1598007201161](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/22.png)
+![1598007201161](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/22.png)
 
-![1598007216472](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/23.png)
+![1598007216472](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/23.png)
 
 #### Case
 
@@ -615,13 +615,13 @@ Nacos的图形化管理界面
 
 新建dev配置DataID
 
-![1598007306224](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/24.png)
+![1598007306224](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/24.png)
 
 新建test配置DataID
 
-![1598007322942](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/25.png)
+![1598007322942](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/25.png)
 
-**通过spring.profile.active属性就能进行多环境下配置文件的读取**  ![1598010338263](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/26.png)
+**通过spring.profile.active属性就能进行多环境下配置文件的读取**  ![1598010338263](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/26.png)
 
 测试
 
@@ -637,15 +637,15 @@ test
 
 新建Group
 
-![1598010952482](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/27.png)
+![1598010952482](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/27.png)
 
 在nacos图形界面控制台上面新建配置文件DataID
 
-![1598010985237](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/28.png)
+![1598010985237](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/28.png)
 
 bootstrap+application
 
-![1598011032814](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/29.png)
+![1598011032814](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/29.png)
 
 在config下增加一条group的配置即可。可配置为DEV_GROUP或TEST_GROUP
 
@@ -653,21 +653,21 @@ bootstrap+application
 
 新建dev/test的Namespace
 
-![1598011094792](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/30.png)
+![1598011094792](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/30.png)
 
 回到服务管理-服务列表查看
 
-![1598011118483](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/31.png)
+![1598011118483](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/31.png)
 
 按照域名配置填写
 
-![1598011149802](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/32.png)
+![1598011149802](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/32.png)
 
 YML
 
 bootstrap
 
-![1598264395915](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/59.png)
+![1598264395915](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/59.png)
 
 ```yml
 namespace: 
@@ -692,9 +692,9 @@ application
 
 > https://nacos.io/zh-cn/docs/deployment.html
 
-![1598011363176](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/36.png)
+![1598011363176](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/36.png)
 
-![1598011391934](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/37.png)
+![1598011391934](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/37.png)
 
 ## Nacos持久化配置解释
 
@@ -972,7 +972,7 @@ Nacos下载linux版本
 
 ##### SQL脚本在哪里
 
-![1598011816083](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/390.png)
+![1598011816083](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/390.png)
 
 ##### sql语句源文件
 
@@ -980,13 +980,13 @@ nacos-mysql.sql
 
 ##### 自己Linux机器上的Mysql数据库黏贴
 
-![1598011996589](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/40.png)
+![1598011996589](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/40.png)
 
 ### 2.application.properties配置
 
 #### 位置
 
-![1598012047300](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/41.png)
+![1598012047300](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/41.png)
 
 #### 内容
 
@@ -999,7 +999,7 @@ db.user=root
 db.password=HF_mysql_654321
 ```
 
-![1598012185308](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/42.png)
+![1598012185308](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/42.png)
 
 ```
 mysql  授权远程访问
@@ -1013,7 +1013,7 @@ flush privileges;
 
 复制出cluster.conf
 
-![1598012321701](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/43.png)
+![1598012321701](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/43.png)
 
 #### 内容
 
@@ -1021,7 +1021,7 @@ flush privileges;
 
 这个IP不能写127.0.0.1,必须是Linux命令hostname -i能够识别的IP
 
-![1598012433063](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/45.png)
+![1598012433063](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/45.png)
 
 或者ifconfig
 
@@ -1033,29 +1033,29 @@ flush privileges;
 
 思考
 
-![1598012484557](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/46.png)
+![1598012484557](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/46.png)
 
 修改内容
 
-![1598012508369](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/47.png)
+![1598012508369](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/47.png)
 
 ```
 cp startup.sh startup.sh.bk
 ```
 
-![1598012527781](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/48.png)
+![1598012527781](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/48.png)
 
-![1598012546461](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/49.png)
+![1598012546461](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/49.png)
 
 执行方式
 
-![1598012636318](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/50.png)
+![1598012636318](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/50.png)
 
 ### 5.Nginx的配置，由它作为负载均衡器
 
 修改nginx的配置文件
 
-![1598012677966](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/51.png)
+![1598012677966](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/51.png)
 
 nginx.conf                                                
 
@@ -1077,7 +1077,7 @@ nginx.conf
 
 按照指定启动
 
-![1598013342566](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/53.png)
+![1598013342566](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/53.png)
 
 ```linux
 ps -ef|grep nacos|grep -v grep |wc -l
@@ -1107,7 +1107,7 @@ mysql> select * from config_info;
 
 linux服务器的mysql插入一条记录
 
-![1598013436552](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/55.png)
+![1598013436552](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/55.png)
 
 #### 测试
 
@@ -1122,8 +1122,8 @@ server-addr:  写你自己的虚拟机ip:1111
 
 结果
 
-![1598013518452](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/56.png)
+![1598013518452](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/56.png)
 
 高可用小总结
 
-![1598013576604](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Nacos服务注册和配置中心/57.png)
+![1598013576604](https://cdn.kayleh.top/gh/kayleh/cdn/img/Nacos服务注册和配置中心/57.png)

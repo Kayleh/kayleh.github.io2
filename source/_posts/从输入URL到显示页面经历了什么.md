@@ -14,7 +14,7 @@ translate_title: What-happened-from-entering-the-URL-to-displaying-the-page
 >
 >     互联网内各网络设备间的通信都遵循TCP/IP协议，利用TCP/IP协议族进行网络通信时，会通过分层顺序与对方进行通信。分层由高到低分别为：应用层、传输层、网络层、数据链路层。发送端从应用层往下走，接收端从数据链路层网上走。如图所示：
 >
->   [![TCPIP](https://cdn.jsdelivr.net/gh/kayleh/cdn4/从输入URL到显示页面经历了什么/020946553127518.png)](http://images0.cnblogs.com/blog/622045/201507/020946547655321.png)
+>   [![TCPIP](https://cdn.kayleh.top/gh/kayleh/cdn4/从输入URL到显示页面经历了什么/020946553127518.png)](http://images0.cnblogs.com/blog/622045/201507/020946547655321.png)
 >
 >   #### 1. 在浏览器中输入url
 >
@@ -54,7 +54,7 @@ translate_title: What-happened-from-entering-the-URL-to-displaying-the-page
 >
 >    “三次握手”的过程是，发送端先发送一个带有SYN（synchronize）标志的数据包给接收端，在一定的延迟时间内等待接收的回复。接收端收到数据包后，传回一个带有SYN/ACK标志的数据包以示传达确认信息。接收方收到后再发送一个带有ACK标志的数据包给接收端以示握手成功。在这个过程中，如果发送端在规定延迟时间内没有收到回复则默认接收方没有收到请求，而再次发送，直到收到回复为止。
 >
->   [![TCP](https://cdn.jsdelivr.net/gh/kayleh/cdn4/从输入URL到显示页面经历了什么/020946560314133.png)](http://images0.cnblogs.com/blog/622045/201507/020946557039933.png) 
+>   [![TCP](https://cdn.kayleh.top/gh/kayleh/cdn4/从输入URL到显示页面经历了什么/020946560314133.png)](http://images0.cnblogs.com/blog/622045/201507/020946557039933.png) 
 >
 >   #### 5.网络层IP协议查询MAC地址
 >

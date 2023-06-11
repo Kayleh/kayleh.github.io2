@@ -61,7 +61,7 @@ function div_default() {
   } else if (post.description) {
     el += post.description;
   } else if (post.content && theme.article.auto_excerpt > 0) {
-    el += truncate(strip_html(post.content), {length: theme.article.auto_excerpt});
+    // el += truncate(strip_html(post.content), {length: 2});
   }
   el += '</p>';
   el += '</div>';

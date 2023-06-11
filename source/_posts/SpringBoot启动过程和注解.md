@@ -7,7 +7,7 @@ translate_title: SpringBoot-startup-process
 
 ## SpringBoot应用启动流程
 
-![图片](https://cdn.jsdelivr.net/gh/kayleh/cdn3/SpringBoot启动过程和注解/640.jpg) 
+![图片](https://cdn.kayleh.top/gh/kayleh/cdn3/SpringBoot启动过程和注解/640.jpg) 
 
 我们将各步骤总结精炼如下：
 

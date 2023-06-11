@@ -11,7 +11,7 @@ translate_title: head-first-JVM(4)
 
 ### 高性能硬件上的程序部署策略
 
-![1626105218415](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-JVM-4/1626105218415.png)
+![1626105218415](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-JVM-4/1626105218415.png)
 
 在高性能硬件上部署程序，目前主要有两种方式：
 
@@ -36,15 +36,15 @@ translate_title: head-first-JVM(4)
 
 ### 集群间同步导致的内存溢出
 
-![1626105579887](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-JVM-4/1626105579887.png)
+![1626105579887](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-JVM-4/1626105579887.png)
 
 由于信息有传输失败需要重发的可能性，在确认所有注册在GMS（GroupMembership Service）的节点都收到正确的信息前，发送的信息必须在内存中保留。而此MIS的服务端中有一个负责安全校验的全局Filter，每当接收到请求时，均会更新一次最后操作时间，并且将这个时间同步到所有的节点去，使得一个用户在一段时间内不能在多台机器上登录。在服务使用过程中，往往一个页面会产生数次乃至数十次的请求，因此这个过滤器导致集群各个节点之间网络交互非常频繁。当网络情况不能满足传输要求时，重发数据在内存中不断堆积，很快就产生了内存溢出。
 
 ### 堆外内存导致的溢出错误
 
-![1626105649611](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-JVM-4/1626105649611.png)
+![1626105649611](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-JVM-4/1626105649611.png)
 
-![1626105684323](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-JVM-4/1626105684323.png)
+![1626105684323](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-JVM-4/1626105684323.png)
 
 垃圾收集进行时，虚拟机虽然会对Direct Memory进行回收，但是Direct Memory却不能像新生代、老年代那样，发现空间不足了就通知收集器进行垃圾回收，它只能等待老年代满了后Full GC，然后“顺便地”帮它清理掉内存的废弃对象。本案例中使用的CometD 1.1.1框架，正好有大量的NIO操作需要使用到Direct Memory内存。
 
@@ -64,7 +64,7 @@ Java虚拟机执行这个命令的过程是：首先克隆一个和当前虚拟�
 
 一个基于B/S的MIS系统，硬件为两台2个CPU、8GB内存的HP系统，服务器是WebLogic 9.2，正常运行一段时间后，最近发现在运行期间频繁出现集群节点的虚拟机进程自动关闭的现象，留下了一个hs_err_pid###.log文件后，进程就消失了，两台物理机器里的每个节点都出现过进程崩溃的现象。从系统日志中可以看出，每个节点的虚拟机进程在崩溃前不久，都发生过大量相同的异常
 
-![1626105957986](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-JVM-4/1626105957986.png)
+![1626105957986](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-JVM-4/1626105957986.png)
 
 解决方法：通知OA门户方修复无法使用的集成接口，并将异步调用改为生产者/消费者模式的消息队列实现后，系统恢复正常。
 
@@ -78,6 +78,6 @@ Java虚拟机执行这个命令的过程是：首先克隆一个和当前虚拟�
 
 例如，有一个带心跳检测功能的GUI桌面程序，每15秒会发送一次心跳检测信号，如果对方30秒以内都没有信号返回，那就认为和对方程序的连接已经断开。程序上线后发现心跳检测有误报的概率，查询日志发现误报的原因是程序会偶尔出现间隔约一分钟左右的时间完全无日志输出，处于停顿状态。因为是桌面程序，所需的内存并不大（-Xmx256m），所以开始并没有想到是GC导致的程序停顿，但是加入参数-XX:+PrintGCApplicationStoppedTime -XX:+PrintGCDateStamps-Xloggc：gclog.log后，从GC日志文件中确认了停顿确实是由GC导致的，大部分GC时间都控制在100毫秒以内，但偶尔就会出现一次接近1分钟的GC。
 
-![1626106416493](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-JVM-4/1626106416493.png)
+![1626106416493](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-JVM-4/1626106416493.png)
 
-![1626106429899](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-JVM-4/1626106429899.png)
+![1626106429899](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-JVM-4/1626106429899.png)

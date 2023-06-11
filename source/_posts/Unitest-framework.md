@@ -7,77 +7,77 @@ tags: [test]
 translate_title: Unitest-framework
 ---
 
-![](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613147342997.png)
+![](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613147342997.png)
 
-![](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613147496034.png)
+![](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613147496034.png)
 
-![](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613149415607.png)
+![](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613149415607.png)
 
-![](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613149552674.png)
+![](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613149552674.png)
 
 #### 多条测试用例
 
-![](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613149845499.png)
+![](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613149845499.png)
 
 #### 注解方法
 
-![1613199579426](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613199579426.png)
+![1613199579426](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613199579426.png)
 
 #### 五个方法
 
-![1613199693463](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613199693463.png)
+![1613199693463](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613199693463.png)
 
 #### 测试用例testcase
 
-![1613201703588](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613201703588.png)
+![1613201703588](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613201703588.png)
 
-![1613202112317](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613202112317.png)
+![1613202112317](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613202112317.png)
 
 #### 测试集合testsuite
 
 ##### 追加单个测试对象
 
-![1613207825662](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613207825662.png)
+![1613207825662](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613207825662.png)
 
 > print(re.\_\_dict\_\_)
 
 ##### 追加多个测试对象
 
-![1613209390861](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613209390861.png)
+![1613209390861](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613209390861.png)
 
 #### TestLoder
 
-![1613231860846](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613231860846.png)
+![1613231860846](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613231860846.png)
 
 第一个参数path：指定存放测试用例的目录（单元测试用例，用unittest框架写的测试用例）
 
 第二个参数pattern：指定匹配规则
 
-![1613233980464](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613233980464.png)
+![1613233980464](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613233980464.png)
 
 
 
-![1613234000816](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613234000816.png)
+![1613234000816](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613234000816.png)
 
 #### TestRunner
 
-![1613318481043](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613318481043.png)
+![1613318481043](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613318481043.png)
 
-![1613319975732](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613319975732.png)
+![1613319975732](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613319975732.png)
 
 ##### 状态1
 
-![1613320910898](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613320910898.png)
+![1613320910898](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613320910898.png)
 
 ##### 状态2（大于1即可）详细报告
 
-![1613320887518](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613320887518.png)
+![1613320887518](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613320887518.png)
 
-##### ![1613321695363](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613321695363.png)
+##### ![1613321695363](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613321695363.png)
 
 ##### 断言
 
-![1613382483121](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613382483121.png)
+![1613382483121](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613382483121.png)
 
 ```python
 class mymath():
@@ -150,7 +150,7 @@ maintest.py
 
 > 主测试文件,不是用来写测试用的,而是用来组织测试用来执行的
 
-![1613396353835](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613396353835.png)
+![1613396353835](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613396353835.png)
 
 ### HTML测试文档
 
@@ -180,13 +180,13 @@ with open(r"./20200408/result.html","wb") as f:
 
 注释
 
-![1613572049278](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613572049278.png)
+![1613572049278](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613572049278.png)
 
-![1613572027235](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613572027235.png)
+![1613572027235](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613572027235.png)
 
 ### 邮件自动化
 
-![1613574779605](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613574779605.png)
+![1613574779605](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613574779605.png)
 
 ### 项目
 
@@ -363,29 +363,29 @@ with open(filename,"wb") as f:
 
 > 测试脚本与测试数据分离
 
-![1613756103321](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613756103321.png)
+![1613756103321](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613756103321.png)
 
 不导入ddt模块，字典只会形成一条测试用例
 
-![1613756685341](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613756685341.png)
+![1613756685341](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613756685341.png)
 
- ![1613756748533](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613756748533.png)
+ ![1613756748533](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613756748533.png)
 
 #### excel
 
-![1613756844713](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613756844713.png)
+![1613756844713](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613756844713.png)
 
-![1613756873832](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613756873832.png)
+![1613756873832](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613756873832.png)
 
 xldr
 
-![1613757056609](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613757056609.png)
+![1613757056609](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613757056609.png)
 
 excelutil.py
 
-<img src="https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613757120441.png" alt="1613757120441" style="zoom:67%;" />
+<img src="https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613757120441.png" alt="1613757120441" style="zoom:67%;" />
 
-<img src="https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613757139743.png" alt="1613757139743" style="zoom:80%;" />
+<img src="https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613757139743.png" alt="1613757139743" style="zoom:80%;" />
 
-![1613757341191](https://cdn.jsdelivr.net/gh/kayleh/cdn3/Unitest-framework/1613757341191.png)
+![1613757341191](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613757341191.png)
 

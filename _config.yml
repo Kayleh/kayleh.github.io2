@@ -4,18 +4,17 @@
 
 # Site
 title: Kayleh
-subtitle: 'blog | Dreamaker' #标题1 | 标题2
-description: 'Dreamaker'
+subtitle: "blog | Dreamaker" #标题1 | 标题2
+description: "Dreamaker"
 keywords: kayleh,blog,algo,algorithm,cpp,java
 author: Kayleh
 # 多语言
-language: [zh-CN,en]
+language: [zh-CN, en]
 #avatar: 您的头像链接
-avatar: https://cdn.jsdelivr.net/gh/kayleh/cdn/img/2.jpg
+avatar: https://cdn.kayleh.top/gh/kayleh/cdn/img/2.jpg
 #favicon: 您的网站icon
-favicon: https://cdn.jsdelivr.net/gh/kayleh/cdn/img/2.jpg
-
-
+favicon: https://cdn.kayleh.top/gh/kayleh/cdn/img/2.jpg
+#https://cdn#.jsdelivr.net/gh/kayleh/cdn/img/2.jpg
 
 # hexo-generator-i18n
 # hexo-generator-i18n 选项（可选，默认使用如下设置）
@@ -23,7 +22,7 @@ favicon: https://cdn.jsdelivr.net/gh/kayleh/cdn/img/2.jpg
 #   type: [page, post]
 #   generator: [index, archive, category, tag]
 
-timezone: ''
+timezone: ""
 # timezone: Asia/Shanghai #中国的时区，不要乱改城市
 
 # URL
@@ -59,7 +58,7 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: ""
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
@@ -69,7 +68,7 @@ highlight:
   enable: false
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: ""
   wrap: true
   hljs: false
 
@@ -78,7 +77,7 @@ highlight:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
 
@@ -120,7 +119,6 @@ theme: stellar
 # volantis
 # stellar
 
-
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
@@ -136,11 +134,10 @@ deploy:
   - type: baidu_url_submitter
 
 baidu_url_submit:
-  count: 10               # 提交最新的多少个链接
-  host: kayleh.top   # 在百度站长平台中添加的域名
-  token: EBlcNcQTTojqoOYR      # 秘钥
-  path: baidu_urls.txt   # 文本文档的地址， 新链接会保存在此文本文档里
-
+  count: 10 # 提交最新的多少个链接
+  host: kayleh.top # 在百度站长平台中添加的域名
+  token: EBlcNcQTTojqoOYR # 秘钥
+  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
 
 #插件配置
 Plugins:
@@ -171,7 +168,6 @@ Plugins:
 # # 是否开启字数统计
 # #不需要使用，直接设置值为false，或注释掉
 # word_count: true
-
 
 # # 访问优化
 # # minifier
@@ -228,20 +224,19 @@ live2d:
 #   total_symbols: true #是否统计总字数
 #   total_time: true #是否统计总阅读时长
 
-
 # hexo-neat
 # 开关
-neat_enable: true
+neat_enable: false
 # 压缩 html
 neat_html:
   enable: true
   exclude:
-    - '**/*.md'
+    - "**/*.md"
 # 压缩 css
 neat_css:
   enable: false
   exclude:
-    - '**/*.min.css'
+    - "**/*.min.css"
 # 压缩 js
 neat_js:
   enable: true
@@ -249,9 +244,9 @@ neat_js:
   output:
   compress:
   exclude:
-    - '**/*.min.js'
-    - '**/jquery.fancybox.pack.js'
-    - '**/index.js'
+    - "**/*.min.js"
+    - "**/jquery.fancybox.pack.js"
+    - "**/index.js"
 
 ##---------------------------------------------------------------------------------------------------隐藏
 ## # 翻译
@@ -405,5 +400,4 @@ inject:
   script:
     - <script src="//code.tidio.co/dq5klo9ydptaxokj83vcwnusf63dogzr.js" async></script>
     - <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7457165067653912"
-     crossorigin="anonymous"></script>
-
+      crossorigin="anonymous"></script>

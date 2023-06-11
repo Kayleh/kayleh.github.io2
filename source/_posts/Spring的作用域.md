@@ -23,7 +23,7 @@ DI： Dependency Injection 依赖注入。 通过IOC创建对象的时候，可�
 把功能划分为核心业务功能和其他的周边辅助功能，比如日志，性能统计，事务等等。 其他的周边辅助功能可以都看作切面功能。核心功能和切面功能分别独立开发，通过面向切面编程，可以有机的把核心业务功能和切面功能根据需求结合在一起。 比如增加操作可以和事务切面结合在一起，查询操作可以和性能统计切面结合在一起。
 在配置方面，要配置切面，切点，并且通过aspect:config 把切面和切点结合起来。
 
-![什么是AOP](https://cdn.jsdelivr.net/gh/kayleh/cdn2/Spring的作用域/2025.png)
+![什么是AOP](https://cdn.kayleh.top/gh/kayleh/cdn2/Spring的作用域/2025.png)
 
 #### bean的作用域
 

@@ -8,7 +8,7 @@ translate_title: Head-First-Netty
 
 # 思维导图
 
-![image.png](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-netty/b3fc6eb690464940b4a9b1100cfed5a2.png)
+![image.png](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-netty/b3fc6eb690464940b4a9b1100cfed5a2.png)
 
 # 前言
 
@@ -47,7 +47,7 @@ translate_title: Head-First-Netty
 
 # 三、架构图
 
-![image.png](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-netty/15944ade0142471399997efd68e52948.png)
+![image.png](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-netty/15944ade0142471399997efd68e52948.png)
 
 上面这张图就是在官网首页的架构图，我们从上到下分析一下。
 
@@ -63,7 +63,7 @@ translate_title: Head-First-Netty
 
 首先搭建一个HelloWord工程，先熟悉一下API，还有为后面的学习做铺垫。以下面这张图为依据：
 
-![image.png](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-netty/cc27d56addd74e82b6b6b349c7f3769b.png)
+![image.png](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-netty/cc27d56addd74e82b6b6b349c7f3769b.png)
 
 ## 4.1 引入Maven依赖
 
@@ -208,10 +208,10 @@ public class MyClientHandler extends ChannelInboundHandlerAdapter {
 
 MyServer打印结果:
 
-![image.png](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-netty/92908e107d6a487bb930ab6cd6be269f.png)
+![image.png](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-netty/92908e107d6a487bb930ab6cd6be269f.png)
 
 MyClient打印结果：
-![image.png](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-netty/419e8af300b24c9eaed71a76ddc2ddeb.png)
+![image.png](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-netty/419e8af300b24c9eaed71a76ddc2ddeb.png)
 
 # 五、Netty的特性与重要组件
 
@@ -243,7 +243,7 @@ public class MyServerHandler extends ChannelInboundHandlerAdapter {
 
 我们打一个debug调试，是可以看到添加进去的taskQueue有一个任务。
 
-![image.png](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-netty/23835a6ae2374897bf28a0b70fce9cc8.png)
+![image.png](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-netty/23835a6ae2374897bf28a0b70fce9cc8.png)
 
 ## 5.2 scheduleTaskQueue延时任务队列
 
@@ -266,7 +266,7 @@ ctx.channel().eventLoop().schedule(new Runnable() {
 
 依然打开debug进行调试查看，我们可以有一个scheduleTaskQueue任务待执行中
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-netty/173194f21adfa111)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-netty/173194f21adfa111)
 
 ## 5.3 Future异步机制
 
@@ -301,13 +301,13 @@ channelFuture.addListener(new ChannelFutureListener() {
 
 Bootstrap和ServerBootStrap是Netty提供的一个创建客户端和服务端启动器的工厂类，使用这个工厂类非常便利地创建启动类，根据上面的一些例子，其实也看得出来能大大地减少了开发的难度。首先看一个类图：
 
-![image.png](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-netty/40cf762660d9455eb6066119cf5eeb49.png)
+![image.png](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-netty/40cf762660d9455eb6066119cf5eeb49.png)
 
 可以看出都是继承于AbstractBootStrap抽象类，所以大致上的配置方法都相同。
 
 一般来说，使用Bootstrap创建启动器的步骤可分为以下几步：
 
-![image.png](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-netty/ae5c6ed3008d4323aaa817e9cb46437a.png)
+![image.png](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-netty/ae5c6ed3008d4323aaa817e9cb46437a.png)
 
 ### 5.4.1 group()
 
@@ -358,11 +358,11 @@ EventLoopGroup workerGroup = new NioEventLoopGroup(16);
 
 这个方法用于设置通道类型，当建立连接后，会根据这个设置创建对应的Channel实例。
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-netty/1731951ae3c43228)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-netty/1731951ae3c43228)
 
 使用debug模式可以看到
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-netty/1731951f80b07785)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-netty/1731951f80b07785)
 
 通道类型有以下：
 
@@ -587,7 +587,7 @@ pipeline.addLast(new MyServerHandler());
 
 Netty中的Selector也和NIO的Selector是一样的，就是用于监听事件，管理注册到Selector中的channel，实现多路复用器。
 
-![image.png](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-netty/5fa70ed04e234fad9e524b3766051c4a.png)
+![image.png](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-netty/5fa70ed04e234fad9e524b3766051c4a.png)
 
 ## 5.7 PiPeline与ChannelPipeline
 
@@ -595,7 +595,7 @@ Netty中的Selector也和NIO的Selector是一样的，就是用于监听事件�
 
 于是pipeline就出现了，pipeline相当于处理器的容器。初始化channel时，把channelHandler按顺序装在pipeline中，就可以实现按序执行channelHandler了。
 
-![image.png](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-netty/e7bac501d86e4e75a897686d7bab40fe.png)
+![image.png](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-netty/e7bac501d86e4e75a897686d7bab40fe.png)
 
 在一个Channel中，只有一个ChannelPipeline。该pipeline在Channel被创建的时候创建。ChannelPipeline包含了一个ChannelHander形成的列表，且所有ChannelHandler都会注册到ChannelPipeline中。
 
@@ -605,7 +605,7 @@ Netty中的Selector也和NIO的Selector是一样的，就是用于监听事件�
 
 于是Netty设计了这个ChannelHandlerContext上下文对象，就可以拿到channel、pipeline等对象，就可以进行读写等操作。
 
-![image.png](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-netty/4c6e9319213b489bbfcc2d7697cf03b0.png)
+![image.png](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-netty/4c6e9319213b489bbfcc2d7697cf03b0.png)
 
 通过类图，ChannelHandlerContext是一个接口，下面有三个实现类。
 
@@ -627,13 +627,13 @@ protected DefaultChannelPipeline(Channel channel) {
 ```
 
 下面我用一张图来表示，会更加清晰一点：
-![image.png](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-netty/c77ea0ea4e554d65b61ee0a2eae78a0c.png)
+![image.png](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-netty/c77ea0ea4e554d65b61ee0a2eae78a0c.png)
 
 ## 5.9 EventLoopGroup
 
 我们先看一下EventLoopGroup的类图：
 
-![image.png](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-netty/7a95eeb933be4470acdc5f0f07afbc2a.png)
+![image.png](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-netty/7a95eeb933be4470acdc5f0f07afbc2a.png)
 
 其中包括了常用的实现类NioEventLoopGroup。OioEventLoopGroup在前面的例子中也有使用过。
 
@@ -658,7 +658,7 @@ public EventExecutor next() {
 
 这段代码可以确定执行的方式是轮询机制，接下来debug调试一下：
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/head-first-netty/17319554d4546047)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/head-first-netty/17319554d4546047)
 
 它这里还有一个判断，如果线程数不是2的N次方，则采用取模算法实现。
 

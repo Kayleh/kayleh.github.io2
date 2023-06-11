@@ -13,7 +13,7 @@ date: 2020-12-17T02:40:45+08:00
 
 ****Java的内存结构********：****
 
-![JUtH_20121024_RuntimeDataAreas_6_MemoryModel](https://cdn.jsdelivr.net/gh/kayleh/cdn2/Java-memory-model内存模型/331425-20160623115840235-1252768148-1608180051585.png)
+![JUtH_20121024_RuntimeDataAreas_6_MemoryModel](https://cdn.kayleh.top/gh/kayleh/cdn2/Java-memory-model内存模型/331425-20160623115840235-1252768148-1608180051585.png)
 
 JVM内存结构主要有三大块：****堆内存****、****方法区****和****栈****。堆内存是JVM中最大的一块由****年轻代****和****老年代****组成，而年轻代内存又被分成三部分，****Eden空间****、****From Survivor空间****、****To Survivor空间****,默认情况下年轻代按照8:1:1的比例来分配；
 
@@ -23,7 +23,7 @@ JVM内存结构主要有三大块：****堆内存****、****方法区****和****
 
 在通过一张图来了解如何通过参数来控制各区域的内存大小
 
-![jvm_m_l](https://cdn.jsdelivr.net/gh/kayleh/cdn2/Java-memory-model内存模型/331425-20160623115841781-223449019.png)
+![jvm_m_l](https://cdn.kayleh.top/gh/kayleh/cdn2/Java-memory-model内存模型/331425-20160623115841781-223449019.png)
 
 ****控制参数****
 -Xms设置堆的最小空间大小。
@@ -50,7 +50,7 @@ JVM内存结构主要有三大块：****堆内存****、****方法区****和****
 
 从更高的一个维度再次来看JVM和系统调用之间的关系
 
-****![002hLfJYgy71J9KxlH53b](https://cdn.jsdelivr.net/gh/kayleh/cdn2/Java-memory-model内存模型/331425-20160623115846235-947282498.png)
+****![002hLfJYgy71J9KxlH53b](https://cdn.kayleh.top/gh/kayleh/cdn2/Java-memory-model内存模型/331425-20160623115846235-947282498.png)
 
 方法区和对是所有线程共享的内存区域；而java栈、本地方法栈和程序员计数器是运行是线程私有的内存区域。
 

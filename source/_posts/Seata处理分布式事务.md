@@ -2,7 +2,7 @@
 title: Seata处理分布式事务
 tags: [DistributedMicroservices]
 categories: [分布式]
-cover: 'https://cdn.jsdelivr.net/gh/kayleh/cdn/img/index3.jpg'
+cover: 'https://cdn.kayleh.top/gh/kayleh/cdn/img/index3.jpg'
 translate_title: seata-handles-distributed-transactions
 date: 2020-08-26T12:25:48+08:00
 ---
@@ -21,9 +21,9 @@ Seata
 
 分布式之后
 
-![1598416105757](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/1.png)
+![1598416105757](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/1.png)
 
-![1598416133712](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/2.png)
+![1598416133712](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/2.png)
 
 > 一次业务操作需要跨多个数据源或需要跨多个系统进行远程调用，就会产生分布式事务问题
 
@@ -59,9 +59,9 @@ Seata
 
 ##### 处理过程
 
-![1598416360363](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/3.png)
+![1598416360363](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/3.png)
 
-![1598416368793](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/4.png)
+![1598416368793](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/4.png)
 
 下载
 
@@ -75,7 +75,7 @@ Seata
 
   > SEATA的分布式交易解决方案
   >
-  > ![1598416447489](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/5.png)
+  > ![1598416447489](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/5.png)
 
 # Seata-Server安装
 
@@ -206,7 +206,7 @@ Seata
 
 业务说明
 
-![1598416862715](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/6.png)
+![1598416862715](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/6.png)
 
 下订单-->扣库存-->减账户（余额）
 
@@ -304,7 +304,7 @@ CREATE TABLE `undo_log` (
 
 ### 最终效果
 
-![1598417026767](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/7.png)
+![1598417026767](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/7.png)
 
 # 订单/库存/账户业务微服务准备
 
@@ -2128,13 +2128,13 @@ public class SeataAccountMainApp2003
 
 下订单->减库存->扣余额->改（订单）状态
 
-![1598418701820](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/8.png)
+![1598418701820](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/8.png)
 
-![1598418752655](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/9.png)
+![1598418752655](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/9.png)
 
 数据库初始情况
 
-![1598418770944](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/10.png)
+![1598418770944](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/10.png)
 
 正常下单
 
@@ -2142,7 +2142,7 @@ public class SeataAccountMainApp2003
 >
 > 数据库情况
 >
-> ![1598418805563](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/11.png)
+> ![1598418805563](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/11.png)
 
 ### 超时异常，没加@GlobalTransactional
 
@@ -2195,11 +2195,11 @@ orderServiceImpl
 >
 > Simple Extensible Autonomous Transaction Architecture,简单可扩展自治事务框架
 >
-> 2020起初，参加工作后用1.0以后的版本![图像](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/12.png)
+> 2020起初，参加工作后用1.0以后的版本![图像](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/12.png)
 
 ## 再看TC/TM/RM三大组件
 
-![1598419006224](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/13.png)
+![1598419006224](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/13.png)
 
 分布式事务的执行流程
 
@@ -2217,31 +2217,31 @@ orderServiceImpl
 
 是什么
 
-![1598419068562](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/14.png)
+![1598419068562](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/14.png)
 
-![1598419095784](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/15.png)
+![1598419095784](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/15.png)
 
 一阶段加载
 
-![1598419109689](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/16.png)
+![1598419109689](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/16.png)
 
-![1598419122066](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/17.png)
+![1598419122066](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/17.png)
 
 二阶段提交
 
-![1598419138114](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/18.png)
+![1598419138114](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/18.png)
 
 二阶段回滚
 
-![1598419157493](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/19.png)
+![1598419157493](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/19.png)
 
-![1598419170919](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/20.png)
+![1598419170919](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/20.png)
 
 debug
 
 ##### 补充
 
-![1598419193998](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Seata处理分布式事务/21.png)
+![1598419193998](https://cdn.kayleh.top/gh/kayleh/cdn/img/Seata处理分布式事务/21.png)
 
 <img src="22.png" alt="1598419205394" style="zoom: 80%;" />
 

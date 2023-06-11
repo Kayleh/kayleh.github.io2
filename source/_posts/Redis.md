@@ -247,13 +247,13 @@ zrevrangebyscore key 结束score 开始score   //反转集合，index也要反�
 
 2.对大小写不敏感
 
-![1593308699248](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Redis/1.png)
+![1593308699248](https://cdn.kayleh.top/gh/kayleh/cdn/img/Redis/1.png)
 
 #### INCLUDES
 
 可以通过includes包含，redis.conf可以作为总闸,包含其他
 
-![1593308936736](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Redis/2.png)
+![1593308936736](https://cdn.kayleh.top/gh/kayleh/cdn/img/Redis/2.png)
 
 #### GENERAL
 
@@ -283,7 +283,7 @@ syslog-facility 指定syslog设备,值可以是USER或LOCAL0-LOCAL7
 
 databases 默认有16个库
 
-![1593309132453](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Redis/3.png)
+![1593309132453](https://cdn.kayleh.top/gh/kayleh/cdn/img/Redis/3.png)
 
 #### SECURITY
 
@@ -771,11 +771,11 @@ watch指令，类似乐观锁，事务提交时，如果key的值已被别的客
 
 下图展示了频道channel1，以及订阅这个频道的三个客户端---client2和client5、client1之间的关系
 
- ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Redis/pubsub1.png) 
+ ![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Redis/pubsub1.png) 
 
 当有新消息通过PUBLISH命令发送给频道channel1时，这个消息就会发送给订阅它的三个客户端
 
- ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Redis/pubsub2.png) 
+ ![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Redis/pubsub2.png) 
 
 
 
@@ -1162,7 +1162,7 @@ public class JedisPoolUtils {
 
 JedisPoolConfig:
 
-![1593434346091](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Redis/1593434346091.png)
+![1593434346091](https://cdn.kayleh.top/gh/kayleh/cdn/img/Redis/1593434346091.png)
 
 ### 缓存雪崩
 

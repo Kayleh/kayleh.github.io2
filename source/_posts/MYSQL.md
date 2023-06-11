@@ -388,7 +388,7 @@ create table新表 select * from 旧表
 
 默认路径: /var/lib/mysql
 
-![1595839986393](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/3.png)
+![1595839986393](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/3.png)
 
 ##### frm文件
 
@@ -404,13 +404,13 @@ create table新表 select * from 旧表
 
 ## 逻辑结构
 
-![1595842885282](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/85282.png)
+![1595842885282](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/85282.png)
 
-![1595843892063](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595843892063.png)
+![1595843892063](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595843892063.png)
 
-![1595843971185](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595843971185.png)
+![1595843971185](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595843971185.png)
 
-![1595844045065](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595844045065.png)
+![1595844045065](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595844045065.png)
 
 ### 存储引擎
 
@@ -426,19 +426,19 @@ show variable like '%storage_engine%'
 
 #### MyisAm和InnoDB区别
 
-![1595844384514](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/384514.png)
+![1595844384514](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/384514.png)
 
-![1595844849986](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/49986.png)
+![1595844849986](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/49986.png)
 
 ### SQL执行加载顺序
 
 手写
 
-![1595988597583](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595988597583.png)
+![1595988597583](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595988597583.png)
 
 机读
 
-![1595988626819](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595988626819.png)
+![1595988626819](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595988626819.png)
 
 # 索引
 
@@ -450,7 +450,7 @@ show variable like '%storage_engine%'
 >
 >   这样可以在这些数据结构上实现高级查找算法.这种数据结构,就是索引.下图就是一种可能的索引方式示例:
 >
->   ![1595905536134](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595905536134.png)
+>   ![1595905536134](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595905536134.png)
 >
 > 索引的目的在于提高查找效率,可以类比字典;
 >
@@ -464,7 +464,7 @@ show variable like '%storage_engine%'
 
 #### 劣势
 
-![1595911864015](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595911864015.png)
+![1595911864015](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595911864015.png)
 
 #### 索引的分类
 
@@ -488,7 +488,7 @@ show variable like '%storage_engine%'
 >
 > ALTER mytable ADD [UNIQUE] INDEX [indexName] ON (columnname(name));
 
-![1595920057502](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595920057502.png)
+![1595920057502](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595920057502.png)
 
 #### 删除
 
@@ -537,21 +537,21 @@ R-Tree索引
 
    如果某个数据列包含许多重复内容，为它建立索引就没有太大的实际效果。
 
-   ![1595923227254](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595923227254.png)
+   ![1595923227254](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595923227254.png)
 
 ### 性能分析（查询执行计划）
 
 MYSQL QUERY Optimizer
 
-![1595923535216](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595923535216.png)
+![1595923535216](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595923535216.png)
 
 MYSQL的常见瓶颈
 
-![1595923570837](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595923570837.png)
+![1595923570837](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595923570837.png)
 
 #### Explain
 
-![1595923735876](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595923735876.png)
+![1595923735876](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595923735876.png)
 
 能干吗
 
@@ -566,7 +566,7 @@ MYSQL的常见瓶颈
 
 执行计划包含的信息
 
-![1595927315197](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595927315197.png)
+![1595927315197](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595927315197.png)
 
 #### 表的读取顺序
 
@@ -578,15 +578,15 @@ MYSQL的常见瓶颈
 >
 > - id相同,执行顺序由上至下
 >
->   ![ ](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595927536666.png)
+>   ![ ](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595927536666.png)
 >
 > - id不同,如果是子查询,id的序号会递增,id值越大优先级会越高,越先被执行.
 >
->   ![1595928872305](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595928872305.png)
+>   ![1595928872305](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595928872305.png)
 >
 > - id相同不同,同时存在
 >
->   ![1595929240606](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595929240606.png)
+>   ![1595929240606](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595929240606.png)
 >
 >   derive的2指的是id为2的t3.
 
@@ -594,9 +594,9 @@ MYSQL的常见瓶颈
 
 ##### select_type：
 
-![1595987567416](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595987567416.png)
+![1595987567416](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595987567416.png)
 
-![1595987675026](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1595987675026.png)
+![1595987675026](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1595987675026.png)
 
 ##### table：
 
@@ -606,7 +606,7 @@ MYSQL的常见瓶颈
 
 访问类型
 
-![1596002301273](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596002301273.png)
+![1596002301273](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596002301273.png)
 
 显示查询使用了何种类型，
 
@@ -614,65 +614,65 @@ MYSQL的常见瓶颈
 
 system > const > eq_ref > ref > range > index >ALL
 
-![1596002552181](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596002552181.png)
+![1596002552181](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596002552181.png)
 
 - system
 
-  ![1596002626747](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596002626747.png)
+  ![1596002626747](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596002626747.png)
 
 - const
 
-  ![1596002709087](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596002709087.png)
+  ![1596002709087](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596002709087.png)
 
 - eq_ref
 
-  ![1596002859369](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596002859369.png)
+  ![1596002859369](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596002859369.png)
 
 - ref
 
-  ![1596003234330](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596003234330.png)
+  ![1596003234330](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596003234330.png)
 
 - range
 
-  ![1596006294816](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596006294816.png)
+  ![1596006294816](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596006294816.png)
 
 - index
 
-  ![1596006410428](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596006410428.png)
+  ![1596006410428](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596006410428.png)
 
 - ALL
 
   全表扫描
 
-  ![1596006425805](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596006425805.png)
+  ![1596006425805](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596006425805.png)
 
-![1596006455254](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596006455254.png)
+![1596006455254](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596006455254.png)
 
 ##### possible_keys 和 key：
 
 possible_keys：
 
-![1596006649311](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596006649311.png)
+![1596006649311](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596006649311.png)
 
 key：
 
-![1596006751196](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596006751196.png)
+![1596006751196](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596006751196.png)
 
 ##### key_len:
 
-![1596007145091](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596007145091.png)
+![1596007145091](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596007145091.png)
 
 4(char长度)*3(UTF-8）+1（null）=13 
 
 ##### ref:
 
-![1596007454015](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596007454015.png)
+![1596007454015](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596007454015.png)
 
-![1596008615453](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596008615453.png)
+![1596008615453](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596008615453.png)
 
 ##### rows:
 
-![1596008758503](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596008758503.png)
+![1596008758503](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596008758503.png)
 
 ##### extra:
 
@@ -682,23 +682,23 @@ key：
 >
 > 说明mysql会对数据使用一个外部的索引排序,而不是按照表内的索引顺序进行读取,MYSQL中无法利用索引完成的排序操作被称为"文件排序"
 >
-> ![1596010221763](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596010221763.png)
+> ![1596010221763](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596010221763.png)
 >
 > **Using temporary**
 >
-> ![1596010368374](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596010368374.png)
+> ![1596010368374](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596010368374.png)
 >
-> ![1596010573507](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596010573507.png)
+> ![1596010573507](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596010573507.png)
 >
 > **Using index**
 >
-> ![1596011670611](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596011670611.png)
+> ![1596011670611](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596011670611.png)
 >
 > 覆盖索引,在possible_keys没有出现但在key出现
 >
-> ![1596011879046](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596011879046.png)
+> ![1596011879046](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596011879046.png)
 >
-> 覆盖索引:![1596011985825](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596011985825.png)
+> 覆盖索引:![1596011985825](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596011985825.png)
 >
 > **Using where**
 >
@@ -720,47 +720,47 @@ key：
 >
 > 优化distinct操作，在找到第一匹配的元组后即停止找同样值的动作。
 
-![1596012711619](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596012711619.png)
+![1596012711619](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596012711619.png)
 
-![1596012728741](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596012728741.png)
+![1596012728741](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596012728741.png)
 
 ### 单表优化
 
-![1596025975416](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596025975416.png)
+![1596025975416](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596025975416.png)
 
-![1596025918356](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596025918356.png)
+![1596025918356](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596025918356.png)
 
 范围使索引失效
 
-![1596026094589](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596026094589.png)
+![1596026094589](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596026094589.png)
 
-![1596026161365](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596026161365.png)
+![1596026161365](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596026161365.png)
 
 ### 两表优化
 
-![1596034217829](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596034217829.png)
+![1596034217829](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596034217829.png)
 
 先尝试只添加右表的索引
 
-![1596034306983](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596034306983.png)
+![1596034306983](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596034306983.png)
 
-![1596034355686](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596034355686.png)
+![1596034355686](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596034355686.png)
 
 左表
 
-![1596034657083](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596034657083.png)
+![1596034657083](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596034657083.png)
 
-![1596034707674](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596034707674.png)
+![1596034707674](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596034707674.png)
 
 #### 所以左连接要加右表。左表全有，加不加索引都是全表查询。
 
 ### 三表优化
 
-![1596035555366](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596035555366.png)
+![1596035555366](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596035555366.png)
 
-![1596035651547](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596035651547.png)
+![1596035651547](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596035651547.png)
 
- ![1596035870103](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596035870103.png)
+ ![1596035870103](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596035870103.png)
 
 ## 索引优化
 
@@ -768,15 +768,15 @@ key：
 
 建表
 
-![1596090287752](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596090287752.png)
+![1596090287752](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596090287752.png)
 
-![1596090383772](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596090383772.png)
+![1596090383772](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596090383772.png)
 
 1. 全值匹配
 
-   ![1596090596937](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596090596937.png)
+   ![1596090596937](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596090596937.png)
 
-   ![1596090698031](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596090698031.png)
+   ![1596090698031](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596090698031.png)
 
    第一层索引没用上，梯子断裂，**最佳左前缀原则**
 
@@ -784,33 +784,33 @@ key：
 
    > 如果索引了多列，要遵守最左前缀法则。指的是查询从索引的最左前列开始并且不跳过索引中的列。
 
-3. 不在索引列上做任何操作![1596091591987](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596091591987.png)
+3. 不在索引列上做任何操作![1596091591987](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596091591987.png)
 
 4. 存储引擎不能使用索引中范围条件右边的列
 
-   ![1596091809527](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596091809527.png)
+   ![1596091809527](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596091809527.png)
 
    范围后面的索引失效
 
 5. 尽量使用覆盖索引
 
-   ![1596092067130](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596092067130.png)
+   ![1596092067130](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596092067130.png)
 
 6. 使用不等于（!=或者<>）的时候无法使用索引会导致全表扫描
 
 7. is not,is not null无法使用索引
 
-   ![1596092443607](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596092443607.png)
+   ![1596092443607](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596092443607.png)
 
 8. like以通配符开头使索引失效会变成全表扫描
 
-   ![1596092593809](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596092593809.png)
+   ![1596092593809](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596092593809.png)
 
    要使用两边都带有通配符 ' %XX% ' 的解决方法: 
 
    创建覆盖索引;
 
-   ![1596093309432](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596093309432.png)
+   ![1596093309432](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596093309432.png)
 
 9. 字符串不加单引号索引失效
 
@@ -826,13 +826,13 @@ other:
 
 排序也会使用索引并且不会断开,但不显示在ref字段上.
 
-![1596096019383](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596096019383.png)
+![1596096019383](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596096019383.png)
 
 分组之前必排序,会有临时表产生
 
-![1596096420658](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596096420658.png)
+![1596096420658](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596096420658.png)
 
-![1596098552860](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596098552860.png)
+![1596098552860](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596098552860.png)
 
 ### 查询截取分析
 
@@ -840,25 +840,25 @@ other:
 
 1. 小表驱动大表
 
-   ![1596113933906](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596113933906.png)
+   ![1596113933906](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596113933906.png)
 
    "select 1 from"的1是什么都行,是个常量就行
 
-   ![1596114222051](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596114222051.png)
+   ![1596114222051](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596114222051.png)
 
    in 和 exists
 
-   ![1596114728723](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596114728723.png)
+   ![1596114728723](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596114728723.png)
 
 ### Order by关键字排序优化
 
 1. **order by子句，尽量使用index方式排序，避免使用filesort方式排序；**
 
-   ![1596180644843](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596180644843.png)
+   ![1596180644843](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596180644843.png)
 
-   ![1596180875682](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596180875682.png)
+   ![1596180875682](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596180875682.png)
 
-   ![1596180941151](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596180941151.png)
+   ![1596180941151](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596180941151.png)
 
    默认是升序。要不就全部升序,要不就全部降序
 
@@ -884,7 +884,7 @@ other:
    >
    > 单路是后出的，总体而言好过双路。
    >
-   > 单路也有问题：![1596184232403](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596184232403.png)
+   > 单路也有问题：![1596184232403](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596184232403.png)
 
 4. **优化策略**
 
@@ -892,23 +892,23 @@ other:
    >
    > 增大max_length_for_sort_data参数的设置
 
-   ![1596184507560](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596184507560.png)
+   ![1596184507560](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596184507560.png)
 
-![1596184598926](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596184598926.png)
+![1596184598926](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596184598926.png)
 
 ##### 总结:
 
-![1596184599055](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596184599055.png)
+![1596184599055](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596184599055.png)
 
 ### group by关键字优化
 
-![1596184960579](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596184960579.png)
+![1596184960579](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596184960579.png)
 
 ## 慢查询日志
 
-![1596185094308](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596185094308.png)
+![1596185094308](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596185094308.png)
 
-![1596188504073](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596188504073.png)
+![1596188504073](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596188504073.png)
 
 查看是否开启
 
@@ -924,15 +924,15 @@ SHOW VARIABLES LIKE '%slow_query_log%';
 set global slow_query_log=1;
 ```
 
-![1596188752818](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596188752818.png)
+![1596188752818](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596188752818.png)
 
-![1596189293802](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596189293802.png)
+![1596189293802](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596189293802.png)
 
-![1596189329303](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596189329303.png)
+![1596189329303](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596189329303.png)
 
 开启了慢查询日志后,什么样的SQL才会记录到慢查询日志里面呢?
 
-![1596189519955](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596189519955.png)
+![1596189519955](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596189519955.png)
 
 设置慢的阈值时间:
 
@@ -957,15 +957,15 @@ select sleep(4);
 cat /var/lib/mysql/***.log
 ```
 
-![1596190235561](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596190235561.png)
+![1596190235561](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596190235561.png)
 
 查询当前系统中有多少条慢查询记录
 
-![1596196732744](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596196732744.png)
+![1596196732744](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596196732744.png)
 
 配置文件
 
-![1596196765703](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596196765703.png)
+![1596196765703](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596196765703.png)
 
 ##### 日志分析工具
 
@@ -977,15 +977,15 @@ cat /var/lib/mysql/***.log
 mysqldumpslow --help
 ```
 
-![1596197041821](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596197041821.png)
+![1596197041821](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596197041821.png)
 
 常用参考:
 
-![1596197129161](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596197129161.png)
+![1596197129161](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596197129161.png)
 
 ## 批量插入数据脚本
 
-![1596197341176](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596197341176.png)
+![1596197341176](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596197341176.png)
 
 1. 建数据库
 
@@ -1010,17 +1010,17 @@ mysqldumpslow --help
 
    建表emp
 
-   ![1596197755173](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596197755173.png)
+   ![1596197755173](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596197755173.png)
 
 3. 设置参数log_bin_trust_function_creators
 
-   ![1596197943115](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596197943115.png)
+   ![1596197943115](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596197943115.png)
 
 4. 随机产生部门字符串
 
-   ![1596203524363](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596203524363.png)
+   ![1596203524363](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596203524363.png)
 
-   ![1596203855006](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596203855006.png)
+   ![1596203855006](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596203855006.png)
 
 5. 创建存储过程
 
@@ -1030,21 +1030,21 @@ mysqldumpslow --help
 
    **procedure:无返回值**
 
-   ![1596204083288](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596204083288.png)
+   ![1596204083288](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596204083288.png)
 
    ##### 创建往dept表插入数据的存储过程
 
-   ![1596204389262](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596204389262.png)
+   ![1596204389262](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596204389262.png)
 
 6. 调用存储过程
 
    dept
 
-   ![1596204532873](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596204532873.png)
+   ![1596204532873](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596204532873.png)
 
    emp
 
-   ![1596205863651](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596205863651.png)
+   ![1596205863651](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596205863651.png)
 
 ## Show Profile
 
@@ -1060,11 +1060,11 @@ Show variables like 'profiling';
 ##默认是关闭的,使用前需要开启
 ```
 
-![1596277672469](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596277672469.png)
+![1596277672469](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596277672469.png)
 
 开启功能
 
-![1596277717456](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596277717456.png)
+![1596277717456](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596277717456.png)
 
 运行SQL
 
@@ -1079,7 +1079,7 @@ select * from emp group by id%20 order by 5;
 show profiles;
 ```
 
-![1596278164535](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596278164535.png)
+![1596278164535](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596278164535.png)
 
 诊断SQL
 
@@ -1087,11 +1087,11 @@ show profiles;
 show profile cpu, block io for query ID(上一步前面的问题SQL数字号码); 
 ```
 
-![1596281249332](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596281249332.png)
+![1596281249332](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596281249332.png)
 
 需要注意的:
 
-![1596281293913](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596281293913.png)
+![1596281293913](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596281293913.png)
 
 ## 全局查询日志
 
@@ -1099,11 +1099,11 @@ show profile cpu, block io for query ID(上一步前面的问题SQL数字号码)
 
 配置开启:
 
-![1596283157110](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596283157110.png)
+![1596283157110](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596283157110.png)
 
 编码开启:
 
-![1596283183562](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596283183562.png)
+![1596283183562](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596283183562.png)
 
 ## 数据库锁
 
@@ -1133,13 +1133,13 @@ show profile cpu, block io for query ID(上一步前面的问题SQL数字号码)
 
 案例:
 
-![1596287138753](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596287138753.png)
+![1596287138753](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596287138753.png)
 
-![1596287239538](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596287239538.png)
+![1596287239538](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596287239538.png)
 
-![1596287470060](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596287470060.png)
+![1596287470060](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596287470060.png)
 
-![1596287910808](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596287910808.png)
+![1596287910808](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596287910808.png)
 
 读操作时共享的,会话1和2都可以读mylock;
 
@@ -1149,23 +1149,23 @@ show profile cpu, block io for query ID(上一步前面的问题SQL数字号码)
 
 会话2如果要更新表,会形成阻塞,要**等待锁的释放**(unlock tables)
 
-![1596288189317](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596288189317.png)
+![1596288189317](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596288189317.png)
 
-![1596288256700](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596288256700.png)
+![1596288256700](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596288256700.png)
 
-![1596288286059](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596288286059.png)
+![1596288286059](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596288286059.png)
 
 ##### 写锁
 
-![1596293163830](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596293163830.png)
+![1596293163830](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596293163830.png)
 
-![1596293452648](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596293452648.png)
+![1596293452648](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596293452648.png)
 
-![1596293310415](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596293310415.png)
+![1596293310415](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596293310415.png)
 
 其他会话读被锁的表会阻塞;
 
-结论:![1596293501087](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596293501087.png)
+结论:![1596293501087](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596293501087.png)
 
 简而言之,就是读锁会阻塞写,但是不会堵塞读,而写锁则会把读和写都堵塞.
 
@@ -1177,9 +1177,9 @@ show open tables;
 
 ##### 如何分析表锁定
 
-![1596294625538](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596294625538.png)
+![1596294625538](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596294625538.png)
 
-![1596294765205](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596294765205.png)
+![1596294765205](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596294765205.png)
 
 
 
@@ -1195,29 +1195,29 @@ InnoDB与MyISAM的最大不同也有两点：
 
 ##### 事务(Transaction)及其ACID属性
 
-![1596361613254](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596361613254.png)
+![1596361613254](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596361613254.png)
 
 ##### 并发处理事务带来的问题
 
 > 更新丢失(Lost Update)
 >
-> ![1596361800362](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596361800362.png)
+> ![1596361800362](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596361800362.png)
 >
 > 脏读(Dirty Reads)
 >
-> ![1596361853689](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596361853689.png)
+> ![1596361853689](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596361853689.png)
 >
 > 不可重复读(Non-Repeatable Reads)
 >
-> ![1596361887110](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596361887110.png)
+> ![1596361887110](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596361887110.png)
 >
 > 幻读(Planttom Reads)
 >
-> ![1596361949063](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596361949063.png)
+> ![1596361949063](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596361949063.png)
 
 ##### 事务隔离级别;
 
-![1596362019625](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596362019625.png)
+![1596362019625](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596362019625.png)
 
 默认级别是Repeatable read
 
@@ -1225,59 +1225,59 @@ InnoDB与MyISAM的最大不同也有两点：
 
 建表
 
-![1596362218502](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596362218502.png)
+![1596362218502](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596362218502.png)
 
 select * from test_innodb_lock;
 
-![1596362340762](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596362340762.png)
+![1596362340762](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596362340762.png)
 
 在没session1和2提交commit之前,session-2读不到修改的数据. 
 
-![1596362749535](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596362749535.png)
+![1596362749535](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596362749535.png)
 
 操作不同行,不会阻塞
 
-![1596363091362](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596363091362.png)
+![1596363091362](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596363091362.png)
 
 ##### 无索引行锁变表锁;
 
 类型转换,索引失效:  (b='4000')
 
-![1596364172827](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596364172827.png)
+![1596364172827](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596364172827.png)
 
 行锁变表锁,造成阻塞.
 
 ##### 间隙锁的危害
 
-![1596367264611](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596367264611.png)
+![1596367264611](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596367264611.png)
 
 session2会阻塞,
 
-![1596367511520](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596367511520.png)
+![1596367511520](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596367511520.png)
 
-![1596367327059](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596367327059.png)
+![1596367327059](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596367327059.png)
 
-![1596367354502](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596367354502.png)
+![1596367354502](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596367354502.png)
 
 ##### 如何锁定一行
 
-![1596367801141](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596367801141.png)
+![1596367801141](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596367801141.png)
 
 行锁总结
 
-![1596368151351](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596368151351.png)
+![1596368151351](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596368151351.png)
 
 ##### 如何分析行锁定
 
-![1596368219445](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596368219445.png)
+![1596368219445](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596368219445.png)
 
-![1596368336057](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596368336057.png)
+![1596368336057](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596368336057.png)
 
-![1596368378801](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596368378801.png)
+![1596368378801](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596368378801.png)
 
 优化建议:
 
-![1596368467316](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596368467316.png)
+![1596368467316](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596368467316.png)
 
 ### 页锁
 
@@ -1289,7 +1289,7 @@ session2会阻塞,
 
 > slave会从master读取binlog来进行数据同步
 
-![1596372268011](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596372268011.png)
+![1596372268011](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596372268011.png)
 
 #### 复制的基本原则：
 
@@ -1392,7 +1392,7 @@ session2会阻塞,
 >
 > mysql
 >
-> ![1596381866992](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596381866992.png)
+> ![1596381866992](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596381866992.png)
 >
 > ```
 > flush privileges
@@ -1410,9 +1410,9 @@ session2会阻塞,
 >
 > 在linux从机上配置需要复制的主机
 >
-> ![1596382399568](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596382399568.png)
+> ![1596382399568](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596382399568.png)
 >
-> ![1596382484275](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/MYSQL/1596382484275.png)
+> ![1596382484275](https://cdn.kayleh.top/gh/kayleh/cdn/img/MYSQL/1596382484275.png)
 >
 > 启动从服务器复制功能
 >

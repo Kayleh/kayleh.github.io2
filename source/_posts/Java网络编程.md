@@ -10,24 +10,24 @@ translate_title: Java-network-programming
 
 ## 1. URL地址的构造和解析
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/Java网络编程/20200719222030510.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/Java网络编程/20200719222030510.png)
 我们看如上地址，一般情况下.root根域名的部分会被省略。而URL的解析过程就是从右向左进行解析，将地址转换为IP地址，进行访问。
 
 ### 1.1 域名的层级
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/Java网络编程/20200719222140239.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/Java网络编程/20200719222140239.png)
 
 ### 1.2 域名DNS查询的两种方式
 
 #### 1.2.1 递归查询
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/Java网络编程/20200719222304793.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/Java网络编程/20200719222304793.png)
 
 - 如图上所示，浏览器将请求发送给DNS客户端，客户端请求根域名服务器对域名进行解析，解析完成后，随后再访问顶级域名服务器，请求它对域名进行解析，以此类推，直至全部解析完毕，重新从三级域名服务器一层一层传递给DNS客户端，再发送给浏览器。
 
 #### 1.2.2 迭代查询
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/Java网络编程/2020071922260859.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/Java网络编程/2020071922260859.png)
 
 - 迭代查询是访问DNS客户端后，先访问根域名服务器，将根域名服务器中存储的该域名的内容全部发送给DNS客户端，如果无法实现域名解析的话，DNS客户端会再次请求顶级域名服务器，过程也同上，最终完成解析后，再将请求结果传递给浏览器。
 
@@ -39,7 +39,7 @@ translate_title: Java-network-programming
 
 ### 2.1 分层及协议
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/Java网络编程/2020071922320757.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/Java网络编程/2020071922320757.png)
 
 - 应用层：规定应用程序的数据格式
 - 传输层：端口之间的连接
@@ -49,5 +49,5 @@ translate_title: Java-network-programming
 
 ### 2.2 各层的数据包格式
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/Java网络编程/20200719223925329.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/Java网络编程/20200719223925329.png)
 从应用层向下，每经过一层都会被添加上该层的标头，对于Ethernet标头，它的大小为18个字节，其余数据部分为1500字节，它的大小最大为1518字节，即每个帧的字节，当发送较大的文件时，就会发送多个帧的数据包，通过标头信息，在接收时能够将其组合，实现数据的正确发送。

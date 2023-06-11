@@ -42,7 +42,7 @@ JVM使用-XX:PermSize设置非堆内存初始值，默认是物理内存的1/64�
 
  (3)下面是当前比较流行的几个不同公司不同版本JVM最大堆内存: 
 
- ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/JVM/5.png) 
+ ![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/JVM/5.png) 
 
 ### jvm是如何实现线程的？
 
@@ -82,7 +82,7 @@ Java内存模型(简称JMM)，JMM决定一个线程对共享变量的写入何�
 
 本地内存是JMM的一个抽象概念，并不真实存在。它涵盖了缓存，写缓冲区，寄存器以及其他的硬件和编译器优化。其关系模型图如下图所示：
 
- ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/JVM/6.png) 
+ ![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/JVM/6.png) 
 
 ### 在JAVA虚拟机中，哪些对象可作为ROOT对象？
 
@@ -129,7 +129,7 @@ jvm将java字节码解释为具体平台的具体指令。一般的高级语言�
 
 ### 简单描述一下JVM分区都有哪些？
 
- ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/JVM/7.png) 
+ ![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/JVM/7.png) 
 
  java内存通常被划分为5个区域：程序计数器（Program Count Register）、本地方法栈（Native Stack）、方法区（Methon Area）、栈（Stack）、堆（Heap）。 
 
@@ -137,7 +137,7 @@ jvm将java字节码解释为具体平台的具体指令。一般的高级语言�
 
 如下图所示，JVM类加载机制分为五个部分：加载，验证，准备，解析，初始化，下面我们就分别来看一下这五个过程。
 
- ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/JVM/8.png) 
+ ![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/JVM/8.png) 
 
 **加载**
 
@@ -211,7 +211,7 @@ CONSTANT_Method_info
 
 JVM通过双亲委派模型进行类的加载，当然我们也可以通过继承java.lang.ClassLoader实现自定义的类加载器。
 
- ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/JVM/9.png) 
+ ![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/JVM/9.png) 
 
 当一个类加载器收到类加载任务，会先交给其父类加载器去完成，因此最终加载任务都会传递到顶层的启动类加载器，只有当父类加载器无法完成加载任务时，才会尝试执行加载任务。采用双亲委派的一个好处是比如加载位于rt.jar包中的类java.lang.Object，不管是哪个加载器加载这个类，最终都是委托给顶层的启动类加载器进行加载，这样就保证了使用不同的类加载器最终得到的都是同样一个Object对象。 
 

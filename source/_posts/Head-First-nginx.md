@@ -9,11 +9,11 @@ translate_title: Head-First-Nginx
 ## 公司产品出现瓶颈？
 
 我们公司项目刚刚上线的时候，并发量小，用户使用的少，所以在低并发的情况下，一个jar包启动应用就够了，然后内部tomcat返回内容给用户。
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/nginx/kuangstudy98b25257-71be-48f3-8afe-e1226ebc4589.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/nginx/kuangstudy98b25257-71be-48f3-8afe-e1226ebc4589.png)
 但是慢慢的，使用我们平台的用户越来越多了，并发量慢慢增大了，这时候一台服务器满足不了我们的需求了。
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/nginx/kuangstudy1d77bc35-df30-46fb-8c41-61ff4468d0c9.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/nginx/kuangstudy1d77bc35-df30-46fb-8c41-61ff4468d0c9.png)
 于是我们横向扩展，又增加了服务器。这个时候几个项目启动在不同的服务器上，用户要访问，就需要增加一个代理服务器了，通过代理服务器来帮我们转发和处理请求。
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/nginx/kuangstudy33ee7313-9356-46e6-a0b2-fc1ed8ef9a62.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/nginx/kuangstudy33ee7313-9356-46e6-a0b2-fc1ed8ef9a62.png)
 我们希望这个代理服务器可以帮助我们接收用户的请求，然后将用户的请求按照规则帮我们转发到不同的服务器节点之上。这个过程用户是无感知的，用户并不知道是哪个服务器返回的结果，我们还希望他可以按照服务器的性能提供不同的权重选择。保证最佳体验！所以我们使用了Nginx。
 
 ## 什么是Nginx？
@@ -31,22 +31,22 @@ Nginx代码完全用C语言从头写成。官方数据测试表明能够支持�
 > Http代理，反向代理：作为web服务器最常用的功能之一，尤其是反向代理。
 
 正向代理
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/nginx/kuangstudy46bdad36-d3e0-43b0-a223-43360b7e8fc7.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/nginx/kuangstudy46bdad36-d3e0-43b0-a223-43360b7e8fc7.png)
 反向代理
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/nginx/kuangstudy62a15097-6e2a-4dbe-bcf5-f0d7cab81089.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/nginx/kuangstudy62a15097-6e2a-4dbe-bcf5-f0d7cab81089.png)
 
 >  Nginx提供的负载均衡策略有2种：内置策略和扩展策略。内置策略为轮询，加权轮询，Ip hash。扩展策略，就天马行空，只有你想不到的没有他做不到的。
 
 轮询
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/nginx/kuangstudy4d33dfac-1949-4b2d-abb8-fe0b6e65b8dc.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/nginx/kuangstudy4d33dfac-1949-4b2d-abb8-fe0b6e65b8dc.png)
 加权轮询
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/nginx/kuangstudyb1e3e440-4159-4259-a174-528b56cb04b2.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/nginx/kuangstudyb1e3e440-4159-4259-a174-528b56cb04b2.png)
 iphash对客户端请求的ip进行hash操作，然后根据hash结果将同一个客户端ip的请求分发给同一台服务器进行处理，可以解决session不共享的问题。
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/nginx/kuangstudy64acb9a3-cd1a-4c0e-a1fa-9b220046a95a.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/nginx/kuangstudy64acb9a3-cd1a-4c0e-a1fa-9b220046a95a.png)
 
 > 动静分离，在我们的软件开发中，有些请求是需要后台处理的，有些请求是不需要经过后台处理的（如：css、html、jpg、js等等文件），这些不需要经过后台处理的文件称为静态文件。让动态网站里的动态网页根据一定规则把不变的资源和经常变的资源区分开来，动静资源做好了拆分以后，我们就可以根据静态资源的特点将其做缓存操作。提高资源响应的速度。
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/nginx/kuangstudyedb1bbd6-e530-4aba-8fde-68658a10e73f.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/nginx/kuangstudyedb1bbd6-e530-4aba-8fde-68658a10e73f.png)
 
 目前，通过使用Nginx大大提高了我们网站的响应速度，优化了用户体验，让网站的健壮性更上一层楼！
 
@@ -60,7 +60,7 @@ http://nginx.org/en/download.html 下载稳定版本。
 以nginx/Windows-1.16.1为例，直接下载 nginx-1.16.1.zip。
 下载后解压，解压后如下：
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/nginx/kuangstudyb5a1d538-352c-4aa6-88f7-23d18f0588ab.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/nginx/kuangstudyb5a1d538-352c-4aa6-88f7-23d18f0588ab.png)
 
 **2、启动nginx**
 
@@ -74,13 +74,13 @@ http://nginx.org/en/download.html 下载稳定版本。
 
 直接在浏览器地址栏输入网址 [http://localhost:80](http://localhost/) 回车，出现以下页面说明启动成功！
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/nginx/kuangstudya21688c8-159e-4caa-8e65-3dc056b6b78e.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/nginx/kuangstudya21688c8-159e-4caa-8e65-3dc056b6b78e.png)
 
 **4、配置监听**
 
 nginx的配置文件是conf目录下的nginx.conf，默认配置的nginx监听的端口为80，如果80端口被占用可以修改为未被占用的端口即可。
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/nginx/kuangstudyf23105c4-b0b2-4e22-a1bf-b8098f40c144.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/nginx/kuangstudyf23105c4-b0b2-4e22-a1bf-b8098f40c144.png)
 
 当我们修改了nginx的配置文件nginx.conf 时，不需要关闭nginx后重新启动nginx，只需要执行命令 `nginx -s reload` 即可让改动生效
 
@@ -137,7 +137,7 @@ yum install -y openssl openssl-devel
 
 手动下载.tar.gz安装包，地址：https://nginx.org/en/download.html
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/nginx/kuangstudyf51b946d-fda4-4675-b913-2084e028a5c0.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/nginx/kuangstudyf51b946d-fda4-4675-b913-2084e028a5c0.png)
 
 下载完毕上传到服务器上 /root
 
@@ -168,7 +168,7 @@ make install
 
 查找安装路径： `whereis nginx`
 
- ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/nginx/kuangstudyf80f8dc2-d5df-4bc2-933d-6ce11f388f6e.png) 
+ ![img](https://cdn.kayleh.top/gh/kayleh/cdn4/nginx/kuangstudyf80f8dc2-d5df-4bc2-933d-6ce11f388f6e.png) 
 
 ## Nginx常用命令
 
@@ -183,7 +183,7 @@ ps aux|grep nginx  查看nginx进程
 
 启动成功访问 服务器ip:80
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn4/nginx/kuangstudyd64b251b-817c-436b-b7a0-57da7bb48cd1.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/nginx/kuangstudyd64b251b-817c-436b-b7a0-57da7bb48cd1.png)
 
 注意：如何连接不上，检查阿里云安全组是否开放端口，或者服务器防火墙是否开放端口！
 相关命令：
@@ -213,7 +213,7 @@ firewall-cmd --reload
 
 # 演示
 
-![nginx](https://cdn.jsdelivr.net/gh/kayleh/cdn4/nginx/nginx.png)
+![nginx](https://cdn.kayleh.top/gh/kayleh/cdn4/nginx/nginx.png)
 
 ```cmd
 upstream lb{

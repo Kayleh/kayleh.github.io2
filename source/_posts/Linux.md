@@ -11,7 +11,7 @@ date: 2020-07-02T21:26:15+08:00
 
 下载中文支持
 
-![1593837102375](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593837102375.png)
+![1593837102375](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593837102375.png)
 
 网络连接的三种形式
 
@@ -81,9 +81,9 @@ Linux文件系统采用的是级层式的树状结构，最上层的是根目录
 
 
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/clip_image004.png)  
+![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/clip_image004.png)  
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/clip_image0014.png)  
+![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/clip_image0014.png)  
 
 
 
@@ -103,33 +103,33 @@ XShell
 
 在使用SSH之前，可以先检查SSH服务有没有开启。使用命令：sudo ps -e | grep ssh来查看，如果返回的结果是“xxxx? 00:00:00 sshd”,代表服务开启。那个四个x代表四位数字，每台机数字不一样的，如图：
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/894368-20181110064124048-505138018.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/894368-20181110064124048-505138018.png)
 
 如果没有反应或者其他结果，再试着开启SSH服务。使用命令sudo /etc/init.d/ssh start来开启服务，如图：
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/894368-20181110064515920-1613146923.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/894368-20181110064515920-1613146923.png)
 
 如果是图中结果，说明没有安装SSH服务，此时需要安装 SSH服务，为了能提高安装成功率，建议先更新源：sudo apt-get update更新安装源，如图：
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/894368-20181110065024263-2090018697.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/894368-20181110065024263-2090018697.png)
 
 然后安装SSH服务，使用命令：sudo apt-get install openssh-server。如图：
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/894368-20181110065349975-237913277.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/894368-20181110065349975-237913277.png)
 
 等待安装结束即可。然后再次查看服务有没有启动：sudo ps -e | grep ssh：
 
- ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/894368-20181110065558878-1157322075.png)
+ ![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/894368-20181110065558878-1157322075.png)
 
 有sshd那个东西，说明服务启动了，如果需要再次确认或者没有图中的结果，使用命令来启动:sudo /etc/init.d/ssh start:
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/894368-20181110065759521-304903884.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/894368-20181110065759521-304903884.png)
 
 看到服务starting了，服务成功开启。另外，还有几条命令需要记住：
 
 sudo service ssh status 查看服务状态：
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/894368-20181110070229962-1792308008.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/894368-20181110070229962-1792308008.png)
 
 sudo service ssh stop 关闭服务：
 
@@ -143,13 +143,13 @@ Xshell新建会话，先查看linux的ip地址。
 ipconfig
 ```
 
-![1593769665771](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593769665771.png)
+![1593769665771](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593769665771.png)
 
 箭头指向的是ip地址。
 
 填写到xshell
 
-![1593769808715](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593769808715.png)
+![1593769808715](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593769808715.png)
 
 Ubuntu需要配置sshd服务
 
@@ -173,9 +173,9 @@ reboot
 
 端口号选择22
 
-![1593782048647](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593782048647.png)
+![1593782048647](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593782048647.png)
 
-**乱码解决**：![1593782224041](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593782224041.png)
+**乱码解决**：![1593782224041](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593782224041.png)
 
 选择要传输的文件，右键传输就可以了。
 
@@ -183,7 +183,7 @@ reboot
 
 ### Vi和Vim编辑器
 
- ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/078207F0-B204-4464-AAEF-982F45EDDAE9.jpg) 
+ ![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/078207F0-B204-4464-AAEF-982F45EDDAE9.jpg) 
 
 #### 正常模式
 
@@ -203,7 +203,7 @@ reboot
 
 #### 各模式之间的互相转换
 
-![1593783036444](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593783036444.png)
+![1593783036444](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593783036444.png)
 
 #### 快捷键的使用案例
 
@@ -229,7 +229,7 @@ hello.
 
 第三步: 输入 shift+g
 
- ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/vi-vim-cheat-sheet-sch.gif) 
+ ![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/vi-vim-cheat-sheet-sch.gif) 
 
 
 
@@ -273,7 +273,7 @@ sync：  把内存的数据同步到磁盘
 
  ### 用户管理
 
-  ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/clip_image003.gif)
+  ![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/clip_image003.gif)
 
 **说明**
 
@@ -412,11 +412,11 @@ usermod  -g 用户组 用户名
 
 /etc/inittab 的   `id:5:initdefault:`   这一行中的数字
 
-![1593838451860](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593838451860.png)
+![1593838451860](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593838451860.png)
 
 #### 指定运行级别
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/clip_image001.gif)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/clip_image001.gif)
 
 init [012356]
 
@@ -543,7 +543,7 @@ more 指令是一个基于 VI 编辑器的文本过滤器，它以全屏幕的�
 
 快捷键：
 
-![1593843318484](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593843318484.png)
+![1593843318484](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593843318484.png)
 
 #### less 指令
 
@@ -553,7 +553,7 @@ less 指令用来分屏查看文件内容，它的功能与 more 指令类似，
 less 要查看的文件
 ```
 
-![1593843382522](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593843382522.png)
+![1593843382522](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593843382522.png)
 
 #### > 指令 和 >> 指令
 
@@ -658,7 +658,7 @@ find 指令将从指定目录向下递归地遍历其各个子目录，将满足
 
 find  [搜索范围]  [选项]
 
-![1593844669367](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593844669367.png)
+![1593844669367](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593844669367.png)
 
 ```
 按文件名：根据名称查找/home 目录下的 hello.txt 文件
@@ -752,7 +752,7 @@ tar 指令 是打包指令，最后打包后的文件是 .tar.gz 的文件。
 tar	[选项]	XXX.tar.gz	打包的内容	(功能描述：打包目录，压缩后的文件格式.tar.gz)
 ```
 
-![1593845537786](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593845537786.png)
+![1593845537786](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593845537786.png)
 
 ```shell
 压缩多个文件，将  /home/a1.txt 和  /home/a2.txt 压缩成 a.tar.gz
@@ -782,7 +782,7 @@ tar -zxvf myhome.tar.gz -C /opt/
 
  
 
-![1593864434878](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593864434878.png)
+![1593864434878](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593864434878.png)
 
 
 
@@ -796,7 +796,7 @@ tar -zxvf myhome.tar.gz -C /opt/
 
 创建一个组 police,再创建一个用户 tom,将 tom 放在 police 组 ,然后使用 tom 来创建一个文件 ok.txt
 
-![1593864576338](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593864576338.png)
+![1593864576338](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593864576338.png)
 
 所有者👆
 
@@ -806,7 +806,7 @@ tar -zxvf myhome.tar.gz -C /opt/
 
 使用 root 创建一个文件 apple.txt ，然后将其所有者修改成 tom
 
-![1593864639589](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593864639589.png)
+![1593864639589](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593864639589.png)
 
 #### 组的创建
 
@@ -836,7 +836,7 @@ chgrp 组名 文件名
 
 使用 root 用户创建文件 orange.txt ,看看当前这个文件属于哪个组，然后将这个文件所在组，修改到 police 组 。
 
-![1593865387296](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593865387296.png)
+![1593865387296](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593865387296.png)
 
 #### 其它组
 
@@ -853,7 +853,7 @@ usermod –d  目录名 用户名  改变该用户
 
 创建一个土匪组（bandit）将 tom 这个用户从原来所在的 police 组，修改到 bandit(土匪) 组
 
-![1593865717951](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593865717951.png)
+![1593865717951](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593865717951.png)
 
 ### 权限的基本介绍
 
@@ -873,7 +873,7 @@ ls  -l 中显示的内容如下：
 
 4)第 7-9 位确定其他用户拥有该文件的权限 ---Other
 
-![1593865847037](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593865847037.png)
+![1593865847037](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593865847037.png)
 
 
 
@@ -937,15 +937,15 @@ u:所有者  g:所有组  o:其他人  a:所有人(u、g、o 的总和)
 3) chmod   a-x    文件目录名
 
 给 abc 文件 的所有者读写执行的权限，给所在组读执行权限，给其它组读执行权限。
-![1593866461439](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593866461439.png)
+![1593866461439](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593866461439.png)
 
 给 abc 文件的所有者除去执行的权限，增加组写的权限
 
-![1593866504885](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593866504885.png)
+![1593866504885](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593866504885.png)
 
 给 abc 文件的所有用户添加读的权限  
 
-![1593866558942](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593866558942.png)
+![1593866558942](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593866558942.png)
 
 #### 第二种方式：通过数字变更权限
 
@@ -979,13 +979,13 @@ chown newowner:newgroup file 	改变用户的所有者和所有组
 
 请将 /home/abc .txt 文件的所有者修改成 tom
 
-![1593866819855](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593866819855.png)
+![1593866819855](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593866819855.png)
 
 请将 /home/kkk 目录下所有的文件和目录的所有者都修改成 tom
 
 首选我们应该使用 root 操作。  
 
-![1593866872283](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593866872283.png)
+![1593866872283](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593866872283.png)
 
 #### 修改文件所在组-chgrp
 
@@ -1003,7 +1003,7 @@ chgrp bandit /home/abc.txt
 chgrp -R bandit /home/kkk
 ```
 
-![1593866984875](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593866984875.png)
+![1593866984875](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593866984875.png)
 
 ### 最佳实践-警察和土匪游戏
 
@@ -1021,31 +1021,31 @@ bash> groupadd bandit
 
 (2)  创建用户 
 
- ![1593867122713](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593867122713.png)
+ ![1593867122713](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593867122713.png)
 
- ![1593867129607](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593867129607.png)
+ ![1593867129607](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593867129607.png)
 
  (3)    jack 创建一个文件，自己可以读写，本组人可以读，其它组没人任何权限
 
- ![1593867173773](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593867173773.png)
+ ![1593867173773](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593867173773.png)
 
  (4)   jack 修改该文件，让其它组人可以读, 本组人可以读写
 
- ![1593867219396](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593867219396.png)
+ ![1593867219396](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593867219396.png)
 
  (5)   xh 投靠 警察，看看是否可以读写. 
 
 先用 root 修改 xh 的组 ：
 
- ![1593867266232](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593867266232.png)
+ ![1593867266232](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593867266232.png)
 
 使用 jack 给他的家目录 /home/jack 的所在组一个 rx 的权限
 
- ![1593867293834](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593867293834.png)
+ ![1593867293834](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593867293834.png)
 
 xh 需要重新注销在到 jack 目录就可以操作    jack 的文件  
 
-![1593867344404](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593867344404.png)
+![1593867344404](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593867344404.png)
 
 
 
@@ -1053,9 +1053,9 @@ xh 需要重新注销在到 jack 目录就可以操作    jack 的文件
 
 ### 原理  
 
-![1593948751281](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593948751281.png)
+![1593948751281](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593948751281.png)
 
-![1593948778770](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593948778770.png)
+![1593948778770](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593948778770.png)
 
 **crontab  进行 定时任务的设置**  
 
@@ -1073,7 +1073,7 @@ xh 需要重新注销在到 jack 目录就可以操作    jack 的文件
 crontab [选项]
 ```
 
-![1593948881827](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593948881827.png)
+![1593948881827](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593948881827.png)
 
 #### 要求
 
@@ -1099,11 +1099,11 @@ crontab [选项]
 
 #### 参数细节说明  
 
-![1593949018840](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593949018840.png)
+![1593949018840](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593949018840.png)
 
-![1593949051397](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593949051397.png)
+![1593949051397](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593949051397.png)
 
-![1593949079188](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593949079188.png)
+![1593949079188](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593949079188.png)
 
 ##### **案例 1**：每隔 1 分钟，就将当前的日期信息，追加到 /tmp/mydate 文件中
 
@@ -1181,7 +1181,7 @@ crontab -e
 
 #####  windows 下的磁盘分区
 
-![1593951062587](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593951062587.png)
+![1593951062587](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593951062587.png)
 
 #### 分区的方式：
 
@@ -1205,7 +1205,7 @@ crontab -e
 
 #### windows 下的磁盘分区
 
-![1593950528566](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593950528566.png)
+![1593950528566](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593950528566.png)
 
 ### Linux 分区
 
@@ -1215,7 +1215,7 @@ crontab -e
 
 2)Linux 采用了一种叫“载入”的处理方法，它的整个文件系统中包含了一整套的文件和目录， 且将一个分区和一个目录联系起来。这时要载入的一个分区将使它的存储空间在一个目录下获得。
 
-![1593950575312](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593950575312.png)
+![1593950575312](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593950575312.png)
 
 #### 硬盘说明
 
@@ -1227,15 +1227,15 @@ crontab -e
 
 ##### 使用 lsblk 指令查看当前系统的分区情况  
 
-![1593950651437](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593950651437.png)
+![1593950651437](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593950651437.png)
 
-![1593950681315](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593950681315.png)
+![1593950681315](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593950681315.png)
 
 #### 挂载的经典案例
 
 需求是给我们的 Linux 系统增加一个新的硬盘，并且挂载到/home/newdisk
 
-![1593950721662](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593950721662.png)
+![1593950721662](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593950721662.png)
 
 ### 如何增加一块硬盘
 
@@ -1259,15 +1259,15 @@ vim   /etc/fstab
 
 在【虚拟机】菜单中，选择【设置】，然后设备列表里添加硬盘，然后一路【下一步】，中间只有选择磁盘大小的地方需要修改，至到完成。然后重启系统（才能识别）！
 
-![1593953351911](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593953351911.png)
+![1593953351911](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593953351911.png)
 
-![1593953412730](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593953412730.png)
+![1593953412730](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593953412730.png)
 
-![1593953444288](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593953444288.png)
+![1593953444288](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593953444288.png)
 
-![1593953468858](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593953468858.png)
+![1593953468858](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593953468858.png)
 
-![1593953495297](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593953495297.png)
+![1593953495297](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593953495297.png)
 
 重启虚拟机reboot
 
@@ -1311,7 +1311,7 @@ w	写入并退出
 
 说明： 开始分区后输入 n，新增分区，然后选择 p ，分区类型为主分区。两次回车默认剩余全部空间。最后输入 w 写入分区并退出，若不保存退出输入 q。
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/clip_image005.jpg)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/clip_image005.jpg)
 
 ##### 虚拟机增加硬盘步骤 3
 
@@ -1355,7 +1355,7 @@ vim   /etc/fstab
 
  永久挂载通过修改实现挂载添加完成后  执行 –即刻生效
 
-![1593950964217](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1593950964217.png)
+![1593950964217](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1593950964217.png)
 
 ### 磁盘情况查询
 
@@ -1365,7 +1365,7 @@ vim   /etc/fstab
 df -h
 ```
 
-![1594016323677](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594016323677.png)
+![1594016323677](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594016323677.png)
 
 #### 查询指定目录的磁盘占用情况
 
@@ -1389,7 +1389,7 @@ du -h	/目录
 
 #### 查询 /opt 目录的磁盘占用情况，深度为 1  
 
-![1594016421875](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594016421875.png)
+![1594016421875](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594016421875.png)
 
 #### 磁盘情况-工作实用指令
 
@@ -1401,25 +1401,25 @@ du -h	/目录
 
 
 
-![1594016824199](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594016824199.png)
+![1594016824199](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594016824199.png)
 
 2)    统计/home 文件夹下目录的个数
 
-![1594016885378](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594016885378.png)
+![1594016885378](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594016885378.png)
 
 3)统计计/home 文件夹下文件的个数，包括子文件夹里的
 
-![1594016923222](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594016923222.png)
+![1594016923222](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594016923222.png)
 
 4)    统计文件夹下目录的个数，包括子文件夹里的
 
-![1594016946230](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594016946230.png)
+![1594016946230](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594016946230.png)
 
 5)以树状显示目录结构  
 
-![1594016968695](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594016968695.png)
+![1594016968695](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594016968695.png)
 
-![1594017008507](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594017008507.png)
+![1594017008507](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594017008507.png)
 
 ###  网络配置  
 
@@ -1427,21 +1427,21 @@ Linux 网络配置原理图(含虚拟机)
 
 目前我们的网络配置采用的是 NAT。
 
-![1594018740806](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594018740806.png)
+![1594018740806](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594018740806.png)
 
 #### 查看网络 IP 和网关
 
 查看虚拟网络编辑器  
 
-![1594018794841](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594018794841.png)
+![1594018794841](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594018794841.png)
 
 #### 修改 ip 地址(修改虚拟网络的 ip)
 
-![1594018819402](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594018819402.png)
+![1594018819402](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594018819402.png)
 
 #### 查看网关  
 
-![1594018857189](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594018857189.png)
+![1594018857189](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594018857189.png)
 
 #### 查看 windows 环境的中 VMnet8 网络配置 (ipconfig 指令)
 
@@ -1449,7 +1449,7 @@ Linux 网络配置原理图(含虚拟机)
 
 2)  界面查看
 
-![1594018892385](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594018892385.png)
+![1594018892385](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594018892385.png)
 
 #### ping 测试主机之间网络连通  
 
@@ -1457,13 +1457,13 @@ ping  目的主机 （功能描述：测试当前服务器是否可以连接目�
 
 **测试当前服务器是否可以连接百度**
 
-[root@hadoop100 桌面]# ping [www.baidu.com](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/http://www.baidu.com/)
+[root@hadoop100 桌面]# ping [www.baidu.com](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/http://www.baidu.com/)
 
 #### linux 网络环境配置
 
 **第一种方法(自动获取)**
 
-![1594018974152](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594018974152.png)
+![1594018974152](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594018974152.png)
 
 缺点: linux 启动后会自动获取 IP,缺点是每次自动获取的 ip 地址可能不一样。这个不适用于做服务器，因为我们的服务器的 ip 需要时固定的。  
 
@@ -1473,7 +1473,7 @@ ping  目的主机 （功能描述：测试当前服务器是否可以连接目�
 
 要求：将 ip 地址配置的静态的，ip 地址为 192.168.184.130
 
-![1594019066944](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594019066944.png)
+![1594019066944](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594019066944.png)
 
 修改后，一定要 重启服务
 
@@ -1481,7 +1481,7 @@ ping  目的主机 （功能描述：测试当前服务器是否可以连接目�
 
 2)  reboot 重启系统
 
-![1594019131820](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594019131820.png)
+![1594019131820](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594019131820.png)
 
 ## 进程管理  
 
@@ -1499,9 +1499,9 @@ ping  目的主机 （功能描述：测试当前服务器是否可以连接目�
 
 查看进行使用的指令是  ps ,一般来说使用的参数是 ps -aux
 
-![1594038649910](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594038649910.png)
+![1594038649910](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594038649910.png)
 
-![1594038680528](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594038680528.png)
+![1594038680528](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594038680528.png)
 
 #### ps 指令详解
 
@@ -1535,7 +1535,7 @@ ping  目的主机 （功能描述：测试当前服务器是否可以连接目�
 
 **要求：以全格式显示当前所有的进程，查看进程的父进程。**
 
-![1594038857538](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594038857538.png)
+![1594038857538](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594038857538.png)
 
 **•**  ps -ef 是以全格式显示当前所有的进程
 
@@ -1563,7 +1563,7 @@ ping  目的主机 （功能描述：测试当前服务器是否可以连接目�
 
 如果我们希望查看 sshd 进程的父进程号是多少，应该怎样查询 ？
 
-![1594038908719](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594038908719.png)
+![1594038908719](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594038908719.png)
 
 可以看到是1.
 
@@ -1585,19 +1585,19 @@ killall 进程名称（功能描述：通过进程名称杀死进程，也支持
 
 xshell用jack登录
 
-![1594039007134](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594039007134.png)
+![1594039007134](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594039007134.png)
 
 **终止远程登录服务 sshd, 在适当时候再次重启 sshd 服务**
 
-![1594039036135](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594039036135.png)
+![1594039036135](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594039036135.png)
 
 **终止多个 gedit 编辑器 【killall , 通过进程名称来终止进程】**  
 
-![1594039077859](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594039077859.png)
+![1594039077859](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594039077859.png)
 
 **强制杀掉一个终端**  
 
-![1594039104006](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594039104006.png)
+![1594039104006](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594039104006.png)
 
 #### 查看进程树 pstree
 
@@ -1613,7 +1613,7 @@ pstree [选项] ,可以更加直观的来看进程信息
 
 **树状的形式显示进程的 pid**  
 
-![1594039184688](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594039184688.png)
+![1594039184688](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594039184688.png)
 
 **树状的形式进程的用户 id pstree -u 即可。**  
 
@@ -1623,7 +1623,7 @@ pstree [选项] ,可以更加直观的来看进程信息
 
 在 CentOS7.0 后 不再使用 service ,而是 systemctl
 
-![1594039258444](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594039258444.png)
+![1594039258444](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594039258444.png)
 
 #### service 管理指令：
 
@@ -1633,9 +1633,9 @@ service  服务名 [start | stop | restart | reload | status]
 
 **查看当前防火墙的状况，关闭防火墙和重启防火墙。**
 
-![1594039305238](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594039305238.png)
+![1594039305238](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594039305238.png)
 
-![1594039336933](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594039336933.png)
+![1594039336933](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594039336933.png)
 
 CentOS用firewalld:   systemctl  status  firewalld
 
@@ -1647,7 +1647,7 @@ CentOS用firewalld:   systemctl  status  firewalld
 
 telnet不是命令的，是因为没有telnet客户端
 
-![1594039381169](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594039381169.png)
+![1594039381169](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594039381169.png)
 
 2)这种方式只是临时生效，当重启系统后，还是回归以前对服务的设置。
 
@@ -1657,11 +1657,11 @@ telnet不是命令的，是因为没有telnet客户端
 
 方式 1：使用 setup -> 系统服务 就可以看到。(空格选中，回车确认，tab切换)
 
-![1594039460191](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594039460191.png)
+![1594039460191](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594039460191.png)
 
 方式 2:     /etc/init.d/服务名称
 
-![1594039571261](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594039571261.png)
+![1594039571261](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594039571261.png)
 
 #### 服务的运行级别(runlevel):
 
@@ -1689,7 +1689,7 @@ Linux 系统有 7 种运行级别(runlevel)：常用的是级别 3 和 5
 
 #### 开机的流程说明  
 
-![1594039668145](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594039668145.png)
+![1594039668145](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594039668145.png)
 
 开机、BIOS自检、boot引导、init进程、判断运行级别、
 
@@ -1701,7 +1701,7 @@ Linux 系统有 7 种运行级别(runlevel)：常用的是级别 3 和 5
 查看服务 chkconfig --list|grep xxx
 ```
 
-![1594039757144](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594039757144.png)
+![1594039757144](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594039757144.png)
 
 
 
@@ -1713,7 +1713,7 @@ chkconfig   --level  5   服务名   on/off
 
 **将 sshd 服务在运行级别为 5 的情况下，不要自启动**  
 
-![1594039797350](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594039797350.png)
+![1594039797350](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594039797350.png)
 
 
 
@@ -1749,7 +1749,7 @@ bash> chkconfig  iptables  on
 top [选项]
 ```
 
-![1594039987313](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594039987313.png)
+![1594039987313](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594039987313.png)
 
 **监视特定用户**
 
@@ -1757,7 +1757,7 @@ top：输入此命令，按回车键，查看执行的进程。
 
 u：然后输入“u”回车，再输入用户名，即可
 
-![1594040023371](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594040023371.png)
+![1594040023371](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594040023371.png)
 
 **终止指定的进程**
 
@@ -1765,7 +1765,7 @@ top：输入此命令，按回车键，查看执行的进程。
 
 k：然后输入“k”回车，再输入要结束的进程 ID 号
 
-![1594040063985](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594040063985.png)
+![1594040063985](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594040063985.png)
 
 **指定系统状态更新的时间(每隔 10 秒自动更新， 默认是 3 秒)：**
 
@@ -1785,11 +1785,11 @@ netstat  -anp
 
 查看系统所有的网络服务
 
-![1594040174174](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594040174174.png)
+![1594040174174](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594040174174.png)
 
 查看服务名为 sshd 的服务的信息。
 
-![1594040196413](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594040196413.png)
+![1594040196413](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594040196413.png)
 
 ### RPM   和 YUM  
 
@@ -1805,7 +1805,7 @@ netstat  -anp
 
 请查询看一下，当前的 Linux 有没有安装 firefox .
 
-![1594089056566](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594089056566.png)
+![1594089056566](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594089056566.png)
 
 ### rpm 包名基本格式：
 
@@ -1827,7 +1827,7 @@ rpm -qa | more [分页显示]
 
 rpm -qa | grep X [rpm -qa | grep firefox ]
 
-![1594089139190](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594089139190.png)
+![1594089139190](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594089139190.png)
 
 rpm -q 软件包名 :查询软件包是否安装
 
@@ -1835,7 +1835,7 @@ rpm -q firefox
 
  rpm -qi 软件包名 ：查询软件包信息
 
-![1594089158445](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594089158445.png)
+![1594089158445](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594089158445.png)
 
 rpm -qi file  
 
@@ -1843,7 +1843,7 @@ rpm -ql 软件包名 :查询软件包中的文件
 
 rpm -ql firefox
 
-![1594089191772](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594089191772.png)
+![1594089191772](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594089191772.png)
 
 rpm -qf 文件全路径名 查询文件所属的软件包
 
@@ -1851,7 +1851,7 @@ rpm -qf /etc/passwd
 
 rpm -qf /root/install.log
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/clip_image001.jpg)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/clip_image001.jpg)
 
 #### 卸载 rpm 包：
 
@@ -1861,7 +1861,7 @@ rpm -e RPM 包的名称
 
 删除 firefox  软件包 
 
-![1594089294137](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594089294137.png)
+![1594089294137](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594089294137.png)
 
 
 
@@ -1895,13 +1895,13 @@ h=hash  进度条
 cp firefox-45.0.1-1.el6.centos.x86_64.rpm /opt/
 ```
 
-![1594089388980](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594089388980.png)
+![1594089388980](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594089388980.png)
 
 ### yum
 
->  Yum 是一个 [Shell ](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/https://baike.baidu.com/item/Shell)前端软件包管理器。基于 [RPM ](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/https://baike.baidu.com/item/RPM)包管理，能够从指定的服务器自动下载 RPM 包并且安装，可以自动处理依赖性关系，并且一次安装所有依赖的软件包。使用 yum 的前提是可以联网。
+>  Yum 是一个 [Shell ](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/https://baike.baidu.com/item/Shell)前端软件包管理器。基于 [RPM ](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/https://baike.baidu.com/item/RPM)包管理，能够从指定的服务器自动下载 RPM 包并且安装，可以自动处理依赖性关系，并且一次安装所有依赖的软件包。使用 yum 的前提是可以联网。
 
-![1594089423920](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594089423920.png)
+![1594089423920](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594089423920.png)
 
 ```shell
 查询 yum 服务器是否有需要安装的软件
@@ -1917,7 +1917,7 @@ yum install xxx	下载安装
 
 先查看一下 firefox    rpm 在 yum 服务器有没有  
 
-![1594089517271](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594089517271.png)
+![1594089517271](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594089517271.png)
 
 1)  安装
 
@@ -1925,9 +1925,9 @@ yum install firefox
 
 ## 搭建 JavaEE 环境  
 
-![1594089578388](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594089578388.png)
+![1594089578388](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594089578388.png)
 
-![1594089603193](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594089603193.png)
+![1594089603193](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594089603193.png)
 
 #### 安装 JDK
 
@@ -1937,7 +1937,7 @@ yum install firefox
 
 2)    配置环境变量的配置文件 vim    /etc/profile
 
-![1594089685175](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594089685175.png)
+![1594089685175](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594089685175.png)
 
 JAVA_HOME=/opt/jdk1.7.0_79 
 
@@ -1953,52 +1953,52 @@ export JAVA_HOME PATH
 
 4) 在任何目录下就可以使用 java 和 javac
 
-![1594089893452](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594089893452.png)
+![1594089893452](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594089893452.png)
 
 测试是否安装成功
 
-​                ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/clip_imag1e001.jpg)    
+​                ![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/clip_imag1e001.jpg)    
 编写一个简单的 输出
 
 Hello.java 输出"hello,world!"  
 
-![1594089954309](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594089954309.png)
+![1594089954309](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594089954309.png)
 
 #### 安装 tomcat
 
 1)  解压缩到/opt
 
-![1594089990057](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594089990057.png)
+![1594089990057](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594089990057.png)
 
 2)启动 tomcat    ./startup.sh
 
 先进入到 tomcat 的 bin 目录
 
-![1594090017998](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594090017998.png)
+![1594090017998](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594090017998.png)
 
-![1594090025822](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594090025822.png)
+![1594090025822](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594090025822.png)
 
 使用 Linux 本地的浏览是可以访问到 tomcat
 
 开放端口 8080 ,这样外网才能访问到 tomcat vim /etc/sysconfig/iptables
 
- ![1594090060315](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594090060315.png)
+ ![1594090060315](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594090060315.png)
 
 重启防火墙
 
-![1594090082996](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594090082996.png)
+![1594090082996](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594090082996.png)
 
 测试是否安装成功：
 
 在 windows、Linux  下  访问 http://linuxip:8080
 
-![1594090112721](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594090112721.png)
+![1594090112721](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594090112721.png)
 
 #### Eclipse 的安装
 
 1)  解压缩到/opt
 
-![1594090161102](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594090161102.png)
+![1594090161102](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594090161102.png)
 
 2)启动 eclipse，配置 jre 和 server
 
@@ -2008,7 +2008,7 @@ Hello.java 输出"hello,world!"
 
 3)编写 jsp 页面,并测试成功!
 
-![1594090202684](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/1594090202684.png)
+![1594090202684](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/1594090202684.png)
 
 #### mysql 的安装和配置
 
@@ -2059,7 +2059,7 @@ mysql -uroot -p
 chkconfig mysql on
 ```
 
-![1595838101340](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/Linux/D:\Blog\source\_posts\Linux\1595838101340.png)
+![1595838101340](https://cdn.kayleh.top/gh/kayleh/cdn/img/Linux/D:\Blog\source\_posts\Linux\1595838101340.png)
 
 拷贝配置文件
 

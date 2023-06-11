@@ -3,7 +3,7 @@ title: contract
 tags: [about]
 translate_title: contract
 date: 2020-07-15T21:57:44+08:00
-cover: https://cdn.jsdelivr.net/gh/kayleh/cdn/img/index8.jpg
+cover: https://cdn.kayleh.top/gh/kayleh/cdn/img/index8.jpg
 ---
 
 <!--more-->
@@ -49,5 +49,5 @@ cover: https://cdn.jsdelivr.net/gh/kayleh/cdn/img/index8.jpg
 
 ---
 
-<img src="https://cdn.jsdelivr.net/gh/kayleh/cdn/img/contract/wechat.jpg" alt="wechat" style="zoom: 33%;" />
+<img src="https://cdn.kayleh.top/gh/kayleh/cdn/img/contract/wechat.jpg" alt="wechat" style="zoom: 33%;" />
 

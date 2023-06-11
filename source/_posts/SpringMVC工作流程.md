@@ -8,7 +8,7 @@ translate_title: springmvc-work-stream
 
 ## SpringMVC工作流程
 
-![springmvc工作流程](https://cdn.jsdelivr.net/gh/kayleh/cdn2/springmvc工作流程/springmvc工作流程.png)
+![springmvc工作流程](https://cdn.kayleh.top/gh/kayleh/cdn2/springmvc工作流程/springmvc工作流程.png)
 
 - 处理模型数据方式一:将方法的返回值设置为ModelAndView
 

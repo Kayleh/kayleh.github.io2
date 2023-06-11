@@ -11,7 +11,7 @@ date: 2020-05-31T20:58:53+08:00
 
 在做社区项目的时候，发现了一个XSS漏洞。
 
-![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/XSS跨站脚本攻击/xss.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/XSS跨站脚本攻击/xss.png)
 
 
 
@@ -23,9 +23,9 @@ date: 2020-05-31T20:58:53+08:00
 
 示例：
 
- ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/XSS跨站脚本攻击/2.png) 
+ ![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/XSS跨站脚本攻击/2.png) 
 
- ![img](https://cdn.jsdelivr.net/gh/kayleh/cdn/img/XSS跨站脚本攻击/3.png) 
+ ![img](https://cdn.kayleh.top/gh/kayleh/cdn/img/XSS跨站脚本攻击/3.png) 
 
 然后客户端就调用脚本alert导致无限弹窗。
 

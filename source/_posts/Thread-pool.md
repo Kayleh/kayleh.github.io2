@@ -33,7 +33,7 @@ class FlashExecutor implements Executor {
 
 可以把这个任务 r 丢到一个 tasks 队列中，然后只启动一个线程，就叫它 **Worker** 线程吧，不断从 tasks 队列中取任务，执行任务。这样无论调用者调用多少次，永远就只有一个 Worker 线程在运行，像这样。
 
-![图片](https://cdn.jsdelivr.net/gh/kayleh/cdn4/Thread-pool/640.gif)
+![图片](https://cdn.kayleh.top/gh/kayleh/cdn4/Thread-pool/640.gif)
 
 这个设计有了三个重大的意义：
 
@@ -55,7 +55,7 @@ Worker 线程的数量要增加，但是具体数量要让使用者决定，调�
 
 \3. execute 方法仍然是直接把任务放到队列，但队列满了之后直接抛弃
 
-![图片](https://cdn.jsdelivr.net/gh/kayleh/cdn4/Thread-pool/640-1618937229662.gif)
+![图片](https://cdn.kayleh.top/gh/kayleh/cdn4/Thread-pool/640-1618937229662.gif)
 
 > 初始化的时候，就创建了一堆 Worker 线程在那空跑着，假如此时并没有异步任务提交过来执行，这就有点浪费了。
 >
@@ -71,25 +71,25 @@ Worker 线程的数量要增加，但是具体数量要让使用者决定，调�
 
 就像下面这样。
 
-![图片](https://cdn.jsdelivr.net/gh/kayleh/cdn4/Thread-pool/640-1618937168495.gif)
+![图片](https://cdn.kayleh.top/gh/kayleh/cdn4/Thread-pool/640-1618937168495.gif)
 
 > 在这个场景里，弹性就是在任务提交比较频繁，和任务提交非常不频繁这两种情况下，你这个代码是否有问题？
 >
 > 这个线程池，当提交任务的量突增时，工作线程和队列都被占满了，就只能走拒绝策略，其实就是被丢弃掉
 
-![图片](https://cdn.jsdelivr.net/gh/kayleh/cdn4/Thread-pool/640-1618937173510.gif)
+![图片](https://cdn.kayleh.top/gh/kayleh/cdn4/Thread-pool/640-1618937173510.gif)
 
 调用方可以通过设置很大的核心线程数 corePoolSize 来解决这个问题
 
-![图片](https://cdn.jsdelivr.net/gh/kayleh/cdn4/Thread-pool/640-1618937221389.gif)
+![图片](https://cdn.kayleh.top/gh/kayleh/cdn4/Thread-pool/640-1618937221389.gif)
 
 > 可以，但一般场景下 QPS 高峰期都很短，而为了这个很短暂的高峰，设置很大的核心线程数，简直太浪费资源了
 
 最大线程数 **maximumPoolSize**。当核心线程数和队列都满了时，新提交的任务仍然可以通过创建新的工作线程（叫它**非核心线程**），直到工作线程数达到 maximumPoolSize 为止，这样就可以缓解一时的高峰期了，而用户也不用设置过大的核心线程数。
 
-![图片](https://cdn.jsdelivr.net/gh/kayleh/cdn4/Thread-pool/640.png)
+![图片](https://cdn.kayleh.top/gh/kayleh/cdn4/Thread-pool/640.png)
 
-![图片](https://cdn.jsdelivr.net/gh/kayleh/cdn4/Thread-pool/640-1618937269134.gif)
+![图片](https://cdn.kayleh.top/gh/kayleh/cdn4/Thread-pool/640-1618937269134.gif)
 
 \1. 开始的时候和上一版一样，当 workCount < corePoolSize 时，通过创建新的 Worker 来执行任务。
 
@@ -101,11 +101,11 @@ Worker 线程的数量要增加，但是具体数量要让使用者决定，调�
 
 高峰时期的弹性搞定了，那自然就还要考虑低谷时期。当长时间没有任务提交时，核心线程与非核心线程都一直空跑着，浪费资源。我们可以给**非核心线程**设定一个超时时间 **keepAliveTime**，当这么长时间没能从队列里获取任务时，就不再等了，销毁线程。
 
-![图片](https://cdn.jsdelivr.net/gh/kayleh/cdn4/Thread-pool/640-1618937263714.gif)
+![图片](https://cdn.kayleh.top/gh/kayleh/cdn4/Thread-pool/640-1618937263714.gif)
 
 这回线程池在 QPS 高峰时可以临时扩容，QPS 低谷时又可以及时回收线程（非核心线程）而不至于浪费资源，真的显得十分 Q 弹呢。
 
-![图片](https://cdn.jsdelivr.net/gh/kayleh/cdn4/Thread-pool/640-1618937301920.gif)
+![图片](https://cdn.kayleh.top/gh/kayleh/cdn4/Thread-pool/640-1618937301920.gif)
 
 
 
@@ -151,5 +151,5 @@ public FlashExecutor(
 
 整个任务的提交流程是
 
-![图片](https://cdn.jsdelivr.net/gh/kayleh/cdn4/Thread-pool/640.webp)
+![图片](https://cdn.kayleh.top/gh/kayleh/cdn4/Thread-pool/640.webp)
 

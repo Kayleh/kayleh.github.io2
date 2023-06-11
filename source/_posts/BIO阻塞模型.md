@@ -10,7 +10,7 @@ translate_title: BIO-blocking-model
 
 ## 1. BIO阻塞模型
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/BIO阻塞模型/20200720183138508.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/BIO阻塞模型/20200720183138508.png)
 简述BIO模型中服务端与客户端的响应过程
 
 1. 服务器`serverSocket`先要和`端口`进行`绑定`
@@ -155,19 +155,19 @@ public class Client {
 ### 2.3 响应结果
 
 - **客户端**
-  ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/BIO阻塞模型/20200720183847235.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/BIO阻塞模型/20200720183847235.png)
 - **服务器**
-  ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/BIO阻塞模型/20200720183859453.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/BIO阻塞模型/20200720183859453.png)
 
 ## 3. 加深理解
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721182800674.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721182800674.png)
 
 # 实战
 
 ## 1. 概念图解
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721171646426.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721171646426.png)
 
 - BIO模型：客户端每有一个请求，服务端都要有一个线程来单独处理这个请求，典型的`一请求一应答`，java 1.4版本之前
 - 对于聊天室服务器，它有多个线程，其中一个为图上的`Acceptor线程`（ChatServer），它实现的就是对来自客户端的请求不断响应，创建分配处理线程；对应客户端的每一个请求，都有一个单独的处理线程
@@ -175,7 +175,7 @@ public class Client {
 
 ### 1.1 伪异步的优化
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721172110567.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721172110567.png)
 
 - 使用线程池的原因是因为防止一大批用户的响应，造成服务器过载，实现线程的复用，减少不停的创建删除线程造成的资源郎芬，这样也实现了BIO的伪异步IO通信
 
@@ -187,28 +187,28 @@ public class Client {
 
 ### 2.1 字段
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721183219259.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721183219259.png)
 
 ### 2.2 转发消息方法
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721184044934.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721184044934.png)
 
 ### 2.3 添加客户方法
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/BIO阻塞模型/2020072118380045.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/BIO阻塞模型/2020072118380045.png)
 
 ### 2.4 移除客户方法
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721183932390.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721183932390.png)
 
 ### 2.5 服务器主线程任务
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721184510239.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721184510239.png)
 
 ### 2.6 服务器处理线程任务
 
 - 实现Runnable接口，之后执行的时候将其传入到线程池中执行。
-  ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/BIO阻塞模型/2020072118470527.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/BIO阻塞模型/2020072118470527.png)
 
 ------
 
@@ -216,27 +216,27 @@ public class Client {
 
 ### 3.1 向服务端发送消息，让服务器转发给其他人
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721185036367.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721185036367.png)
 
 ### 3.2 接收服务端的消息
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721185104298.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721185104298.png)
 
 ### 3.3 主线程任务
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721185243618.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721185243618.png)
 
 ### 3.4 处理线程任务
 
 - 实现Runnable接口，创建线程时启动
-  ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721185400861.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/BIO阻塞模型/20200721185400861.png)
 
 ------
 
 ## 4. 测试结果
 
 **服务器端信息**
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kayleh/cdn2/IO/BIO阻塞模型/2020072118562745.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/BIO阻塞模型/2020072118562745.png)
 
 ------
 
