@@ -15,6 +15,4 @@ translate_title: Large-number-operations
 
 4 通过cf worker实现的反向代理,加速访问
 
-5 blog home 设置全局字体
-
 6 git action 自动化部署
