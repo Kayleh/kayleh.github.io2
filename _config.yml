@@ -160,10 +160,10 @@ Plugins:
 #   field: post
 
 #站点地图，seo搜索引擎需要
-#sitemap:
-#  path: sitemap.xml
-#baidusitemap:
-#  path: baidusitemap.xml
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
 
 # # 是否开启字数统计
 # #不需要使用，直接设置值为false，或注释掉
