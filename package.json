@@ -11,7 +11,7 @@
     "s": "hexo clean && hexo server",
     "g": "hexo clean && hexo generate",
     "d": "hexo deploy",
-    "ss":"/home/kayleh/Project/kayleh.github.io2/node_modules/hexo/bin/hexo server"
+    "ss": "/home/kayleh/Project/kayleh.github.io2/node_modules/hexo/bin/hexo server"
   },
   "hexo": {
     "version": "5.4.2"
@@ -54,7 +54,6 @@
     "hexo-renderer-pug": "^2.0.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^2.0.0",
-    "hexo-service-worker": "^1.0.1",
     "hexo-symbols-count-time": "^0.7.1",
     "hexo-tag-cloud": "^2.1.2",
     "hexo-theme-stellar": "^1.19.0",

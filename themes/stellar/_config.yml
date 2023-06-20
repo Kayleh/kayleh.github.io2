@@ -25,15 +25,16 @@ sidebar:
     home: '[导航](https://kayleh.top)'
     #about: '[关于](/about/)'
     notes: '[随记](/notes/)'
+    friends: '[友人帐](/friends/)'
+    more: '[更多](/more/)'
     # post: '[btn.blog](/)'
     # wiki: '[btn.wiki](/wiki/)'
-    # friends: '[友链](/friends/)'
     # about: '[关于](/about/)'
   # Sidebar widgets
   widgets:
     #### 自动生成的页面 ####
     # 主页
-    home: search, recent, timeline # for home
+    home: search, shici, recent, timeline # for home
     # 博客索引页
     blog_index: search_blog, recent, timeline # for categories/tags/archives
     # 文档索引页

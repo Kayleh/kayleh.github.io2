@@ -3,7 +3,7 @@ title: 写点什么呢
 mathjax: false
 date: 2022-11-09 15:12:23
 tags: algorithm
-translate_title: Large-number-operations
+translate_title: todolist
 ---
 
 1 java服务内第三方c程序导致服务终止的问题：
@@ -13,10 +13,14 @@ translate_title: Large-number-operations
 
 3 redis远程执行漏洞
 
-4 通过cf worker实现的反向代理,加速访问
-
-6 git action 自动化部署
-
 7 KMP算法
 
 8 快速幂
+
+8 创造一个并查集！
+
+9 快速幂
+
+10 哈夫曼树的应用
+
+11 
