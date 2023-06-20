@@ -13,8 +13,12 @@ translate_title: todolist
 
 3 redis远程执行漏洞
 
-4 通过cf worker实现的反向代理,加速访问
-
-6 git action 自动化部署
-
 7 KMP算法
+
+8 创造一个并查集！
+
+9 快速幂
+
+10 哈夫曼树的应用
+
+11 
