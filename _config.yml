@@ -367,7 +367,7 @@ neat_js:
 #
 #
 #
-cache: true
+cache: false
 #
 #import:
 #  meta:
