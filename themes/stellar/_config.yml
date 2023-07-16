@@ -116,7 +116,7 @@ comments:
   giscus:
     data-repo: Kayleh/kayleh.top.giscus # [在此输入仓库]
     data-repo-id: R_kgDOJrPWjA # [在此输入仓库 ID]
-    data-category: announcements # [在此输入分类名]
+    data-category: Announcements # [在此输入分类名]
     data-category-id: DIC_kwDOJrPWjM4CW9R6
     data-mapping: pathname
     data-strict: 0

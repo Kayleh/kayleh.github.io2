@@ -1,21 +1,36 @@
-[comment]: <> (---)
+---
+title: 项目
+date: 2022-11-24 02:17:26
+menu_id: more
+---
 
-[comment]: <> (title: create)
 
-[comment]: <> (date: 2022-11-24 02:17:26)
+[//]: # ({% link https://kayleh.top 标题 icon:https://cdn.kayleh.top/gh/kayleh/logo/logo.svg desc:备注 %})
 
-[comment]: <> (---)
+{% link https://kayleh.top Blog %}
 
-[comment]: <> ({% linkgrid %})
 
-[comment]: <> (Blog | https://kayleh.top | where i am | /images/@logo.svg)
+[//]: # ({% frame iphone11 img:/assets/wiki/prohud/toast/demo-loading.png video:/assets/wiki/prohud/toast/demo-loading.mp4 focus:top %})
 
-[comment]: <> (Github | https://www.github.com/kayleh | The home for all developers — including you. | /images/github.svg)
+[//]: # (https://cdn.kayleh.top/gh/kayleh/cdn/img/2.jpg)
 
-[comment]: <> (C| https://c.kayleh.top | C Language Guide | /images/C.png)
 
-[comment]: <> (shell | https://shell.kayleh.top | shell for my website | /images/command.png)
 
-[comment]: <> ({% endlinkgrid %})
+[//]: # ({% linkgrid %})
 
-[comment]: <> ({% label default@kayleh %})
+[//]: # ()
+[//]: # (Blog | https://kayleh.top | where i am | https://cdn.kayleh.top/gh/chanshiyucx/yoi/blog/avatar.jpg)
+
+[//]: # ()
+[//]: # (Github | https://www.github.com/kayleh | The home for all developers — including you. | /images/github.svg)
+
+[//]: # ()
+[//]: # (C| https://c.kayleh.top | C Language Guide | /images/C.png)
+
+[//]: # ()
+[//]: # (shell | https://shell.kayleh.top | shell for my website | /images/command.png)
+
+[//]: # ()
+[//]: # ({% endlinkgrid %})
+
+[//]: # ({% label default@kayleh %})
