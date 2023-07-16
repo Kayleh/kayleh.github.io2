@@ -15,8 +15,6 @@ translate_title: todolist
 
 7 KMP算法
 
-8 快速幂
-
 8 创造一个并查集！
 
 9 快速幂
