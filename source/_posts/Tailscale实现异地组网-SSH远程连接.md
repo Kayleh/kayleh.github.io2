@@ -1,13 +1,10 @@
 ---
 title: Tailscale实现异地组网+SSH远程连接
 tags: [ network ]
-categories: [ ]
 mathjax: false
 date: 2023-09-05 00:16:33
 description:
-cover:
-banner:
-translate_title:
+translate_title: tailscale-ssh-remote-connection
 ---
 
 # Tailscale实现异地组网+SSH远程连接
