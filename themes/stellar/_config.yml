@@ -22,11 +22,11 @@ sidebar:
     #title: '[<img no-lazy height="32px" src="https://cdn.kayleh.top/gh/kayleh/logo/logo.svg"/>](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
     title: '[config.title](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
   menu:
-    home: '[导航](https://kayleh.top)'
+    home: '[Site](https://kayleh.top)'
     #about: '[关于](/about/)'
-    notes: '[随记](/notes/)'
-    friends: '[友人帐](/friends/)'
-    more: '[更多](/more/)'
+    notes: '[Note](/notes/)'
+    friends: '[Friends](/friends/)'
+    more: '[more](/more/)'
     # post: '[btn.blog](/)'
     # wiki: '[btn.wiki](/wiki/)'
     # about: '[关于](/about/)'
@@ -204,19 +204,18 @@ footer:
     #   icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/social/942ebbf1a4b91.svg"/>'
     #   url: /about/#comments
   sitemap:
-    '博客':
-      - '[近期](/)'
-      - '[标签](/tags)'
-      - '[归档](/archives)'
-    '社交':
-      - '[友链](/friends)'
-    '更多':
-      - '[关于本站](/)'
+    'Blog':
+      - '[Tags](/tags)'
+      - '[Archives](/archives)'
+    'Social': #Social
+      - '[Friends](/friends)'
+    'More':
+      - '[More](/)'
   content: | # 支持 Markdown 格式
-    本站由 [@kayleh](/) 创建。
-    本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
-  # 主题用户越多，开发者维护和更新的积极性就越高，如果您喜欢本主题，请在适当的位置显示主题信息和仓库链接以表支持。
-
+    This site was created by [@kayleh](/).
+    Unless otherwise stated, all articles on this blog are licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. Please indicate the source when reprintin
+#    本站由 [@kayleh](/) 创建。
+#    本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
 
 ######## Tag Plugins ########
 tag_plugins:
@@ -329,7 +328,7 @@ plugins:
   # 需在Markdown文件开头加入mathjax: true
   # 推荐使用Pandoc: npm uninstall hexo-renderer-marked --save & npm install hexo-renderer-pandoc --save
   mathjax:
-    enable: false
+    enable: true
     cdn: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
   # Katex - The fastest math typesetting library for the web

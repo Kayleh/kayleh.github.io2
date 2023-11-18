@@ -9,7 +9,7 @@ description: "Dreamaker"
 keywords: kayleh,blog,algo,algorithm,cpp,java
 author: Kayleh
 # 多语言
-language: [zh-CN, en]
+language: [en] #zh-CN,
 #avatar: 您的头像链接
 avatar: https://cdn.kayleh.top/gh/kayleh/cdn/img/2.jpg
 #favicon: 您的网站icon
