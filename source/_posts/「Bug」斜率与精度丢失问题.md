@@ -2,7 +2,7 @@
 title: 超高精度计算
 mathjax: false
 date: 2022-11-09 15:12:23
-tags: algorithm
+tags: [algorithm]
 translate_title: Large-number-operations
 ---
 

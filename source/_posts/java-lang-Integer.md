@@ -2,7 +2,7 @@
 title: java.lang.Integer
 mathjax: false
 date: 2021-12-24 13:13:16
-tags: jdk
+tags: [jdk]
 translate_title: Integer
 ---
 

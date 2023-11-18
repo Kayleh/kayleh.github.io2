@@ -2,7 +2,7 @@
 title: 区间dp算法
 mathjax: false
 date: 2022-02-17 14:06:18
-tags: algorithm
+tags: [algorithm]
 translate_title: round-dp-algorithm
 ---
 

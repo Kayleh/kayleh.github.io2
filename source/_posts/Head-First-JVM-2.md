@@ -2,7 +2,7 @@
 title: Head First JVM(2)
 mathjax: false
 date: 2021-07-08 00:00:05
-tags: jvm
+tags: [jvm]
 translate_title: head-first-JVM(2)
 ---
 

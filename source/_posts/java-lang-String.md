@@ -2,7 +2,7 @@
 title: java.lang.String
 mathjax: false
 date: 2021-12-19 23:20:58
-tags: jdk
+tags: [jdk]
 translate_title: java.lang.String
 ---
 

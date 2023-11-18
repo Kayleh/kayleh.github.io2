@@ -2,7 +2,7 @@
 title: ⌈JVM⌋方法内联优化
 mathjax: false
 date: 2022-10-14 22:24:15
-tags: jvm
+tags: [jvm]
 translate_title: jvm-method-inline
 ---
 

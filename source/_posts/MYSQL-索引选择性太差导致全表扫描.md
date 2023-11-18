@@ -2,7 +2,7 @@
 title: MYSQL 索引选择性陷阱
 mathjax: false
 date: 2021-09-29 12:42:29
-tags: sql
+tags: [sql]
 translate_title: mysql-index-wrong
 ---
 

@@ -2,7 +2,7 @@
 title: 'uuid导致的MySQL性能问题'
 mathjax: false
 date: 2021-09-23 13:47:54
-tags: sql
+tags: [sql]
 translate_title: MYSQL-uuid-and-page-splitting
 ---
 

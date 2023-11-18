@@ -2,7 +2,7 @@
 title: dp矩阵数组优化、滚动数组、线性数组
 mathjax: false
 date: 2021-12-24 10:39:22
-tags: algorithm
+tags: [algorithm]
 translate_title: dp-array
 ---
 
