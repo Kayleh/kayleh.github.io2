@@ -36,6 +36,10 @@ Bellman–Ford 算法的基本思想是：**就是不断尝试对图上每一条
    > 如果第二步是`n`轮松弛操作，那么就无法判断负环，因为负环的最短路径包含`n`条边，所以进行`n`轮松弛操作后，负环的最短路径长度仍然会被更新。
 
 ```cpp
+struct Edge {
+    int a, b, w; // 边的起点、终点、权重
+} edges[m];
+
 int main{
     int n, m; // n个顶点，m条边
     cin >> n >> m; 
@@ -49,6 +53,7 @@ int main{
     for (int i = 0; i < m; i++) {
         int a, b, w;
         cin >> a >> b >> w;
+        edges[i] = {a, b, w};
         dis[b] = min(dis[b], dis[a] + w); // 松弛操作
         // dis[a] = min(dis[a], dis[b] + w); // 无向图
     }
@@ -105,6 +110,12 @@ SPFA 算法的基本思想是：**在 Bellman–Ford 算法中，我们每进行
 4. 返回结果：`dis[i]`即为起点到终点的最短路径长度。
 
 ```cpp
+struct Edge {
+    int a, b, w; // 边的起点、终点、权重
+    int ne; // 链表中的下一条边
+} edges[m];
+
+int h[N], e[M], w[M], ne[M], idx; // 链表的头结点、边的起点、终点、权重、下一条边、边的编号
 int main{
     int n, m; // n个顶点，m条边
     cin >> n >> m; 
