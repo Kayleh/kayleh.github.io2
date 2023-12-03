@@ -1,5 +1,5 @@
 ---
-title: Tailscale实现异地组网+SSH远程连接
+title: 异地组网+SSH实现
 tags: [ network ]
 mathjax: false
 date: 2023-09-05 00:16:33
@@ -47,6 +47,78 @@ ssh username@server_ip
 #username是服务器上的用户名，server_ip是服务器的IP地址, 如果是默认端口，可以不用指定端口号。
 ```
 
+#### VSCode Remote SSH
+
+在VSCode中，安装Remote SSH插件，然后通过Remote SSH插件，连接服务器，就可以在本地编辑服务器上的文件了。
+
+安装以下插件
+
+> Remote - SSH
+> Remote - SSH: Editing Configuration Files
+> Remote - SSH: Explorer
+
+在VSCode中，按下F1，输入Remote SSH，选择Remote-SSH: Open Configuration File，然后选择config文件，编辑config文件，添加以下内容
+
+```shell
+Host server
+    HostName server_ip
+    User username
+```
+
+#### 免密登录
+
+以下操作，以客户端和服务端都为Windows为例，Linux和MacOS类似。
+
+##### 客户端生成密钥
+
+在客户端上，打开PowerShell，输入以下命令，生成密钥
+
+```shell
+ssh-keygen
+```
+
+##### 服务端添加密钥
+
+拷贝客户端生成的公钥到服务端的.ssh目录下，在authorized_keys文件中追加粘贴。（如果没有authorized_keys文件，可以新建一个）
+
+然后编辑sshd_config文件，添加以下配置
+
+```shell
+PubkeyAuthentication yes
+AuthorizedKeysFile  .ssh/authorized_keys
+PasswordAuthentication no  (需要将默认的yes改为no,很重要)
+```
+
+注释掉以下配置
+
+```shell
+ #Match Group administrators
+       #AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys
+```
+
+重启sshd服务
+
+```shell
+net stop sshd
+net start sshd
+```
+
+##### 客户端免密登录
+
+编辑客户端的.ssh目录下的config文件，添加IdentityFile配置，内容为客户端的私钥路径。
+
+```shell
+Host server
+    HostName server_ip
+    User username
+    IdentityFile C:\Users\username\.ssh\id_rsa
+```
 
 
+#### Git保存用户名密码
 
+在客户端上，打开PowerShell，输入以下命令，保存用户名密码（需要输入过一次用户名密码）
+
+```shell
+git config --global credential.helper store 
+```
