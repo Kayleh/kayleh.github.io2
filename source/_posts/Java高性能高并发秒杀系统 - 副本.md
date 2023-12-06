@@ -20,7 +20,7 @@ description: MD5加密和全局异常处理器
 
 ## 2. 构建数据库表
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200709182209155.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200709182209155.png)
 
 ### 2.1 几个需要注意的点
 

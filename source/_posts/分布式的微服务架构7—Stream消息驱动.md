@@ -15,9 +15,9 @@ SpringCloud Stream消息驱动
 
 屏蔽底层消息中间件的差异，降低切换版本，统一消息的编程模型
 
-![1597388512890](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构7/1.png)
+![1597388512890](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构7/1.png)
 
-![1597388531508](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构7/2.png)
+![1597388531508](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构7/2.png)
 
 Spring Cloud Stream中文指导手册
 
@@ -27,7 +27,7 @@ https://m.wang1314.com/doc/webapp/topic/20971999.html
 
 ##### 标准MQ
 
-![1597828873174](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构7/3.png)
+![1597828873174](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构7/3.png)
 
 > 生产者/消费者之间靠消息媒介传递信息内容:\
 >
@@ -43,25 +43,25 @@ https://m.wang1314.com/doc/webapp/topic/20971999.html
 
 ##### 为什么用Cloud Stream
 
-![1598076856767](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构7/1598076856767.png)
+![1598076856767](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构7/1598076856767.png)
 
-![1598076876160](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构7/4.png)
+![1598076876160](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构7/4.png)
 
-![1598076887339](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构7/1598076887339.png)
+![1598076887339](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构7/1598076887339.png)
 
 stream凭什么可以统一底层差异
 
-![1597828959376](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构7/5.png)
+![1597828959376](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构7/5.png)
 
-![1597828966885](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构7/6.png)
+![1597828966885](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构7/6.png)
 
 Binder
 
-![1597828986684](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构7/8.png)
+![1597828986684](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构7/8.png)
 
-![1597828994579](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构7/7.png)
+![1597828994579](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构7/7.png)
 
-![1597829004031](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构7/9.png)
+![1597829004031](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构7/9.png)
 
 > INPUT对应于消费者
 >
@@ -77,9 +77,9 @@ Topic主题进行广播
 
 ##### Spring Cloud Stream标准流程套路
 
-![1597829077773](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构7/10.png)
+![1597829077773](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构7/10.png)
 
-![1597829087752](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构7/11.png)
+![1597829087752](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构7/11.png)
 
 > **Binder**
 >
@@ -95,7 +95,7 @@ Topic主题进行广播
 
 ##### 编码API和常用注解
 
-![1597829175675](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构7/12.png)
+![1597829175675](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构7/12.png)
 
 # 案例说明
 
@@ -613,9 +613,9 @@ public class ReceiveMessageListenerController
 >
 > 生产实际案例
 >
-> ![1597830160806](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构7/13.png)
+> ![1597830160806](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构7/13.png)
 >
-> ![1597830172304](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构7/14.png)
+> ![1597830172304](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构7/14.png)
 
 ##### 分组
 
@@ -647,7 +647,7 @@ public class ReceiveMessageListenerController
   >
   > 我们自己配置
   >
-  > ![1597830340659](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构7/15.png)
+  > ![1597830340659](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构7/15.png)
   >
   > 结论
   >

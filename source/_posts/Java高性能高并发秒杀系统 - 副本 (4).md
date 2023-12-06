@@ -12,19 +12,19 @@ description: JMeter压力测试
 ### 1.1 测试过程
 
 1. 打开jmeter.bat
-   ![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713193736717.png)
+   ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713193736717.png)
 2. 设置HTTP默认请求
-   ![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713193845955.png)
+   ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713193845955.png)
    编写协议和端口号
-   ![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713193919346.png)
+   ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713193919346.png)
 3. 编写测试HTTP请求
-   ![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713194035109.png)
+   ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713194035109.png)
    因为我们已经写过`默认设置`，我们就可以不用编写协议和地址了，如下，只需编写`请求类型`和`地址`即可
-   ![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/2020071319414434.png)
+   ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/2020071319414434.png)
 4. 添加聚合报告
 
 我们即可在报告中查看压测信息
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713194305250.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713194305250.png)
 
 ### 1.2 Linux top命令
 
@@ -37,11 +37,11 @@ description: JMeter压力测试
 ### 2.1 测试过程
 
 与上方基本一致，不过，要在测试的请求上，`添加CSV数据文件设置`
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713195835161.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713195835161.png)
 读取我们自己编写的配置文件，并且标注变量名称，如此，即可开始压测。
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713195944979.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713195944979.png)
 其中配置文件信息，用英文逗号隔开
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713201121978.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713201121978.png)
 
 ------
 
@@ -78,7 +78,7 @@ maven clean package
 ```
 
 打开jar包，我们进入META-INF目录下，打开MANIFEST.MF文件，我们可以发现如下语句
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713211114969.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713211114969.png)
 其中Main-Class为SpringBoot框架的启动类，在这个类中可以跟进看源码
 Start-Class为我们自己编写的启动类
 
@@ -143,6 +143,6 @@ public class MiaoshaApplication extends SpringBootServletInitializer {
 ```
 
 1. 将ROOT目录删除，并且把我们的war包修改为ROOT.war，放在webapps目录下，即可访问
-   ![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713203204970.png)
+   ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200713203204970.png)
 
 ------

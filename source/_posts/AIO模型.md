@@ -14,19 +14,19 @@ translate_title: AIO-blocking-model
 
 ### 1.1 BIO模型
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723190512937.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723190512937.png)
 
 - 我们的应用程序会首先`调用特定的函数`，这样才能去访问我们的操作系统。拿我们的BIO聊天室来说，我们在服务器上，想看一下客户端从网络上传递过来的数据有没有准备好，那么它会去询问操作系统有没有收到新的数据，如果没有收到，它会`一直阻塞`在这里，直到收到消息，并且已经`从系统内核缓冲区中拷贝到应用程序的缓冲区`中，这样这个调用才能够成功返回。这就是阻塞式IO，我们在等待的过程中，什么都做不了。
 
 ### 1.2 NIO模型
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723191219755.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723191219755.png)
 
 - 当我们的应用程序进行系统调用，询问数据有没有准备好，没有准备好的话，因为它是`非阻塞的`，所以`直接返回`；直到系统已经将内核缓冲区中的数据复制到应用程序的缓冲区中，这时我们再去询问数据有没有准备好的话，就能够获取到我们想要的数据了。但是它并不包括Selector监听模式，仅仅是NIO中的非阻塞式模型。
 
 #### 1.2.1 IO多路复用
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/202007231924362.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/202007231924362.png)
 
 - 这个模式对应的就是我们NIO聊天室中采用的模式，使用了Selector监听
 - 首先我们的应用程序发起新的询问，是不是有可用的数据进行操作了，如果数据这时没有准备好，`并不会如上NIO直接返回`，而是说，我们要求内核`监听`我们这个IO通道，直到它有了数据可以供我们的程序进行操作了，再来通知我们，这个监听的过程，就像我们聊天室中的`select()方法`，它是`阻塞`的。直到数据已经在系统内核缓存区中准备好了，它会通知你一下，告诉你可以执行系统调用，将缓存区中的数据复制到应用程序缓存区中，这时我们才真正获取到了我们想要的数据
@@ -34,7 +34,7 @@ translate_title: AIO-blocking-model
 
 ### 1.3 AIO模型（异步IO）
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723194710403.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723194710403.png)
 
 - BIO和NIO都是同步IO模型，这里我们说说AIO（异步）模型
 - 同步IO模型是当我们访问的这个数据无论有没有准备好，都会返回给你结果；当数据没有准备好的时候，我们没有能够获取数据，`如果我们再也不发起获取数据的请求，那么我们永远都不会再获取到这个数据`。异步IO就不同了，当你请求这个数据没有请求到，而`之后这个数据准备好了，它就会回去通知你`，可以来取这个数据了
@@ -47,7 +47,7 @@ translate_title: AIO-blocking-model
 
 ### 2.1 AIO中的异步操作
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723205527982.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723205527982.png)
 
 - 客户端对应AsynchronousSocketChannel
 - 服务端对应AsynchronousServerSocketChannel
@@ -57,13 +57,13 @@ translate_title: AIO-blocking-model
 
 ### 2.2 通过Future进行异步调用
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723210814302.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723210814302.png)
 
 - 注意其中Future的get()方法是阻塞式的
 
 ### 2.3 通过CompletionHandler（多用）
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723210919682.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723210919682.png)
 
 - 在执行操作的时候，传入CompletionHandler参数
 
@@ -75,29 +75,29 @@ translate_title: AIO-blocking-model
 
 #### 3.1.1 字段
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723211230958.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723211230958.png)
 
 #### 3.1.2 主方法
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723211619641.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723211619641.png)
 
 #### 3.1.3 AcceptHandler的实现
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723211813626.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723211813626.png)
 
 #### 3.1.4 ClientHandler的实现
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723213343220.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723213343220.png)
 
 ### 3.2 客户端
 
 #### 3.2.1 字段
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/2020072321343625.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/2020072321343625.png)
 
 #### 3.2.2 主方法
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723213746283.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723213746283.png)
 
 ------
 
@@ -320,19 +320,19 @@ public class Client {
 
 ## 5. 测试结果
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723214442368.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200723214442368.png)
 
 # 实战
 
 ## 1. AIO模型分析
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724200020715.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724200020715.png)
 
 - AsynchronousServerSocket：它属于一个`AsynchronousChannelGroup`，这个通道组，其实是被多个异步通道共享的资源群组，这里边我们之前提到过，有一个非常重要的资源：`线程池`，系统会利用线程池中的线程，来处理一些handler请求。系统利用这个资源组还为我们做了很多的事情，包括它能在数据准备好的时候通知我们和利用handler做一些异步的操作。当我们在创建AsynchronousServerSocket时(open())，我们可以自定义一个通道组，当然我们不传参的时候，系统会默认给我们一个群组。
 
 ------
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724195923945.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724195923945.png)
 
 - 当客户端请求与服务器建立连接时，系统会异步的调用AcceptHandler来处理连接请求，成功建立连接后，会返回一个AsynchronousSocketChannel对象，`每个对象`还会有一个`ClientHandler`来处理读写请求，在请求处理的过程中，并不是在主线程中完成的，而是通道组利用线程池资源，在不同的线程中完成异步处理。
 
@@ -344,27 +344,27 @@ public class Client {
 
 #### 2.1.1 字段
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/2020072420461170.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/2020072420461170.png)
 
 #### 2.1.2 主方法
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724204906660.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724204906660.png)
 
 #### 2.1.3 AcceptHandler
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724205358130.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724205358130.png)
 
 #### 2.1.4 ClientHandler（处理读写请求）
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724205908451.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724205908451.png)
 
 #### 2.1.5 添加和删除用户
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/2020072421010985.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/2020072421010985.png)
 
 #### 2.1.6 接收和转发方法
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724210243585.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724210243585.png)
 
 ### 2.2 客户端
 
@@ -372,22 +372,22 @@ public class Client {
 
 #### 2.2.1 主方法
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724210613293.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724210613293.png)
 
 #### 2.2.2 发送消息
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724210719163.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724210719163.png)
 
 #### 2.2.3 用户的输入线程
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724210827857.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724210827857.png)
 
 ------
 
 ## 3. 测试结果
 
 - 服务器端显示
-  ![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724210901364.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200724210901364.png)
 
 ------
 
@@ -730,7 +730,7 @@ public class UserInputHandler implements Runnable{
 3. AIO：接受的连接数目多，相对于NIO来说，是异步出来，可以接受某个任务花费过长的时间，但是开发难度比较高，维护起来也不简单。
 
 - 附：可以使用JDK文件夹下面的VisualVM来监控程序的使用情况
-  ![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200725151809156.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/IO/AIO%E6%A8%A1%E5%9E%8B/20200725151809156.png)
 
 ------
 

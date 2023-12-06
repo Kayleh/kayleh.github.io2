@@ -9,7 +9,7 @@ description: 秒杀功能的实现
 
 ## 1. 实现联表查询的一个小技巧
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200712214753389.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200712214753389.png)
 商品表和秒杀商品表是两个互相独立的表，其中的关联为`goods_id`，但是我要返回的对象，既想要商品表中的字段，又想要秒杀商品表中的字段，用下面这个方法，有点儿亮眼
 
 ```java
@@ -70,7 +70,7 @@ jdbc:mysql://xxx.xx.xxx.xxx:3306/miaosha?useUnicode=true&characterEncoding=utf-8
 
 ## 3. 秒杀功能实现的逻辑
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200712231043251.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200712231043251.png)
 
 ### 3.1 减少库存的sql语句
 

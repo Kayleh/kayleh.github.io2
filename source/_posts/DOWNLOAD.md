@@ -18,7 +18,7 @@ translate_title: Download
 
 当然，文件并不能被无限地分段，IDM 会设定一个段的阈值，当剩余的最大段小于这个阈值的时候，就不再分段了给空闲的线程了，只等待活动中的所有线程下载完毕。
 
-![img](https://gcore.jsdelivr.net/gh/kayleh/cdn4/DOWNLOAD/idm.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/DOWNLOAD/idm.png)
 
 说完 IDM 的下载策略，我们大致有了思路。不过优秀的软件不是一蹴而就的，虽然我们想写出像 IDM 的下载器，但还需要从简单的实现开始，不断迭代优化。
 
@@ -371,13 +371,13 @@ HttpDownloader 的入口方法为 get()，它的工作如下：
 
 首先是单个线程进行下载：
 
-![img](https://gcore.jsdelivr.net/gh/kayleh/cdn4/DOWNLOAD/downloader-one-threads.gif)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/DOWNLOAD/downloader-one-threads.gif)
 
 用时 54.133 秒，平均下载速度 42 KB/s。
 
 开启 10 个线程进行下载：
 
-![img](https://gcore.jsdelivr.net/gh/kayleh/cdn4/DOWNLOAD/downloader-ten-threads.gif)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn4/DOWNLOAD/downloader-ten-threads.gif)
 
 用时 10.144 秒，平均下载速度 228 KB/s。
 

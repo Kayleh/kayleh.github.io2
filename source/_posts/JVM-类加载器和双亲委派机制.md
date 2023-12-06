@@ -40,7 +40,7 @@ translate_title: JVM-classloader-and-parent-delegation-mechanism
 
 
 
-![img](https://gcore.jsdelivr.net/gh/kayleh/cdn2/JVM-类加载器和双亲委派机制/20161101164523853)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn2/JVM-类加载器和双亲委派机制/20161101164523853)
 
 
 
@@ -48,13 +48,13 @@ translate_title: JVM-classloader-and-parent-delegation-mechanism
 
 在操作系统之上。
 
-<img src="https://gcore.jsdelivr.net/gh/kayleh/cdn2/JVM-类加载器和双亲委派机制/JRE--JVM.png" alt="JRE--JVM" style="zoom: 33%;" />
+<img src="https://cdn.kayleh.top/gh/kayleh/cdn2/JVM-类加载器和双亲委派机制/JRE--JVM.png" alt="JRE--JVM" style="zoom: 33%;" />
 
 #### JVM的体系结构
 
 
 
-![JVM体系结构](https://gcore.jsdelivr.net/gh/kayleh/cdn2/JVM-类加载器和双亲委派机制/JVM体系结构.png)
+![JVM体系结构](https://cdn.kayleh.top/gh/kayleh/cdn2/JVM-类加载器和双亲委派机制/JVM体系结构.png)
 
 *栈用完系统会自动释放，不会有垃圾
 
@@ -68,7 +68,7 @@ translate_title: JVM-classloader-and-parent-delegation-mechanism
 
 > 加载Class文件
 
-<img src="https://gcore.jsdelivr.net/gh/kayleh/cdn2/JVM-类加载器和双亲委派机制/1607958651140.png" alt="1607958651140" style="zoom: 80%;" />
+<img src="https://cdn.kayleh.top/gh/kayleh/cdn2/JVM-类加载器和双亲委派机制/1607958651140.png" alt="1607958651140" style="zoom: 80%;" />
 
 #### 加载器分为
 
@@ -87,7 +87,7 @@ Class文件中的“类”从加载到JVM内存中，到卸载出内存过程有
 
 如下图所示：
 
-![img](https://gcore.jsdelivr.net/gh/kayleh/cdn2/JVM-类加载器和双亲委派机制/20160504235346278.png)
+![img](https://cdn.kayleh.top/gh/kayleh/cdn2/JVM-类加载器和双亲委派机制/20160504235346278.png)
 
 其中，加载、验证、准备、初始化、卸载的***\*开始顺序\****是确定的，注意，只是按顺序开始，进行与结束的顺序并不一定。解析阶段可能在初始化之后开始。
 

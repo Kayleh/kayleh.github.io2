@@ -18,47 +18,47 @@ SpringCloud Bus 消息总线
 
 ##### 是什么？
 
-![1597326106343](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构6/1.png)
+![1597326106343](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构6/1.png)
 
 Bus支持两种消息代理：RabbitMQ和Kafka
 
 ##### 能干嘛？
 
-![1597326181455](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构6/2.png)
+![1597326181455](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构6/2.png)
 
 ##### 为何被称为总线
 
-![1597326216800](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构6/3.png)
+![1597326216800](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构6/3.png)
 
 ## RabbitMQ环境配置
 
 安装Erlang，下载地址：http://erlang.org/download/otp_win64_21.3.exe
 
-![1597326251762](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构6/4.png)
+![1597326251762](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构6/4.png)
 
-![1597326263813](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构6/5.png)
+![1597326263813](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构6/5.png)
 
 安装RabbitMQ，下载地址
 
 https://dl.bintray.com/rabbitmq/all/rabbitmq-server/3.7.14/rabbitmq-server-3.7.14.exe
 
-![1597326363871](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构6/6.png)
+![1597326363871](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构6/6.png)
 
 进入RabbitMQ安装目录下的sbin目录
 
 如例我自己本机D:\scmq\rabbitmq_server-3.7.14\sbin
 
-![1597326403266](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构6/7.png)
+![1597326403266](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构6/7.png)
 
 输入以下命令启动管理功能
 
 rabbitmq-plugins enable rabbitmq_management
 
-![1597326436344](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构6/8.png)
+![1597326436344](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构6/8.png)
 
 可视化插件
 
-![1597326454063](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构6/9.png)
+![1597326454063](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构6/9.png)
 
 访问地址查看是否安装成功
 
@@ -200,15 +200,15 @@ public class ConfigClientController {
 
 1) 利用消息总线触发一个客户端/bus/refresh,而刷新所有客户端的配置
 
-![1597386232917](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构6/10.png)
+![1597386232917](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构6/10.png)
 
-![1597386240399](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构6/11.png)
+![1597386240399](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构6/11.png)
 
 2) 利用消息总线触发一个服务端ConfigServer的/bus/refresh端点,而刷新所有客户端的配置（更加推荐）
 
-![1597386285571](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构6/13.png)
+![1597386285571](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构6/13.png)
 
-![1597386240399](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构6/11.png)
+![1597386240399](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构6/11.png)
 
 > ####  图二的架构显然更加合适，图一不适合的原因如下
 >
@@ -362,7 +362,7 @@ management:
 >
 > 发送Post请求
 >
-> ![图像](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构6/12.png)
+> ![图像](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构6/12.png)
 >
 > ```cmd
 > curl -X POST "http://localhost:3344/actuator/bus-refresh"
@@ -397,7 +397,7 @@ management:
 
 我们这里以刷新运行在3355端口上的config-client为例.  只通知3355, 不通知3366
 
-![1597386973424](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构6/15.png)
+![1597386973424](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构6/15.png)
 
 ```cmd
 curl -X POST "http://localhost:3344/actuator/bus-refresh/config-client:3355"
@@ -405,5 +405,5 @@ curl -X POST "http://localhost:3344/actuator/bus-refresh/config-client:3355"
 
 #### 通知总结All
 
-![1597387025181](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构6/14.png)
+![1597387025181](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构6/14.png)
 

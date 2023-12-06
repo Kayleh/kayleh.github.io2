@@ -13,9 +13,9 @@ description: 安全优化,动态秒杀地址+数字公式验证码+接口限流�
 
 之前我们实现秒杀的时候是直接跳转到秒杀接口，使得我们每次的秒杀地址都是一样的，这样具有安全隐患，所以，我们将其改为动态地址，通过在前端上写一个方法进行跳转，如下所示。
 
-- 它会先跳转到`/miaosha/path`，获取秒杀地址中的`path值`，将其存储在Redis中![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200717200220865.png)
+- 它会先跳转到`/miaosha/path`，获取秒杀地址中的`path值`，将其存储在Redis中![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200717200220865.png)
 - 然后携带`path值`去访问真正的秒杀方法，在其中将`path`值与Redis中的值进行比较，一致才能继续秒杀
-  ![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200717200701223.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200717200701223.png)
 
 ### 1.2 获取路径的Java代码
 
@@ -52,7 +52,7 @@ description: 安全优化,动态秒杀地址+数字公式验证码+接口限流�
 
 ### 1.3 执行秒杀接口的修改
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200717212754253.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200717212754253.png)
 
 - 路径上，我们采用了RestFul风格，通过@PathVariable注解获取其中的路径值，并与redis服务器中的值进行比较，一致才能向下一步继续执行
 
@@ -65,11 +65,11 @@ description: 安全优化,动态秒杀地址+数字公式验证码+接口限流�
 ### 2.1 实现过程
 
 1. 首先，我们在路径获取中，添加了对验证码验证的步骤
-   ![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200717213516271.png)
+   ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200717213516271.png)
    在该方法中，实现的是将从前端获取的验证码与Redis存储的验证码进行验证，验证完成之后，就将它从Redis中移除，方法代码如下
-   ![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200717214223598.png)
+   ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200717214223598.png)
 2. 在此之前，前端验证码会和后端有一个响应，每次刷新验证码都会将其的正确结果同步到服务器的Redis上
-   ![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200717214411513.png)
+   ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200717214411513.png)
 
 ------
 
@@ -96,7 +96,7 @@ public @interface AccessLimit {
 - `@Target(ElementType.METHOD)`：表示注解修饰的是方法
 
 对我们想要限流的方法进行标记
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/2020071813164559.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/2020071813164559.png)
 
 ### 3.2 创建拦截器
 
@@ -152,7 +152,7 @@ public class AccessInterceptor extends HandlerInterceptorAdapter {
 
 - 继承`HandlerInterceptorAdapter`，重写`preHandle`方法
 - 重要的UserContext
-  ![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200718134859274.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200718134859274.png)
   我们看一下具体的实现
 
 ```java
@@ -174,12 +174,12 @@ public class UserContext {
 ```
 
 其中ThreadLocal()源码如下
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200718135610756.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200718135610756.png)
 
 ### 3.3 后序步骤解释
 
 **方法后边比较简单啦**
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200718144817668.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200718144817668.png)
 
 ### 3.4 切莫忘记配置，不配置约等于不加拦截器
 
@@ -208,6 +208,6 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 123456789101112131415161718192021
 ```
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200718144110839.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200718144110839.png)
 
 在这个配置类中，我们重写的是addInterceptors方法，将拦截器注入进来，加到配置中，(指定要拦截的地址这一步可以省略掉了，因为我们使用的是注解标记，前边有一处写错，开始写的是没有注解的话，返回false，这样全局都被拦截了，应该写成true，这样才能放行），接下来就可以使用了！

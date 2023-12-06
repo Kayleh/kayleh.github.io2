@@ -21,7 +21,7 @@ description: 引入RabbitMQ后的秒杀优化
 
 ## 2. 清晰框图解析
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200717154409401.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200717154409401.png)
 
 ------
 

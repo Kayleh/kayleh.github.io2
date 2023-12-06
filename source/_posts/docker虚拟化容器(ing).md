@@ -17,7 +17,7 @@ docker
 > Docker之所以发展如此迅速，也是因为它对此给出了一个标准化的解决方案。
 > 环境配置如此麻烦，换一台机器，就要重来一次，费力费时。很多人想到，能不能从根本上解决问题，软件可以带环境安装？也就是说，安装的时候，把原始环境一模一样地复制过来。开发人员利用 Docker 可以消除协作编码时“在我的机器上可正常工作”的问题。
 >
-> ![1598604152509](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/1.png)
+> ![1598604152509](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/1.png)
 > 之前在服务器配置一个应用的运行环境，要安装各种软件，就拿尚硅谷电商项目的环境来说吧，Java/Tomcat/MySQL/JDBC驱动包等。安装和配置这些东西有多麻烦就不说了，它还不能跨平台。假如我们是在 Windows 上安装的这些环境，到了 Linux 又得重新装。况且就算不跨操作系统，换另一台同样操作系统的服务器，要移植应用也是非常麻烦的。
 >
 > 传统上认为，软件编码开发/测试结束后，所产出的成果即是程序或是能够编译执行的二进制字节码等(java为例)。而为了让这些程序可以顺利执行，开发团队也得准备完整的部署文件，让维运团队得以部署应用程式，开发需要清楚的告诉运维部署团队，用的全部配置文件+所有软件环境。不过，即便如此，仍然常常发生部署失败的状况。Docker镜像的设计，使得Docker得以打破过去「程序即应用」的观念。透过镜像(images)将作业系统核心除外，运作应用程式所需要的系统环境，由下而上打包，达到应用程式跨平台间的无缝接轨运作。
@@ -27,7 +27,7 @@ docker
 Docker是基于Go语言实现的云开源项目。
 Docker的主要目标是“Build，Ship and Run Any App,Anywhere”，也就是通过对应用组件的封装、分发、部署、运行等生命周期的管理，使用户的APP（可以是一个WEB应用或数据库应用等等）及其运行环境能够做到“一次封装，到处运行”。
 
-![1598604211629](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/2.png)
+![1598604211629](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/2.png)
 
 Linux 容器技术的出现就解决了这样一个问题，而 Docker 就是在它的基础上发展过来的。将应用运行在 Docker 容器上面，而 Docker 容器在任何操作系统上都是一致的，这就实现了跨平台、跨服务器。只需要一次配置好环境，换到别的机子上就可以一键部署好，大大简化了操作
 
@@ -104,13 +104,13 @@ Docker 运行在 CentOS-6.5 或更高的版本的 CentOS 上，要求系统为64
 
 uname命令用于打印当前系统相关信息（内核版本号、硬件架构、主机名称和操作系统类型等）。
 
-![1598605075304](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/6.png)
+![1598605075304](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/6.png)
 
 查看已安装的CentOS版本信息（CentOS6.8有，CentOS7无该命令）
 
-![1598605093121](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/7.png)
+![1598605093121](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/7.png)
 
-![1598605106745](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/8.png)
+![1598605106745](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/8.png)
 
 ### Docker的基本组成
 
@@ -118,7 +118,7 @@ uname命令用于打印当前系统相关信息（内核版本号、硬件架构
 
 - Docker 镜像（Image）就是一个只读的模板。镜像可以用来创建 Docker 容器，一个镜像可以创建很多容器。
 
-  ![1](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/9.png)
+  ![1](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/9.png)
 
 容器（container）
 
@@ -152,7 +152,7 @@ uname命令用于打印当前系统相关信息（内核版本号、硬件架构
 
 ### Docker的架构图
 
-![1598605341500](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/10.png)
+![1598605341500](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/10.png)
 
 ## CentOS7安装Docker
 
@@ -172,7 +172,7 @@ uname命令用于打印当前系统相关信息（内核版本号、硬件架构
 
    CentOS7能上外网
 
-   ![1](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/5.png)
+   ![1](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/5.png)
 
    ```
    yum -y install gcc
@@ -274,7 +274,7 @@ uname命令用于打印当前系统相关信息（内核版本号、硬件架构
 
 登陆阿里云开发者平台,获取加速器地址
 
-![1598605448117](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/11.png)
+![1598605448117](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/11.png)
 
 配置本机Docker运行镜像加速器
 
@@ -288,7 +288,7 @@ vim /etc/sysconfig/docker
 other_args="--registry-mirror=https://你自己的账号加速信息.mirror.aliyuncs.com"
 ```
 
-![1598605528307](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/12.png)
+![1598605528307](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/12.png)
 
 
 重新启动Docker后台服务：service docker restart
@@ -297,7 +297,7 @@ Linux 系统下配置完加速器需要检查是否生效
 
 如果从结果中看到了配置的--registry-mirror参数说明配置成功，如下所示:
 
-![1598605562504](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/13.png)
+![1598605562504](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/13.png)
 
 ## 启动Docker后台容器(测试运行 hello-world)
 
@@ -305,19 +305,19 @@ Linux 系统下配置完加速器需要检查是否生效
 docker run hello-world
 ```
 
-![1598605611408](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/14.png)
+![1598605611408](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/14.png)
 
 输出这段提示以后，hello world就会停止运行，容器自动终止。
 
 - run干了什么
 
-![1598605642470](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/15.png)
+![1598605642470](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/15.png)
 
 ### Docker是怎么工作的
 
 > Docker是一个Client-Server结构的系统，Docker守护进程运行在主机上， 然后通过Socket连接从客户端访问，守护进程从客户端接受命令并管理运行在主机上的容器。 容器，是一个运行时环境，就是我们前面说到的集装箱。
 
-![1598605821646](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/16.png)
+![1598605821646](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/16.png)
 
 ### 为什么Docker比较比VM快
 
@@ -325,7 +325,7 @@ docker run hello-world
 >
 > (2)docker利用的是宿主机的内核,而不需要Guest OS。因此,当新建一个容器时,docker不需要和虚拟机一样重新加载一个操作系统内核。仍而避免引寻、加载操作系统内核返个比较费时费资源的过程,当新建一个虚拟机时,虚拟机软件需要加载Guest OS,返个新建过程是分钟级别的。而docker由于直接利用宿主机的操作系统,则省略了返个过程,因此新建一个docker容器只需要几秒钟。
 
-![1](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/17.png)
+![1](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/17.png)
 
 # Docker常用命令
 
@@ -341,7 +341,7 @@ docker run hello-world
 
   > 列出本地主机上的镜像
   >
-  > ![1598606088968](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/18.png)
+  > ![1598606088968](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/18.png)
   >
   > 各个选项说明:
   >
@@ -432,7 +432,7 @@ docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 
 - 启动交互式容器
 
-![1598606569114](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/19.png)
+![1598606569114](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/19.png)
 
 ```
 #使用镜像centos:latest以交互模式启动一个容器,在容器内执行/bin/bash命令。
@@ -533,13 +533,13 @@ docker logs -f -t --tail 容器ID
 
 - docker run -d centos /bin/sh -c "while true;do echo hello zzyy;sleep 2;done"
 
-  ![1](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/20.png)
+  ![1](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/20.png)
 
   *   -t 是加入时间戳
   *   -f 跟随最新的日志打印
   *   --tail 数字 显示最后多少条
 
-  ![1598606975626](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/21.png)
+  ![1598606975626](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/21.png)
 
 
 
@@ -576,13 +576,13 @@ docker inspect 容器ID
  docker cp  容器ID:容器内路径 目的主机路径
 ```
 
-![1598607114510](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/22.png)
+![1598607114510](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/22.png)
 
 
 
 小总结
 
-![1598607164719](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/docker虚拟化容器/23.png)
+![1598607164719](https://cdn.kayleh.top/gh/kayleh/cdn/img/docker虚拟化容器/23.png)
 
 ```
 

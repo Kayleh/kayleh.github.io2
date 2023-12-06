@@ -4,7 +4,7 @@ tags: [DistributedMicroservices]
 categories: [分布式]
 translate_title: springcloud-sleuth-distributed-request-link-tracking
 date: 2020-08-19T17:52:50+08:00
-cover: https://gcore.jsdelivr.net/gh/kayleh/cdn/img/index2.jpg
+cover: https://cdn.kayleh.top/gh/kayleh/cdn/img/index2.jpg
 ---
 
 SpringCloud Sleuth分布式请求链路追踪
@@ -13,7 +13,7 @@ SpringCloud Sleuth分布式请求链路追踪
 
 为什么会出现这个技术？需要解决哪些问题？
 
-![1597832055850](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构8/0.png)
+![1597832055850](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构8/0.png)
 
 <img src="1.png" alt="1597832064671" style="zoom: 50%;" />
 
@@ -23,7 +23,7 @@ Spring Cloud Sleuth提供了一套完整的服务跟踪的解决方案
 
 解决
 
-![1597832119213](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构8/2.png)
+![1597832119213](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构8/2.png)
 
 
 
@@ -41,7 +41,7 @@ zipkin-server-2.12.9.exec.jar
 
 java -jar zipkin-server-2.12.9-exec.jar
 
-![1597832503297](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构8/3.png)
+![1597832503297](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构8/3.png)
 
 
 
@@ -51,9 +51,9 @@ java -jar zipkin-server-2.12.9-exec.jar
 
 完整的调用链路
 
-![1597835169702](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构8/4.png)
+![1597835169702](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构8/4.png)
 
-![1597835215535](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构8/5.png)
+![1597835215535](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构8/5.png)
 
 Trace:类似于树结构的Span集合，表示一条调用链路，存在唯一标识
 
@@ -278,15 +278,15 @@ http://localhost/consumer/payment/zipkin
 
 会出现以下界面
 
-![1597835524811](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构8/6.png)
+![1597835524811](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构8/6.png)
 
 查看
 
-![1597835538196](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构8/7.png)
+![1597835538196](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构8/7.png)
 
 查看依赖关系
 
 原理
 
-![1597835568713](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构8/8.png)
+![1597835568713](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构8/8.png)
 

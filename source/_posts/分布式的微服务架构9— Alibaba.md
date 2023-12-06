@@ -14,25 +14,25 @@ SpringCloud Alibaba
 
 Spring Cloud Netflix项目进入维护模式
 
-![1597850443212](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构9/1.png)
+![1597850443212](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构9/1.png)
 
-![1597850459371](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构9/2.png)
+![1597850459371](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构9/2.png)
 
 SpringCloud NetFlix Projects Entering Maintenance Mode
 
 什么是维护模式
 
-![1597850522418](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构9/3.png)
+![1597850522418](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构9/3.png)
 
 进入维护模式意味着什么呢？
 
-![1597850556832](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构9/7.png)
+![1597850556832](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构9/7.png)
 
-![1597850565496](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构9/8.png)
+![1597850565496](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构9/8.png)
 
 SpringCloud alibaba带来了什么？
 
-![1597850587083](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构9/4.png)
+![1597850587083](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构9/4.png)
 
 能干吗
 
@@ -67,7 +67,7 @@ https://github.com/alibaba/spring-cloud-alibaba/blob/master/README-zh.md
 
 官网
 
-![1597850747004](https://gcore.jsdelivr.net/gh/kayleh/cdn/img/分布式的微服务架构9/6.png)
+![1597850747004](https://cdn.kayleh.top/gh/kayleh/cdn/img/分布式的微服务架构9/6.png)
 
 中文：
 

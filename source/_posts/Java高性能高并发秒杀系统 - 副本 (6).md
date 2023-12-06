@@ -11,11 +11,11 @@ description: Rabbit+接口优化
 
 ### 1.1 添加依赖
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716163301517.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716163301517.png)
 
 ### 1.2 添加配置信息
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716163454589.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716163454589.png)
 
 ------
 
@@ -84,13 +84,13 @@ public class MQSender {
 ```
 
 测试通过 ↓
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716165300289.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716165300289.png)
 
 ------
 
 ## 3. 预先配置
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716194032540.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716194032540.png)
 
 ------
 
@@ -100,23 +100,23 @@ public class MQSender {
 
 ### 4.1 进行配置
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716194739570.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716194739570.png)
 
 ### 4.2 编写消息发送者
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716194916953.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716194916953.png)
 
 ### 4.3 编写消息接收器
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716195031442.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716195031442.png)
 
 ### 4.4 测试结果
 
 - 我们只绑定了队列1和队列2，根据消息发送者，会为队列1和队列2各发送一条消息，队列1和队列2各收到一条消息
 - 测试内容
-  ![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/2020071619525022.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/2020071619525022.png)
 - 测试结果
-  ![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716195331704.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716195331704.png)
 
 ------
 
@@ -126,22 +126,22 @@ public class MQSender {
 
 ### 5.1 进行配置
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716195912138.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716195912138.png)
 
 ### 5.2 编写消息发送者
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/2020071620004565.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/2020071620004565.png)
 
 ### 5.3 编写消息接受器
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716195031442-1607862601760.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716195031442-1607862601760.png)
 
 ### 5.4 测试结果
 
 - 根据条件，我们可以知道Fanout Exchange进行广播，每个队列都会收到消息
-- 测试内容![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716200231166.png)
+- 测试内容![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716200231166.png)
 - 测试结果
-  ![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/2020071620031624.png)
+  ![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/2020071620031624.png)
 
 ------
 
@@ -151,18 +151,18 @@ public class MQSender {
 
 ### 6.1 进行配置
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716193836266.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716193836266.png)
 
 ### 6.2 编写消息发送者
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716193713119.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716193713119.png)
 
 ### 6.3 编写消息接收器
 
-![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716194217567.png)
+![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/20200716194217567.png)
 
 ### 6.4 测试结果
 
 - 根据匹配条件我们可以知道，只有3队列能接受到消息。
-- 测试内容![在这里插入图片描述](https://gcore.jsdelivr.net/gh/kayleh/cdn2/Java高性能高并发秒杀系统/2020071619431467.png)
+- 测试内容![在这里插入图片描述](https://cdn.kayleh.top/gh/kayleh/cdn2/Java高性能高并发秒杀系统/2020071619431467.png)
 - 测试结果
