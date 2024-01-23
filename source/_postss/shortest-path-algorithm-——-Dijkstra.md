@@ -4,7 +4,7 @@ tags: [ algorithm ]
 mathjax: true
 date: 2023-11-19 16:24:09
 description:
-translate_title: shortest-path-algorithm-Dijkstra
+slug: shortest-path-algorithm-Dijkstra
 ---
 
 ### Dijkstra

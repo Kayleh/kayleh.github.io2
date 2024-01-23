@@ -2,7 +2,7 @@
 title: "Improve Robustness (1)"
 date: 2021-05-12T23:44:09+08:00
 draft: false
-translate_title: Improve-Robustness-(1)
+slug: Improve-Robustness-(1)
 ---
 
 # 提高代码鲁棒性——（1）

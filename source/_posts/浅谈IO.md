@@ -3,7 +3,7 @@ title: Talk about:IO
 mathjax: false
 date: 2020-12-20T22:45:19+08:00
 tags: [io]
-translate_title: IO
+slug: IO
 ---
 
 # File对象

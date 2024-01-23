@@ -3,7 +3,7 @@ title: "Spring and Jwt"
 date: 2021-05-24T11:04:21+08:00
 draft: false
 tags: [frame]
-translate_title: spring-and-jwt
+slug: spring-and-jwt
 ---
 
 # 使用JWT

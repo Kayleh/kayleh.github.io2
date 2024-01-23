@@ -6,7 +6,7 @@ date: 2023-11-19 01:05:31
 description:
 cover:
 banner:
-translate_title: shortest-path-algorithm-Floyd
+slug: shortest-path-algorithm-Floyd
 ---
 
 ### Floyd

@@ -33,7 +33,7 @@ root: /
 # permalink: :year/:month/:day/:title/
 # permalink: archives/:title.html
 #:translate_title/
-permalink: :translate_title/
+permalink: :slug/
 
 # permalink: :year:month:day/:translate_title.html
 permalink_defaults:

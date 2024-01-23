@@ -1,7 +1,7 @@
 ---
 title: C pointer
 tags: [C]
-translate_title: c-pointer
+slug: c-pointer
 date: 2020-06-28T17:33:01+08:00
 ---
 

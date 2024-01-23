@@ -3,7 +3,7 @@ title: "Proxy"
 date: 2021-04-25T21:37:43+08:00
 draft: false
 tags: [java]
-translate_title: Proxy
+slug: Proxy
 ---
 
 代理模式是一种经典的设计模式，代理的意义在于生成代理对象，在服务提供方和使用方之间充当一个媒介，控制真实对象的访问。

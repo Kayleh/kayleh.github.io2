@@ -1,7 +1,7 @@
 ---
 title: Inversion of Control控制反转
 tags: [frame]
-translate_title: inversion-of-control
+slug: inversion-of-control
 date: 2020-05-13T16:42:55+08:00
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: jsdelivr的CDN加速缓存不刷新问题
 tags: [maintain]
-translate_title: the-cdn-acceleration-cache-of-jsdelivr-does-not-refresh
+slug: the-cdn-acceleration-cache-of-jsdelivr-does-not-refresh
 date: 2020-08-20T14:20:58+08:00
 cover: https://cdn.kayleh.top/gh/kayleh/cdn/img/index3.jpg
 ---

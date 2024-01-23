@@ -3,7 +3,7 @@ title: Native method?
 mathjax: false
 date: 2020-12-16T00:58:42+08:00
 tags: [jvm]
-translate_title: Native-method
+slug: Native-method
 ---
 
 #### Native 方法?

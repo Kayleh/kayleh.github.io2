@@ -1,7 +1,7 @@
 ---
 title: Reflection
 tags: [Interview]
-translate_title: reflection
+slug: reflection
 date: 2020-07-14T13:33:21+08:00
 ---
 

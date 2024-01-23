@@ -3,7 +3,7 @@ title: JVM classloader and parent delegation-mechanism
 mathjax: false
 date: 2020-12-14T21:28:57+08:00
 tags: [jvm]
-translate_title: JVM-classloader-and-parent-delegation-mechanism
+slug: JVM-classloader-and-parent-delegation-mechanism
 ---
 
 # JVM-类加载器和双亲委派机制

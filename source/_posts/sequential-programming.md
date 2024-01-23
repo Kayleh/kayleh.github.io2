@@ -3,7 +3,7 @@ title: sequential programming
 mathjax: false
 date: 2020-10-26T01:16:00+08:00
 tags: [C]
-translate_title: sequential-programming
+slug: sequential-programming
 ---
 
 # 顺序程序设计

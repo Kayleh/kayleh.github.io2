@@ -3,7 +3,7 @@ title: C programming
 mathjax: false
 date: 2020-10-26T01:14:40+08:00
 tags: [C]
-translate_title: C-programming
+slug: C-programming
 ---
 
 # 程序

@@ -3,7 +3,7 @@ title: head-first-SpringSecurity
 mathjax: false
 date: 2022-05-01 18:05:47
 tags: [frame]
-translate_title: head-first-SpringSecurity
+slug: head-first-SpringSecurity
 ---
 
 ### 一、权限认证 SpringSecurity

@@ -2,7 +2,7 @@
 title: SpringMVC@ModelAttribute的使用
 tags: [frame]
 categories: [SpringMVC]
-translate_title: use-of-springmvcmodelattribute
+slug: use-of-springmvcmodelattribute
 date: 2020-04-19T21:04:07+08:00
 ---
 

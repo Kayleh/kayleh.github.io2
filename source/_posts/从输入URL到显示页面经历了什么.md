@@ -3,7 +3,7 @@ title: What happened from entering the URL to displaying the page?
 mathjax: false
 date: 2021-03-31T01:22:51+08:00
 tags: [network]
-translate_title: What-happened-from-entering-the-URL-to-displaying-the-page
+slug: What-happened-from-entering-the-URL-to-displaying-the-page
 ---
 
 # 从输入URL到显示页面经历了什么?

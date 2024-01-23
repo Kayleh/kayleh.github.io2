@@ -3,7 +3,7 @@ title: Good use of pointers
 mathjax: false
 date: 2020-10-26T01:18:07+08:00
 tags: [C]
-translate_title: Good-use-of-pointers
+slug: Good-use-of-pointers
 ---
 
 # 善于利用指针

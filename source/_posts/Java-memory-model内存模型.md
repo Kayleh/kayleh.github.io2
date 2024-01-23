@@ -1,7 +1,7 @@
 ---
 title: JMM memory model
 tags: [JVM]
-translate_title: jmm-memory-model
+slug: jmm-memory-model
 date: 2020-12-17T02:40:45+08:00
 ---
 

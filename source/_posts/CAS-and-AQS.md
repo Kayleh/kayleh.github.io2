@@ -3,7 +3,7 @@ title: "CAS & AQS"
 date: 2021-04-19T01:43:22+08:00
 draft: false
 tags: [Concurrency]
-translate_title: CAS-&-AQS
+slug: CAS-&-AQS
 ---
 
 ## CAS（Compare And Swap）原理分析

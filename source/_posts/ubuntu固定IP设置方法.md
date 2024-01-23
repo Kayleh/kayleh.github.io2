@@ -3,7 +3,7 @@ title: ubuntu fixed IP setting method
 mathjax: false
 date: 2020-11-13T23:23:35+08:00
 tags: [linux]
-translate_title: ubuntu-set-ip
+slug: ubuntu-set-ip
 ---
 
 # ubuntu固定IP设置方法

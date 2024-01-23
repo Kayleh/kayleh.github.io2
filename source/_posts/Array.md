@@ -1,7 +1,7 @@
 ---
 title: Array
 tags: [Interview]
-translate_title: array
+slug: array
 date: 2020-07-14T13:29:08+08:00
 ---
 

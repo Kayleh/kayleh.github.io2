@@ -3,7 +3,7 @@ title: Download
 mathjax: false
 date: 2021-03-16T01:18:07+08:00
 tags: [C]
-translate_title: Download
+slug: Download
 ---
 
 # Java 多线程下载器的设计与实现

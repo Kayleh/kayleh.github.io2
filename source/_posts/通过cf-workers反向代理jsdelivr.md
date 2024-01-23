@@ -2,7 +2,7 @@
 title: 通过cf-workers反向代理jsdelivr
 tags: [network]
 date: 2023-06-12 13:11:15
-translate_title: reverse-proxy-jsdelivr-with-cf-workers
+slug: reverse-proxy-jsdelivr-with-cf-workers
 ---
 
 ## 1. 什么是cf-workers
