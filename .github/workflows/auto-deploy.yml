@@ -1,6 +1,6 @@
 name: auto deploy
 
-on:
+on: 
   workflow_dispatch:
   push:
 
