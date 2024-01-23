@@ -1,0 +1,58 @@
+baseURL = "https://Kayleh.com/"
+languageCode = "zh-cn"
+title = "Kayleh's blog"
+#theme = "github-style"
+theme = "hugo-theme-stack"
+googleAnalytics = "UA-123456-789"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+summaryLength = 1 #自动摘要
+
+[params]
+author = "Kayleh"
+description = "In solitude, where we are least alone."
+github = "Kayleh"
+facebook = "Kayleh"
+twitter = "Kayleh"
+linkedin = "Kayleh"
+instagram = "Kayleh"
+tumblr = "Kayleh"
+email = "Kayleh@gmail.com"
+url = "https://Kayleh.com"
+keywords = "blog, google analytics"
+rss = true
+lastmod = true
+userStatusEmoji = "😀"
+favicon = "https://cdn.kayleh.top/gh/kayleh/cdn/img/2.jpg"
+location = "China"
+enableGitalk = true
+
+[params.gitalk]
+clientID = "Your client ID"
+clientSecret = "Your client secret"
+repo = "Kayleh/kayleh.top.giscus"
+owner = "Kayleh"
+admin = "Kayleh"
+id = "location.pathname"
+labels = "gitalk"
+perPage = 15
+pagerDirection = "last"
+createIssueManually = true
+distractionFreeMode = false
+
+[[params.links]]
+title = "Link"
+href = "https://github.com/Kayleh"
+[[params.links]]
+title = "Link2"
+href = "https://Kayleh.com"
+icon = "https://Kayleh.com/images/avatar.png"
+
+[frontmatter]
+lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[permalinks]
+#posts = "/:year/:month/:title/"
+posts = "/:slug/"
+
+
