@@ -1,7 +1,7 @@
 ---
 title: Spring架构
 tags: [frame]
-translate_title: spring-architecture
+slug: spring-architecture
 date: 2020-04-19T20:40:54+08:00
 ---
 

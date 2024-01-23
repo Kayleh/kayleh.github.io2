@@ -4,7 +4,7 @@ title: Unitest framework
 mathjax: false
 date: 2021-02-13T00:00:57+08:00
 tags: [test]
-translate_title: Unitest-framework
+slug: Unitest-framework
 ---
 
 ![](https://cdn.kayleh.top/gh/kayleh/cdn3/Unitest-framework/1613147342997.png)

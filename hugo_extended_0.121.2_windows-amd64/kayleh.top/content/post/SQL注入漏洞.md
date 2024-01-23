@@ -3,7 +3,7 @@ title: SQL injection
 mathjax: false
 date: 2021-04-06T09:48:59+08:00
 tags: [security]
-translate_title: SQL-injection-vulnerability
+slug: SQL-injection-vulnerability
 ---
 
 # SQL注入

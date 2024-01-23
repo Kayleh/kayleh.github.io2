@@ -3,7 +3,7 @@ title: AIO blocking model
 mathjax: false
 date: 2020-12-05T11:57:07+08:00
 tags: [network]
-translate_title: AIO-blocking-model
+slug: AIO-blocking-model
 ---
 
 # AIO模型

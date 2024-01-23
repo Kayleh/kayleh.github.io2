@@ -1,7 +1,7 @@
 ---
 title: TCP/IP
 tags: [network]
-translate_title: tcpip
+slug: tcpip
 date: 2020-07-27T10:58:27+08:00
 ---
 

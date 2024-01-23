@@ -1,7 +1,7 @@
 ---
 title: SparseArray
 tags: [algorithm]
-translate_title: sparsearray
+slug: sparsearray
 date: 2020-05-07T21:28:41+08:00
 ---
 

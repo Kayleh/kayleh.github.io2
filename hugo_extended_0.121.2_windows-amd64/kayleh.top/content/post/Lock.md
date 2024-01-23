@@ -1,7 +1,7 @@
 ---
 title: Lock
 tags: [Interview]
-translate_title: lock
+slug: lock
 date: 2020-07-14T13:31:29+08:00
 ---
 

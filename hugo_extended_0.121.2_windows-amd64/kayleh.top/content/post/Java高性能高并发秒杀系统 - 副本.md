@@ -3,7 +3,7 @@ title: Java高性能高并发秒杀系统(2)
 mathjax: false
 date: 2020-11-06T20:13:45+08:00
 tags: [project]
-translate_title: Java-high-performance-and-high-concurrency-spike-system-2
+slug: Java-high-performance-and-high-concurrency-spike-system-2
 description: MD5加密和全局异常处理器
 ---
 

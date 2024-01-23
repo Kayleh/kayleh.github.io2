@@ -1,7 +1,7 @@
 ---
 title: Stack
 tags: [algorithm]
-translate_title: stack
+slug: stack
 date: 2020-05-11T15:30:11+08:00
 ---
 

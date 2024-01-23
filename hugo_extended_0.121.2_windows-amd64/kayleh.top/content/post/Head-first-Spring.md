@@ -3,7 +3,7 @@ title: Head first Spring
 mathjax: false
 date: 2021-08-01 23:18:53
 tags: [framework]
-translate_title: Head-first-Spring
+slug: Head-first-Spring
 ---
 
 # Spring

@@ -1,7 +1,7 @@
 ---
 title: contract
 tags: [about]
-translate_title: contract
+slug: contract
 date: 2020-07-15T21:57:44+08:00
 cover: https://cdn.kayleh.top/gh/kayleh/cdn/img/index8.jpg
 ---

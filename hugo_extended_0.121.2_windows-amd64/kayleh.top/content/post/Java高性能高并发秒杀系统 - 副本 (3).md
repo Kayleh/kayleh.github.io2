@@ -3,7 +3,7 @@ title: Java高性能高并发秒杀系统(4)
 mathjax: false
 date: 2020-11-07T20:13:45+08:00
 tags: [project]
-translate_title: Java-high-performance-and-high-concurrency-spike-system-4
+slug: Java-high-performance-and-high-concurrency-spike-system-4
 description: 秒杀功能的实现
 ---
 

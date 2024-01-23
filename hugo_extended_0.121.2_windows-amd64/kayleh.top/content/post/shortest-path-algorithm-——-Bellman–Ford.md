@@ -6,7 +6,7 @@ date: 2023-11-19 01:30:30
 description:
 cover:
 banner:
-translate_title: shortest-path-algorithm-Bellman–Ford
+slug: shortest-path-algorithm-Bellman–Ford
 ---
 
 ### Bellman–Ford

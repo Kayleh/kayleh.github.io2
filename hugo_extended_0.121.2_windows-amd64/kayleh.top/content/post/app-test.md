@@ -3,7 +3,7 @@ title: app test
 mathjax: false
 date: 2021-03-04T00:49:54+08:00
 tags: [test]
-translate_title: app-test
+slug: app-test
 ---
 
 ## 移动端测试要点

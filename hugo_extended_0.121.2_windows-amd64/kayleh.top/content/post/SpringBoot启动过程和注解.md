@@ -2,7 +2,7 @@
 title: SpringBoot startup process
 tags: [frame]
 date: 2021-01-15T20:40:54+08:00
-translate_title: SpringBoot-startup-process
+slug: SpringBoot-startup-process
 ---
 
 ## SpringBoot应用启动流程

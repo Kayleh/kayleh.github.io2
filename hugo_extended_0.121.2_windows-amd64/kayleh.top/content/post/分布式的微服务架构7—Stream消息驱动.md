@@ -2,7 +2,7 @@
 title: SpringCloud Stream消息驱动
 tags: [DistributedMicroservices]
 categories: [分布式]
-translate_title: springcloud-stream-message-driver
+slug: springcloud-stream-message-driver
 date: 2020-08-14T23:33:07+08:00
 
 ---

@@ -3,7 +3,7 @@
 title: SpringCloud Alibaba
 tags: [DistributedMicroservices]
 categories: [分布式]
-translate_title: springcloud-alibaba
+slug: springcloud-alibaba
 date: 2020-08-19T20:25:56+08:00
 
 ---

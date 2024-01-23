@@ -2,7 +2,7 @@
 title: "SpringSecurity"
 date: 2021-05-21T11:56:08+08:00
 draft: false
-translate_title: SpringSecurity
+slug: SpringSecurity
 ---
 
 # SpringBoot整合SpringSecurity

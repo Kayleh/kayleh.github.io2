@@ -4,7 +4,7 @@ tags: [project, github]
 poster:
   color: '#1e90ff'
 date: 2023-06-19 00:28:17
-translate_title: ci-cd-continuous-delivery-continuous-integration-github-action-pages
+slug: ci-cd-continuous-delivery-continuous-integration-github-action-pages
 ---
 
 #### 1.什么是持续集成 、交付、部署

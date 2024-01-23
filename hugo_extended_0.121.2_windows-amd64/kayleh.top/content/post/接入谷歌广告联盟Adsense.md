@@ -1,7 +1,7 @@
 ---
 title: 'Traffic monetization:Access to Google Adsense'
 tags: [ad]
-translate_title: traffic-monetizationaccess-to-google-adsense
+slug: traffic-monetizationaccess-to-google-adsense
 date: 2020-08-21T15:23:22+08:00
 cover: https://cdn.kayleh.top/gh/kayleh/cdn/img/index1.jpg
 ---

@@ -1,7 +1,7 @@
 ---
 title: JDK
 tags: [Interview]
-translate_title: jdk
+slug: jdk
 date: 2020-07-14T13:32:29+08:00
 ---
 

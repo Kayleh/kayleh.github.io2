@@ -1,7 +1,7 @@
 ---
 title: Thread
 tags: [Interview]
-translate_title: thread
+slug: thread
 date: 2020-07-14T13:30:23+08:00
 ---
 

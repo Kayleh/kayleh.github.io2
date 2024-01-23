@@ -1,7 +1,7 @@
 ---
 title: Linux
 tags: [linux]
-translate_title: linux
+slug: linux
 date: 2020-07-02T21:26:15+08:00
 ---
 

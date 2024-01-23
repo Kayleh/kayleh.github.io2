@@ -3,7 +3,7 @@ title: C algorithm
 mathjax: false
 date: 2020-10-26T01:15:22+08:00
 tags: [C]
-translate_title: C-algorithm
+slug: C-algorithm
 ---
 
 ## 算法

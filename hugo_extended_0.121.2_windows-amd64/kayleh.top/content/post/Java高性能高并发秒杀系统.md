@@ -3,7 +3,7 @@ title: Java高性能高并发秒杀系统
 mathjax: false
 date: 2020-11-06T20:12:45+08:00
 tags: [project]
-translate_title: Java-high-performance-and-high-concurrency-spike-system
+slug: Java-high-performance-and-high-concurrency-spike-system
 description: 集成Mybatis和Redis的知识点
 ---
 

@@ -3,7 +3,7 @@ title: Sping框架编写RPC远程过程调用服务
 mathjax: false
 date: 2021-06-07 00:20:50
 tags:
-translate_title: RPC-remoteprocedure-call-service-written-by-spinning-framework
+slug: RPC-remoteprocedure-call-service-written-by-spinning-framework
 ---
 
 > https://www.jb51.net/article/87079.htm

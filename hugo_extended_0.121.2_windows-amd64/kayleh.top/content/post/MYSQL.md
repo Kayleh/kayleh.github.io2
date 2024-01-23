@@ -1,7 +1,7 @@
 ---
 title: MYSQL
 tags: [sql]
-translate_title: mysql
+slug: mysql
 date: 2020-08-02T22:54:25+08:00
 ---
 

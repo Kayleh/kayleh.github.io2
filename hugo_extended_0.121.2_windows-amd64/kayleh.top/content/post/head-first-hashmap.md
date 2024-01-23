@@ -3,7 +3,7 @@ title: "Head First Map"
 date: 2021-04-18T01:31:12+08:00
 draft: false
 tags: [algorithm]
-translate_title: Head-First-Map
+slug: Head-First-Map
 ---
 
 #  深入浅出Map

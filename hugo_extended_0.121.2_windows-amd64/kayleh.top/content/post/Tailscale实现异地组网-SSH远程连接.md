@@ -4,7 +4,7 @@ tags: [ network ]
 mathjax: false
 date: 2023-09-05 00:16:33
 description:
-translate_title: tailscale-ssh-remote-connection
+slug: tailscale-ssh-remote-connection
 ---
 
 # Tailscale实现异地组网+SSH远程连接

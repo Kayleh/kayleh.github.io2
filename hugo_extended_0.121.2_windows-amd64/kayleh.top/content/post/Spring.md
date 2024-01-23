@@ -1,7 +1,7 @@
 ---
 title: Spring
 tags: [Interview]
-translate_title: spring
+slug: spring
 date: 2020-07-14T13:40:15+08:00
 ---
 
