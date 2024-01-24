@@ -1,8 +1,9 @@
 name: auto deploy
 
-on: 
-  workflow_dispatch:
+on:
   push:
+    branches:
+      - dev_hugo  # Set a branch to deploy
 
 jobs:
   build:
@@ -36,7 +37,7 @@ jobs:
         # 配置 Git
         git config --global user.name 'kayleh's bot'
         git config --global user.email 'yaojinqing@kayleh.top'
-        
+
     # 4. 部署到 GitHub 仓库（可选）
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
