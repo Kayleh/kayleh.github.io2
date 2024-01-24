@@ -25,9 +25,6 @@ jobs:
         hugo-version: '0.121.2'
         extended: true
 
-    - name: 'cd '
-      run: 
-
     # 3. 生成静态文件
     - name: Generate Public Files
       run: |
