@@ -12,35 +12,31 @@ jobs:
     # 1. 获取源码
     - name: Checkout
       uses: actions/checkout@v3 # 使用 actions/checkout@v3
-      with: # 条件
-        submodules: false # Checkout private submodules(themes or something else). 当有子模块时切换分支？
+      with:
+        submodules: false  # Fetch Hugo themes (true OR recursive)
+        fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
     # 2. 配置环境
-    - name: Setup Node.js 16.15.0
-      uses: actions/setup-node@master
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
       with:
-        node-version: "16.15.0"
-    - name: '缓存依赖环境'
-      uses: actions/cache@v3
-      id: cache
-      with:
-        path: node_modules
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-    - name: '安装依赖环境'
-      if: steps.cache.outputs.cache-hit != 'true'
-      run: npm ci
+        # hugo-version: '${{ steps.hugo-version.outputs.HUGO_VERSION }}'
+        hugo-version: '0.121.2'
+        extended: true
+
+    - name: 'cd '
+      run: cd ./hugo_extended_0.121.2_windows-amd64/kayleh.top/
+
     # 3. 生成静态文件
     - name: Generate Public Files
       run: |
-        npm i
-        npm install hexo-cli -g
-        hexo clean && hexo generate
+        hugo --minify
         # 配置 SSH
         mkdir -p ~/.ssh && echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa  && ssh-keyscan github.com >> ~/.ssh/known_hosts
         # 配置 Git
-        git config --global user.name 'kayleh'
+        git config --global user.name 'kayleh's bot'
         git config --global user.email 'yaojinqing@kayleh.top'
+        
     # 4. 部署到 GitHub 仓库（可选）
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
