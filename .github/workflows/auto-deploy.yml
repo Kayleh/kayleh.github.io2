@@ -26,11 +26,12 @@ jobs:
         extended: true
 
     - name: 'cd '
-      run: cd ./hugo_extended_0.121.2_windows-amd64/kayleh.top/
+      run: 
 
     # 3. 生成静态文件
     - name: Generate Public Files
       run: |
+        cd ./hugo_extended_0.121.2_windows-amd64/kayleh.top/
         hugo --minify
         # 配置 SSH
         mkdir -p ~/.ssh && echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa  && ssh-keyscan github.com >> ~/.ssh/known_hosts
