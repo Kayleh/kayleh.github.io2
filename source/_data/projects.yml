@@ -1,9 +1,0 @@
-Notes:
-  name: 笔记
-  title: 笔记
-  description: 一个隐藏项目：笔记
-  index: false
-  # sidebar: [toc]
-  tags: 知识库
-  sections:
-    '在线工具': [400, 499]
