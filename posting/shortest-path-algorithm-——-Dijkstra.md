@@ -1,7 +1,7 @@
 ---
 title: shortest path algorithm —— Dijkstra
 tags: [ algorithm ]
-mathjax: true
+math: true
 date: 2023-11-19 16:24:09
 description:
 slug: shortest-path-algorithm-Dijkstra

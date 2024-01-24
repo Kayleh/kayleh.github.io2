@@ -1,0 +1,1 @@
+cd .\hugo_extended_0.121.2_windows-amd64\kayleh.top\ &&  ..\hugo.exe server

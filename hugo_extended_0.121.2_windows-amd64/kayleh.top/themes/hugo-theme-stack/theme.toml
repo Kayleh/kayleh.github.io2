@@ -4,7 +4,7 @@
 name = "Stack"
 license = "GPL-3.0-only"
 licenselink = "https://github.com/CaiJimmy/hugo-theme-stack/blob/master/LICENSE"
-description = "Card-style Hugo theme designed for bloggers"
+description = "bloggers"
 homepage = "https://github.com/CaiJimmy/hugo-theme-stack"
 demosite = "https://demo.stack.jimmycai.com"
 
@@ -23,5 +23,5 @@ features = [
 min_version = "0.87.0"
 
 [author]
-name = "Jimmy Cai"
-homepage = "https://jimmycai.com"
+name = "Kayleh"
+homepage = "https://kayleh.top"
