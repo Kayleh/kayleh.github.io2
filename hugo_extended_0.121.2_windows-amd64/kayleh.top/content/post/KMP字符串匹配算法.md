@@ -1,9 +1,12 @@
-+++
-title = 'KMP字符串匹配算法'
-date = 2024-02-24T22:58:10+08:00
-draft = true
+---
+title: KMP字符串匹配算法
+tags: [ algorithm ]
+mathjax: true
+date: 2023-07-30 01:50:06
+slug: disjoint-set-union-find-technique-appreciation
+draft: true
 slug: kmp-string-matching-algorithm
-+++
+---
 
 ## 1. 算法简介
 
