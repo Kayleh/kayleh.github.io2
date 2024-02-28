@@ -2,7 +2,7 @@
 title: KMP字符串匹配算法
 tags: [ algorithm ]
 mathjax: true
-date: 2023-07-30 01:50:06
+date: 2024-02-28 01:50:06
 slug: disjoint-set-union-find-technique-appreciation
 draft: true
 slug: kmp-string-matching-algorithm
