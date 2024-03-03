@@ -1,10 +1,9 @@
 ---
-title: KMP字符串匹配算法
+title: kmp-字符串匹配算法
 tags: [ algorithm ]
 mathjax: true
-date: 2024-02-28 01:50:06
-slug: disjoint-set-union-find-technique-appreciation
-draft: true
+date: 2024-02-27 01:50:06
+draft: false
 slug: kmp-string-matching-algorithm
 ---
 
@@ -24,20 +23,22 @@ KMP（Knuth-Morris-Pratt）算法是一种改进的字符串搜索算法，由Do
 | 部分匹配值 | 0   | 0   | 0   | 0   | 1   | 2   | 0   |
 
 > 详细的，
-> "A"的前缀和后缀都为空集，共有元素的长度为0；
+> "A"的前缀和后缀都为空集，共有元素的长度为`0`；
 >
-> "AB"的前缀为[A]，后缀为[B]，共有元素的长度为0；
+> "AB"的前缀为[A]，后缀为[B]，共有元素的长度为`0`；
 >
-> "ABC"的前缀为[A, AB]，后缀为[BC, C]，共有元素的长度0；
+> "ABC"的前缀为[A, AB]，后缀为[BC, C]，共有元素的长度`0`；
 >
-> "ABCD"的前缀为[A, AB, ABC]，后缀为[BCD, CD, D]，共有元素的长度为0；
+> "ABCD"的前缀为[A, AB, ABC]，后缀为[BCD, CD, D]，共有元素的长度为`0`；
 >
-> "ABCDA"的前缀为[A, AB, ABC, ABCD]，后缀为[BCDA, CDA, DA, A]，共有元素为"A"，长度为1；
+> "ABCDA"的前缀为[A, AB, ABC, ABCD]，后缀为[BCDA, CDA, DA, A]，共有元素为"A"，长度为`1`；
 >
-> "ABCDAB"的前缀为[A, AB, ABC, ABCD, ABCDA]，后缀为[BCDAB, CDAB, DAB, AB, B]，共有元素为"AB"，长度为2；
+> "ABCDAB"的前缀为[A, AB, ABC, ABCD, ABCDA]，后缀为[BCDAB, CDAB, DAB, AB, B]，共有元素为"AB"，长度为`2`；
 >
-> "ABCDABD"的前缀为[A, AB, ABC, ABCD, ABCDA, ABCDAB]，后缀为[BCDABD, CDABD, DABD, ABD, BD, D]，共有元素的长度为0。
+> "ABCDABD"的前缀为[A, AB, ABC, ABCD, ABCDA, ABCDAB]，后缀为[BCDABD, CDABD, DABD, ABD, BD, D]，共有元素的长度为`0`。
 >
+
+### 部分匹配表的实际作用
 
 通过预先计算出的部分匹配表，解决字符串模式匹配中的无效回溯问题。在朴素的字符串匹配算法中，如果一个字符不匹配，则需要将模式串整体回退一位，重新开始比较。而KMP算法通过部分匹配表，可以在发生不匹配时，利用这部分信息直接跳过已知的匹配前缀，避免无谓的重复比较。
 
