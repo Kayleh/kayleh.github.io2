@@ -1,5 +1,5 @@
 ---
-title: CI/CD 持续交付&持续集成(Github Action Pages)
+title: Github Action 持续集成
 tags: [project, github]
 poster:
   color: '#1e90ff'
