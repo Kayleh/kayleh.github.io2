@@ -12,7 +12,7 @@
   
 - [Cloudflare Pages](https://pages.cloudflare.com/)
 
-#### DNS
+#### domain && DNS
 
 - [Cloudflare](https://www.cloudflare.com/zh-cn/)
 
