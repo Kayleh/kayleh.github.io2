@@ -36,18 +36,17 @@ jobs:
         git config --global user.name 'kayleh'
         git config --global user.email 'yaojinqing@kayleh.top'
 
-    # 4. 部署到 GitHub 仓库（可选）
-    - name: Deploy to GitHub Pages
+      # 4. 部署到 GitHub 仓库（可选）
+    - name: Deploy to GitHub Pages2
       uses: peaceiris/actions-gh-pages@v3
       with:
         deploy_key: ${{ secrets.DEPLOY_KEY }}
-        external_repository: Kayleh/kayleh.github.io
-        publish_branch: master #gh-pages
+        external_repository: Kayleh/kayleh.github.io2
+        publish_branch: gh-pages
         publish_dir: ./hugo_extended_0.121.2_windows-amd64/kayleh.top/public
         commit_message: ${{ github.event.head_commit.message }}
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
-
 #    # 5. 部署到服务器（可选）
 #    - name: Deploy to Server
 #      uses: easingthemes/ssh-deploy@v3
