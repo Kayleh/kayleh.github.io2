@@ -104,5 +104,5 @@ theme: next
 #   type: ''
 deploy:
   type: git
-  repository: https://github.com/kayleh/kayleh.github.io.git
+  repository: git@github.com:Kayleh/kayleh.github.io.git
   branch: master
