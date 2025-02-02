@@ -16,7 +16,7 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v3 # 使用v2，会报错，更新到v3无报错。
         with:
-          ref: main
+          ref: master
 
       - name: Setup Node.js
         uses: actions/setup-node@v3 # 使用v1，会报错，更新到v3无报错。
