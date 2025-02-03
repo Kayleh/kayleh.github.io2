@@ -651,19 +651,19 @@ motion:
 # Progress bar in the top during page loading.
 # For more information: https://github.com/CodeByZach/pace
 pace:
-  enable: false
+  enable: true
   # All available colors:
   # black | blue | green | orange | pink | purple | red | silver | white | yellow
   color: blue
   # All available themes:
   # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
   # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
-  theme: minimal
+  theme: center-simple #minimal
 
 # Generate a ribbon in your website with HTML5 canvas.
 # For more information: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 300 # The width of the ribbon
   alpha: 0.6 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
@@ -729,11 +729,11 @@ livere_uid: # <your_uid>
 # For more information: https://gitalk.github.io
 gitalk:
   enable: true
-  github_id: kayleh # GitHub repo owner
+  github_id: Kayleh # GitHub repo owner
   repo: Kayleh/kayleh.top.giscus # Repository name to store issues
   client_id: Ov23liJZlhhVSuSynF9Q # GitHub Application Client ID
   client_secret: 27568c0dc64b05f9bce9b122bd7575ea8be36654 # GitHub Application Client Secret
-  admin_user: kayleh # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
+  admin_user: Kayleh # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   # When the official proxy is not available, you can change it to your own proxy address
   proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token # This is official proxy address
@@ -799,7 +799,7 @@ cloudflare_analytics:
 
 # Microsoft Clarity Analytics
 # See: https://clarity.microsoft.com/
-clarity_analytics: # <project_id>
+clarity_analytics: q44a4p85n0 # <project_id>
 
 # Matomo Analytics
 # See: https://matomo.org/
