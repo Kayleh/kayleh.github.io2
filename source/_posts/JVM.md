@@ -1,7 +1,7 @@
 ---
 title: JVM
 tags: [Interview]
-slug: jvm
+slugs: jvm
 date: 2020-07-14T13:35:08+08:00
 ---
 

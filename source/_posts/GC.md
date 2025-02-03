@@ -1,7 +1,7 @@
 ---
 title: GC
 tags: [Interview]
-slug: gc
+slugs: gc
 date: 2020-07-14T13:38:14+08:00
 ---
 

@@ -3,7 +3,7 @@ title: SpringMVC work stream
 mathjax: false
 date: 2020-12-16T23:13:22+08:00
 tags: [frame]
-slug: springmvc-work-stream
+slugs: springmvc-work-stream
 ---
 
 ## SpringMVC工作流程

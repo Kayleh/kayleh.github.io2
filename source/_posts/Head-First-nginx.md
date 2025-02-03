@@ -3,7 +3,7 @@ title: "Head First Nginx"
 date: 2021-04-15T13:55:17+08:00
 draft: false
 tags: [middleware]
-slug: Head-First-Nginx
+slugs: Head-First-Nginx
 ---
 
 ## 公司产品出现瓶颈？

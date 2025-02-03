@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Kingsley-Yau Blog
+title: Kayleh's Blog
 subtitle: ''
 description: ''
 keywords:
-author: Kingsley Yau
+author: Kayleh
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :slug #:year/:month/:day/:title/
+url: https://blog.kayleh.top
+permalink: posts/:slugs #:year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks

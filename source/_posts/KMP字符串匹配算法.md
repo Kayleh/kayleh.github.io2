@@ -4,7 +4,7 @@ tags: [ algorithm ]
 mathjax: true
 date: 2024-02-27 01:50:06
 draft: false
-slug: kmp-string-matching-algorithm
+slugs: kmp-string-matching-algorithm
 ---
 
 ## 1. 算法简介

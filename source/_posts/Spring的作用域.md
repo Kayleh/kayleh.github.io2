@@ -3,7 +3,7 @@ title: Spring Related
 mathjax: false
 date: 2020-12-16T21:44:11+08:00
 tags: [frame]
-slug: spring-relate
+slugs: spring-relate
 ---
 
 # Spring相关

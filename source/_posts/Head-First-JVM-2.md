@@ -3,7 +3,7 @@ title: Head First JVM(2)
 mathjax: false
 date: 2021-07-08 00:00:05
 tags: [jvm]
-slug: head-first-JVM(2)
+slugs: head-first-JVM(2)
 ---
 
 ## 垃圾收集器与内存分配策略

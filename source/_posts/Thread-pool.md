@@ -3,7 +3,7 @@ title: "Thread Pool"
 date: 2021-04-21T00:37:35+08:00
 draft: false
 tags: [Concurrency]
-slug: Thread_Pool
+slugs: Thread_Pool
 ---
 
 异步执行的代码

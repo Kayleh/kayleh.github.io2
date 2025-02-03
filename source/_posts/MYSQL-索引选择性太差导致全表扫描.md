@@ -3,7 +3,7 @@ title: MYSQL 索引选择性陷阱
 mathjax: false
 date: 2021-09-29 12:42:29
 tags: [sql]
-slug: mysql-index-wrong
+slugs: mysql-index-wrong
 ---
 
 ### MYSQL 索引选择性陷阱

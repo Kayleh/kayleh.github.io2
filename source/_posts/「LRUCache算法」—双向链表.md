@@ -3,7 +3,7 @@ title: 「LRUCache算法」—双向链表
 mathjax: false
 date: 2022-03-16 13:18:22
 tags: [algorithm]
-slug: lru-cache
+slugs: lru-cache
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: gulp压缩静态资源
 tags: [front]
-slug: gulp-compresses-static-resources
+slugs: gulp-compresses-static-resources
 date: 2020-08-24T11:28:18+08:00
 ---
 

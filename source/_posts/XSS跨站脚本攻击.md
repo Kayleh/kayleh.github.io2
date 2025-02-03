@@ -1,7 +1,7 @@
 ---
 title: XSS跨站脚本攻击
 tags: [security]
-slug: xss-crosssite-scripting-attack
+slugs: xss-crosssite-scripting-attack
 date: 2020-05-31T20:58:53+08:00
 ---
 

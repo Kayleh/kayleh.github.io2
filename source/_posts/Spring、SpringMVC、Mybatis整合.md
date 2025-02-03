@@ -1,7 +1,7 @@
 ---
 title: Spring、SpringMVC、Mybatis整合
 tags: [frame]
-slug: spring-springmvc-mybatis-integration
+slugs: spring-springmvc-mybatis-integration
 date: 2020-04-20T21:05:31+08:00
 ---
 

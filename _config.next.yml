@@ -52,13 +52,13 @@ darkmode: true
 
 favicon:
   small: /images/mygo.jpg #/images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
+  medium: /images/mygo.jpg #/images/favicon-32x32-next.png
   apple_touch_icon: /images/apple-touch-icon-next.png
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
-custom_logo: /images/mygo.jpg #/uploads/custom-logo.png
+custom_logo: #/images/mygo.jpg #/uploads/custom-logo.png
 
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/about/cclicenses/
@@ -105,11 +105,12 @@ menu:
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
-  home: https://kayleh.top || fa fa-home
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
   about: /about/ || fa fa-user
-  notes: /notes/ || fa fa-calendar
   tags: /tags/ || fa fa-tags
   friends: /friends || fa fa-heartbeat
+  sitemap: /rss.xml || fa fa-sitemap
   #more: /more/ || fa fa-heartbeat
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -149,7 +150,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: /images/mygo.jpg #/images/avatar.gif
   # If true, the avatar will be displayed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
@@ -163,6 +164,8 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
+  GitHub: https://github.com/kayleh || fab fa-github
+  E-Mail: mailto:website@kayleh.top || fa fa-envelope
   #GitHub: https://github.com/yourname || fab fa-github
   #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
@@ -207,11 +210,11 @@ toc:
 # ---------------------------------------------------------------
 
 # Show multilingual switcher in footer.
-language_switcher: false
+language_switcher: true
 
 footer:
   # Specify the year when the site was setup. If not defined, current year will be used.
-  #since: 2021
+  since: 2019
 
   # Icon between year and copyright info.
   icon:
@@ -224,10 +227,10 @@ footer:
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
   # Set to `false` to disable the copyright statement.
-  copyright:
+  copyright: true
 
   # Powered by Hexo & NexT
-  powered: true
+  powered: false
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
   beian:
@@ -269,7 +272,7 @@ symbols_count_time:
   item_text_total: false
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Donate (Sponsor) settings
 # Front-matter variable (nonsupport animation).
@@ -290,7 +293,7 @@ follow_me:
   #Twitter: https://twitter.com/username || fab fa-twitter
   #Telegram: https://t.me/channel_name || fab fa-telegram
   #WeChat: /images/wechat_channel.png || fab fa-weixin
-  #RSS: /atom.xml || fa fa-rss
+  RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
 # Dependencies: https://github.com/sergeyzwezdin/hexo-related-posts
@@ -301,9 +304,9 @@ related_posts:
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: false
-  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/ # Link for view source
-  #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/ # Link for fork & edit
+  enable: true
+  #url: https://github.com/kayleh/kayleh.github.io2/tree/master/source/ # Link for view source
+  url: https://github.com/kayleh/kayleh.github.io2/edit/master/source/ # Link for fork & edit
 
 # Show previous post and next post in post footer if exists
 # Available values: left | right | false
@@ -344,7 +347,7 @@ calendar:
 
 # Preload styles and preconnect CDN for fonts and plugins.
 # For more information: https://www.w3.org/TR/resource-hints/#preconnect
-preconnect: false
+preconnect: true
 
 # Set the text alignment in posts / pages.
 text_align:
@@ -478,10 +481,10 @@ font:
 
 # If true, site-subtitle will be added to the title of index page.
 # Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)
-index_with_subtitle: false
+index_with_subtitle: true
 
 # Automatically add external URL with Base64 encrypt & decrypt.
-exturl: false
+exturl: true
 # If true, an icon will be attached to each external URL
 exturl_icon: true
 
@@ -728,8 +731,8 @@ gitalk:
   enable: true
   github_id: kayleh # GitHub repo owner
   repo: Kayleh/kayleh.top.giscus # Repository name to store issues
-  client_id: # GitHub Application Client ID
-  client_secret: # GitHub Application Client Secret
+  client_id: Ov23liJZlhhVSuSynF9Q # GitHub Application Client ID
+  client_secret: 27568c0dc64b05f9bce9b122bd7575ea8be36654 # GitHub Application Client Secret
   admin_user: kayleh # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   # When the official proxy is not available, you can change it to your own proxy address

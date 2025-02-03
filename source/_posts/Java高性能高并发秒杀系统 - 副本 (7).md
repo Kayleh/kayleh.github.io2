@@ -3,7 +3,7 @@ title: Java高性能高并发秒杀系统(8)
 mathjax: false
 date: 2020-11-09T20:12:45+08:00
 tags: [project]
-slug: Java-high-performance-and-high-concurrency-spike-system-8
+slugs: Java-high-performance-and-high-concurrency-spike-system-8
 description: 引入RabbitMQ后的秒杀优化
 ---
 

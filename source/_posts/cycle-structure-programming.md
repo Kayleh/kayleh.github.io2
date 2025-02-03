@@ -3,7 +3,7 @@ title: cycle structure programming
 mathjax: false
 date: 2020-10-26T01:16:57+08:00
 tags: [C]
-slug: cycle-structure-programming
+slugs: cycle-structure-programming
 ---
 
 # 循环结构体程序设计

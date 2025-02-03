@@ -1,7 +1,7 @@
 ---
 title: MVC
 tags: [Interview]
-slug: mvc
+slugs: mvc
 date: 2020-07-14T13:43:03+08:00
 ---
 

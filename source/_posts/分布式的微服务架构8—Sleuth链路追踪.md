@@ -2,7 +2,7 @@
 title: SpringCloud Sleuth分布式请求链路追踪
 tags: [DistributedMicroservices]
 categories: [分布式]
-slug: springcloud-sleuth-distributed-request-link-tracking
+slugs: springcloud-sleuth-distributed-request-link-tracking
 date: 2020-08-19T17:52:50+08:00
 cover: https://cdn.kayleh.top/gh/kayleh/cdn/img/index2.jpg
 ---

@@ -3,7 +3,7 @@ title: Seata处理分布式事务
 tags: [DistributedMicroservices]
 categories: [分布式]
 cover: 'https://cdn.kayleh.top/gh/kayleh/cdn/img/index3.jpg'
-slug: seata-handles-distributed-transactions
+slugs: seata-handles-distributed-transactions
 date: 2020-08-26T12:25:48+08:00
 ---
 

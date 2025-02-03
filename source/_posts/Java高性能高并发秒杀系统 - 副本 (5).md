@@ -3,7 +3,7 @@ title: Java高性能高并发秒杀系统(6)
 mathjax: false
 date: 2020-11-08T20:14:45+08:00
 tags: [project]
-slug: Java-high-performance-and-high-concurrency-spike-system-6
+slugs: Java-high-performance-and-high-concurrency-spike-system-6
 description: 页面缓存和对象缓存
 ---
 

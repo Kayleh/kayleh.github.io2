@@ -3,7 +3,7 @@ title: JVM垃圾回收机制
 mathjax: false
 date: 2020-12-17T01:46:57+08:00
 tags: [jvm]
-slug: jvm-gc
+slugs: jvm-gc
 ---
 
 ### GC是什么

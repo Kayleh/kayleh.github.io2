@@ -3,7 +3,7 @@ title: mybatis-cache
 mathjax: false
 date: 2021-05-29 23:49:32
 tags: [frame]
-slug: mybatis-cache
+slugs: mybatis-cache
 ---
 
 # mybatis-缓存

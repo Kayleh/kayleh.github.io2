@@ -3,7 +3,7 @@ title: java.lang.String
 mathjax: false
 date: 2021-12-19 23:20:58
 tags: [jdk]
-slug: java.lang.String
+slugs: java.lang.String
 ---
 
 # String 

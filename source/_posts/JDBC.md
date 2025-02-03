@@ -1,7 +1,7 @@
 ---
 title: JDBC
 tags: [Interview]
-slug: jdbc
+slugs: jdbc
 date: 2020-07-16T15:06:43+08:00
 ---
 

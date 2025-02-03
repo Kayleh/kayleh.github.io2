@@ -3,7 +3,7 @@ title: head first JVM(3)
 mathjax: false
 date: 2021-07-11 00:24:20
 tags: [jvm]
-slug: head-first-JVM(3)
+slugs: head-first-JVM(3)
 ---
 
 ## 内存分配与回收策略

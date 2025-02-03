@@ -3,7 +3,7 @@ title: use-arrays-to-process-batch-data
 mathjax: false
 date: 2020-10-26T01:17:20+08:00
 tags: [C]
-slug: use-arrays-to-process-batch-data
+slugs: use-arrays-to-process-batch-data
 ---
 
 

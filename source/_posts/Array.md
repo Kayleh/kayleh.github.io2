@@ -1,7 +1,7 @@
 ---
 title: Array
 tags: [Interview]
-slug: array
+slugs: array
 date: 2020-07-14T13:29:08+08:00
 ---
 

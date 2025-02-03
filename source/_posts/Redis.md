@@ -1,7 +1,7 @@
 ---
 title: Redis
 tags: [middleware]
-slug: redis
+slugs: redis
 date: 2020-06-27T17:30:29+08:00
 ---
 

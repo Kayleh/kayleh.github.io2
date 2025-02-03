@@ -3,7 +3,7 @@ title: select structure programming
 mathjax: false
 date: 2020-10-26T01:16:20+08:00
 tags: [C]
-slug: select-structure-programming
+slugs: select-structure-programming
 ---
 
 # 选择结构程序设计

@@ -3,7 +3,7 @@ title: "Head First Netty"
 date: 2021-05-26T14:26:52+08:00
 draft: false
 tags: [frame]
-slug: Head-First-Netty
+slugs: Head-First-Netty
 ---
 
 # 思维导图

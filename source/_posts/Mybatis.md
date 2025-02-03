@@ -1,7 +1,7 @@
 ---
 title: Mybatis
 tags: [Interview]
-slug: mybatis
+slugs: mybatis
 date: 2020-07-14T13:41:49+08:00
 ---
 

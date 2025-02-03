@@ -6,7 +6,7 @@ date: 2023-11-19 01:05:31
 description:
 cover:
 banner:
-slug: shortest-path-algorithm-Floyd
+slugs: shortest-path-algorithm-Floyd
 ---
 
 ### Floyd

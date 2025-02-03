@@ -1,6 +1,6 @@
 ---
 title: unix的常用指令
-slug: common-commands-of-unix
+slugs: common-commands-of-unix
 date: 2019-12-14T13:30:23+08:00
 ---
 

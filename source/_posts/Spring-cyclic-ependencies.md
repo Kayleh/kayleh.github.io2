@@ -3,7 +3,7 @@ title: "Spring Cyclic Ependencies"
 date: 2021-04-16T23:36:37+08:00
 draft: false
 tags: [frame]
-slug: Spring-Cyclic-Ependencies
+slugs: Spring-Cyclic-Ependencies
 ---
 
 ## Spring是怎么解决循环依赖的？

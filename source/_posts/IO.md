@@ -1,7 +1,7 @@
 ---
 title: IO
 tags: [Interview]
-slug: io
+slugs: io
 date: 2020-07-14T13:39:13+08:00
 ---
 

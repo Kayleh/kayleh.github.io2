@@ -3,7 +3,7 @@ title: 区间dp算法
 mathjax: false
 date: 2022-02-17 14:06:18
 tags: [algorithm]
-slug: round-dp-algorithm
+slugs: round-dp-algorithm
 ---
 
 ### [688\. 骑士在棋盘上的概率](https://leetcode-cn.com/problems/knight-probability-in-chessboard/)

@@ -3,7 +3,7 @@ title: Java高性能高并发秒杀系统(9)
 mathjax: false
 date: 2020-11-09T20:14:45+08:00
 tags: [project]
-slug: Java-high-performance-and-high-concurrency-spike-system-9
+slugs: Java-high-performance-and-high-concurrency-spike-system-9
 description: 安全优化,动态秒杀地址+数字公式验证码+接口限流防刷
 ---
 

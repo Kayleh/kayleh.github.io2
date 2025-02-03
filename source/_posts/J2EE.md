@@ -1,7 +1,7 @@
 ---
 title: J2EE
 tags: [Interview]
-slug: j2ee
+slugs: j2ee
 date: 2020-07-14T13:44:34+08:00
 ---
 

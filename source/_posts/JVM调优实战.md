@@ -3,7 +3,7 @@ title: JVM内存调优实战
 mathjax: false
 date: 2023-04-14 22:24:15
 tags: [jvm]
-slug: jvm-tuning-practice
+slugs: jvm-tuning-practice
 site: https://kayleh.top/jvm-tuning-practice
 ---
 

@@ -2,7 +2,7 @@
 title: Sentinel实现熔断与限流
 tags: [DistributedMicroservices]
 categories: [分布式]
-slug: sentinel-realizes-fusing-and-current-limiting
+slugs: sentinel-realizes-fusing-and-current-limiting
 date: 2020-08-24T21:18:27+08:00
 cover: https://cdn.kayleh.top/gh/kayleh/cdn/img/index4.jpg
 ---

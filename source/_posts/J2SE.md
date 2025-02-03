@@ -1,7 +1,7 @@
 ---
 title: J2SE
 tags: [Interview]
-slug: j2se
+slugs: j2se
 date: 2020-07-14T13:27:19+08:00
 ---
 

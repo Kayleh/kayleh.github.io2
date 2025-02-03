@@ -2,7 +2,7 @@
 title: 从零开始Github Action:自动化驱动你的开发流程
 date: 2025-02-02 15:44:43
 tags: [blog]
-slug: github-action-deploy
+slugs: github-action-deploy
 ---
 
 ## 引言

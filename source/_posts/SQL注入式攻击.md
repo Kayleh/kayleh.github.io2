@@ -1,7 +1,7 @@
 ---
 title: SQL注入式攻击
 tags: [security]
-slug: sql-injection-attacks
+slugs: sql-injection-attacks
 date: 2020-05-30T21:13:52+08:00
 ---
 

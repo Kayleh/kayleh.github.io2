@@ -3,7 +3,7 @@ title: 'uuid导致的MySQL性能问题'
 mathjax: false
 date: 2021-09-23 13:47:54
 tags: [sql]
-slug: MYSQL-uuid-and-page-splitting
+slugs: MYSQL-uuid-and-page-splitting
 ---
 
 #### uuid无序导致Inoodb页分裂和随机IO

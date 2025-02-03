@@ -3,7 +3,7 @@ title: interface test
 mathjax: false
 date: 2021-02-21T01:49:12+08:00
 tags: [test]
-slug: interface-test
+slugs: interface-test
 ---
 
 # 接口测试

@@ -2,7 +2,7 @@
 title: Nacos服务注册和配置中心
 tags: [DistributedMicroservices]
 categories: [分布式]
-slug: nacos-service-registration-and-configuration-center
+slugs: nacos-service-registration-and-configuration-center
 date: 2020-08-21T17:44:55+08:00
 
 ---

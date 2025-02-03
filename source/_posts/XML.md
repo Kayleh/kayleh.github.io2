@@ -1,7 +1,7 @@
 ---
 title: XML
 tags: [Interview]
-slug: xml
+slugs: xml
 date: 2020-07-24T14:24:49+08:00
 ---
 

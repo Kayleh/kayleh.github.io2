@@ -3,7 +3,7 @@ title: Java network programming
 mathjax: false
 date: 2020-12-04T01:35:35+08:00
 tags: [network]
-slug: Java-network-programming
+slugs: Java-network-programming
 ---
 
 ###### @来源CSDN：方圆

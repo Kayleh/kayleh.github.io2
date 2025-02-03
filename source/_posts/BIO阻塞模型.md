@@ -3,7 +3,7 @@ title: BIO blocking model
 mathjax: false
 date: 2020-12-04T01:46:43+08:00
 tags: [network]
-slug: BIO-blocking-model
+slugs: BIO-blocking-model
 ---
 
 # BIO阻塞模型

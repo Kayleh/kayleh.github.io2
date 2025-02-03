@@ -3,7 +3,7 @@ title: realize modular programming with functions
 mathjax: false
 date: 2020-10-26T01:17:42+08:00
 tags: [C]
-slug: realize-modular-programming-with-functions
+slugs: realize-modular-programming-with-functions
 ---
 
 # 用函数实现模块化程序设计

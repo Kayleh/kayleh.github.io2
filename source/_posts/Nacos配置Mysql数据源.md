@@ -3,7 +3,7 @@ title: Nacos-Mysql数据源
 mathjax: false
 date: 2021-06-20 14:49:10
 tags: [DistributedMicroservices]
-slug: Nacos：Configure-MySQL-data-source
+slugs: Nacos：Configure-MySQL-data-source
 ---
 
 ## Nacos配置Mysql数据源

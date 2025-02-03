@@ -3,7 +3,7 @@ title: head-first-docker
 mathjax: false
 date: 2022-04-23 21:23:00
 tags: [docker]
-slug: head-first-docker
+slugs: head-first-docker
 ---
 
 

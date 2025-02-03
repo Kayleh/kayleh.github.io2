@@ -3,7 +3,7 @@ title: NIO blocking model
 mathjax: false
 date: 2020-12-05T11:33:46+08:00
 tags: [network]
-slug: NIO-blocking-model
+slugs: NIO-blocking-model
 ---
 
 # NIO模型

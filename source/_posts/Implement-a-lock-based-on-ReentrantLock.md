@@ -3,7 +3,7 @@ title: "a Lock Based on ReentrantLock"
 date: 2021-04-20T00:59:25+08:00
 draft: false
 tags: [Concurrency]
-slug: Implement-a-lock-based-on-ReentrantLock
+slugs: Implement-a-lock-based-on-ReentrantLock
 ---
 
 ## 基于 ReentrantLock实现一个锁

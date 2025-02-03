@@ -3,7 +3,7 @@ title: docker虚拟化容器
 tags: [docker]
 categories: [linux]
 
-slug: docker-virtualized-container
+slugs: docker-virtualized-container
 date: 2020-08-28T16:36:20+08:00
 ---
 

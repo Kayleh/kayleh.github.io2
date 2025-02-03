@@ -2,7 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 tags: []
-slug: {{ slug }}
+slugs: {{ slug }}
 ---
 
 

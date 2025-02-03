@@ -3,7 +3,7 @@ title: Java高性能高并发秒杀系统(7)
 mathjax: false
 date: 2020-11-08T20:17:45+08:00
 tags: [project]
-slug: Java-high-performance-and-high-concurrency-spike-system-7
+slugs: Java-high-performance-and-high-concurrency-spike-system-7
 description: Rabbit+接口优化
 ---
 

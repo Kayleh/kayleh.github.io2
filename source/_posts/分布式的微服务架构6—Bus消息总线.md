@@ -2,7 +2,7 @@
 title: SpringCloud Bus消息总线
 tags: [DistributedMicroservices]
 categories: [分布式]
-slug: springcloud-bus-message
+slugs: springcloud-bus-message
 date: 2020-08-14T23:29:28+08:00
 ---
 

@@ -2,7 +2,7 @@
 title: ubuntu.deb安装包
 date: 2020-10-06T21:16:50+08:00
 tags: [linux]
-slug: deb
+slugs: deb
 ---
 
 ```linux

@@ -1,7 +1,7 @@
 ---
 title: Reflection
 tags: [Interview]
-slug: reflection
+slugs: reflection
 date: 2020-07-14T13:33:21+08:00
 ---
 

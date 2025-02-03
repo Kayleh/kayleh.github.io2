@@ -3,7 +3,7 @@ title: ⌈JVM⌋方法内联优化
 mathjax: false
 date: 2022-10-14 22:24:15
 tags: [jvm]
-slug: jvm-method-inline
+slugs: jvm-method-inline
 ---
 
 ## 内联优化

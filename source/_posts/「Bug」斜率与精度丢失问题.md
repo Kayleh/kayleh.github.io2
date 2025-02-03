@@ -3,7 +3,7 @@ title: 超高精度计算
 mathjax: false
 date: 2022-11-09 15:12:23
 tags: [algorithm]
-slug: Large-number-operations
+slugs: Large-number-operations
 ---
 
 # 高精算法解决了什么问题？

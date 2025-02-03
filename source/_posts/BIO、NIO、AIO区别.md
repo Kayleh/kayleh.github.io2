@@ -3,7 +3,7 @@ title: the difference of BIO、NIO、AIO
 mathjax: false
 date: 2020-12-21T00:15:14+08:00
 tags: [network]
-slug: bionioaio
+slugs: bionioaio
 ---
 
 ### BIO、NIO、AIO区别

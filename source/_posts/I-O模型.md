@@ -3,7 +3,7 @@ title: I/O model
 mathjax: false
 date: 2020-12-04T01:44:24+08:00
 tags: [network]
-slug: IO-model
+slugs: IO-model
 ---
 
 # I/O模型

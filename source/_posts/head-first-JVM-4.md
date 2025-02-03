@@ -3,7 +3,7 @@ title: head first JVM(4)
 mathjax: false
 date: 2021-07-12 23:51:24
 tags: [jvm]
-slug: head-first-JVM(4)
+slugs: head-first-JVM(4)
 
 ---
 

@@ -3,7 +3,7 @@ title: MYSQL MVCC & LOCK
 mathjax: false
 date: 2021-09-23 13:10:41
 tags: [sql]
-slug: MYSQL-MVCC-&-LOCK
+slugs: MYSQL-MVCC-LOCK
 ---
 
 ### MYSQL的MVCC并发控制

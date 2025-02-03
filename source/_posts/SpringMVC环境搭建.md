@@ -2,7 +2,7 @@
 title: SpringMVC环境搭建
 tags: [frame]
 categories: [SpringMVC]
-slug: springmvc-environment-construction
+slugs: springmvc-environment-construction
 date: 2019-07-14T13:30:23+08:00
 ---
 
