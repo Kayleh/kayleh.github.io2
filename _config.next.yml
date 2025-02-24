@@ -731,8 +731,8 @@ gitalk:
   enable: true
   github_id: Kayleh # GitHub repo owner
   repo: kayleh.top.giscus # Repository name to store issues
-  client_id: Ov23liJZlhhVSuSynF9Q # GitHub Application Client ID
-  client_secret: d16c7023956f130d20927ad469dfe83295864094 # GitHub Application Client Secret
+  client_id: Ov23ctwqy9CWIr2Blvye # GitHub Application Client ID
+  client_secret: d52582c3d76059c270aa5032bcb10106aaa0e3b9 # GitHub Application Client Secret
   admin_user: Kayleh # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   # When the official proxy is not available, you can change it to your own proxy address
