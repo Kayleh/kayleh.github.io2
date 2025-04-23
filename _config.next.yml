@@ -110,7 +110,7 @@ menu:
   about: /about/ || fa fa-user
   tags: /tags/ || fa fa-tags
   friends: /friends || fa fa-heartbeat
-  sitemap: /rss.xml || fa fa-sitemap
+  Rss: /rss.xml || fa fa-sitemap
   #more: /more/ || fa fa-heartbeat
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -663,7 +663,7 @@ pace:
 # Generate a ribbon in your website with HTML5 canvas.
 # For more information: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 300 # The width of the ribbon
   alpha: 0.6 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
