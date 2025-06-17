@@ -110,7 +110,8 @@ menu:
   about: /about/ || fa fa-user
   tags: /tags/ || fa fa-tags
   friends: /friends || fa fa-heartbeat
-  sitemap: /sitemap.xml || fa fa-sitemap
+  RSS: /sitemap.xml || fa fa-sitemap
+  Travelling: https://www.travellings.cn/go.html || fa fa-train-subway
   #more: /more/ || fa fa-heartbeat
 # Enable / Disable menu icons / item badges.
 menu_settings:
