@@ -1,5 +1,5 @@
 ---
-title: Github Action 持续集成
+title: 「Github协作」通过Action部署到Github Pages
 tags: [project, github]
 poster:
   color: '#1e90ff'
@@ -7,7 +7,7 @@ date: 2023-06-19 00:28:17
 slugs: ci-continuous-integration-github-action-pages
 ---
 
-#### 1.什么是持续集成 、交付、部署
+#### 1.什么是持续集成
 
 > 持续集成是指，频繁地（一天多次）将代码集成到主干。 每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。许多团队发现这种方法可以显著减少集成问题，并允许团队更快地开发高质量的软件。 这是持续交付和持续部署的基础。
 

@@ -1,5 +1,5 @@
 ---
-title: 从零开始Github Action:自动化驱动你的开发流程
+title: 「Github」CICD流水线-hexo自动发布到Pages服务
 date: 2025-02-02 15:44:43
 tags: [blog]
 slugs: github-action-deploy

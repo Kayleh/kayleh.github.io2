@@ -37,9 +37,9 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Muse
-#scheme: Mist
-#scheme: Pisces
+# scheme: Muse
+# scheme: Mist
+# scheme: Pisces
 scheme: Gemini
 
 # Dark Mode
@@ -110,7 +110,7 @@ menu:
   about: /about/ || fa fa-user
   tags: /tags/ || fa fa-tags
   friends: /friends || fa fa-heartbeat
-  Rss: /rss.xml || fa fa-sitemap
+  sitemap: /sitemap.xml || fa fa-sitemap
   #more: /more/ || fa fa-heartbeat
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -157,7 +157,7 @@ avatar:
   rotated: false
 
 # Posts / Categories / Tags in sidebar.
-site_state: true
+site_state: false
 
 # Social Links
 # Usage: `Key: permalink || icon`
@@ -261,9 +261,9 @@ post_meta:
   item_text: true
   created_at: true
   updated_at:
-    enable: true
+    enable: false
     another_day: true
-  categories: true
+  categories: false
 
 # Post wordcount display settings
 # Dependencies: https://github.com/next-theme/hexo-word-counter
@@ -658,7 +658,7 @@ pace:
   # All available themes:
   # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
   # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
-  theme: center-atom #minimal
+  theme: minimal #minimal
 
 # Generate a ribbon in your website with HTML5 canvas.
 # For more information: https://github.com/hustcc/ribbon.js
